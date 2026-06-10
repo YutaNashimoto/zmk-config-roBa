@@ -55,7 +55,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 4>;
+                <&sl 3>;
 
             label = "MKP_EXIT_AML";
         };
@@ -89,7 +89,7 @@
 &lt 6 Q             &kp W         &kp E         &kp R    &kp T                                              &kp Y           &kp U  &lt 5 I    &kp O    &lt 5 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F    &kp G           &kp LG(Q)        &kp SINGLE_QUOTE  &kp H           &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V    &kp B           &lt 1 EQUAL      &kp BACKSPACE     &kp N           &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL           &kp CAPSLOCK  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 3 SPACE      &lt 2 ENTER       &mt RCMD LANG1                             &kp DEL
+&kp LCTRL           &kp CAPSLOCK  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 4 SPACE      &lt 2 ENTER       &mt RCMD LANG1                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -115,6 +115,15 @@
             sensor-bindings = <&inc_dec_kp F2 F1>;
         };
 
+        MOUSE {
+            bindings = <
+&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                                 &to_layer_0 Y           &to_layer_0 U      &lt 5 I            &to_layer_0 O      &lt 5 P
+&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G           &trans                      &to_layer_0 SINGLE_QUOTE  &mkp_exit_AML MB5       &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
+&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B           &lt_to_layer_0 1 EQUAL      &to_layer_0 BACKSPACE     &mkp_exit_AML MB4       &kp LG(C)          &kp LG(W)          &kp LG(V)          &to_layer_0 SLASH
+&to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &lt_to_layer_0 4 LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 2 ENTER    &lt_to_layer_0 4 LANG1                                                           &to_layer_0 DELETE
+            >;
+        };
+
         ARROW {
             bindings = <
 &kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                    &trans    &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
@@ -123,16 +132,7 @@
 &trans         &trans                      &trans             &trans                       &trans   &trans                   &trans  &trans                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
-        };
-
-        MOUSE {
-            bindings = <
-&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                           &to_layer_0 Y      &kp LG(C)          &lt 5 I            &kp LG(V)          &lt 5 P
-&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G     &trans                      &to_layer_0 SINGLE_QUOTE  &mkp_exit_AML MB5  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
-&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B     &lt_to_layer_0 1 EQUAL      &to_layer_0 BACKSPACE     &mkp_exit_AML MB4  &kp LG(W)          &kp LG(W)          &kp LG(W)          &to_layer_0 SLASH
-&to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &to_layer_0 LCMD  &lt_to_layer_0 3 SPACE      &lt_to_layer_0 2 ENTER    &to_layer_0 RCMD                                                            &to_layer_0 DELETE
-            >;
+            sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
         SCROLL {
