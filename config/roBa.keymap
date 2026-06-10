@@ -74,6 +74,7 @@
         mt_to_0: mt_to_0 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&to_layer_0>;
+
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -105,10 +106,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                                 &to_layer_0 Y           &to_layer_0 U      &lt 5 I            &to_layer_0 O      &lt 5 P
-&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G           &trans                      &to_layer_0 SINGLE_QUOTE  &mkp_exit_AML MB5       &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
-&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B           &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &mkp_exit_AML MB4       &kp LG(C)          &kp LG(W)          &kp LG(V)          &to_layer_0 SLASH
-&to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &lt_to_layer_0 4 LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 3 ENTER    &lt_to_layer_0 4 LANG1                                                           &to_layer_0 DELETE
+&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                              &to_layer_0 Y        &to_layer_0 U      &lt 5 I            &to_layer_0 O      &lt 5 P
+&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &trans                      &to_layer_0 SINGLE_QUOTE  &mkp_exit_AML MB5    &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
+&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &mkp_exit_AML MB4    &kp LG(C)          &kp LG(W)          &kp LG(V)          &to_layer_0 SLASH
+&to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 RCMD LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 3 ENTER    &mt_to_0 LCMD LANG1                                                           &to_layer_0 DELETE
             >;
         };
 
