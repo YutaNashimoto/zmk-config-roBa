@@ -71,6 +71,14 @@
             tapping-term-ms = <200>;
         };
 
+        mt_to_0: mt_to_0 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&to_layer_0>;
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
