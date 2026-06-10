@@ -128,10 +128,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                    &trans    &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
-&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans  &mkp MB5  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
-&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &trans  &mkp MB4  &trans           &kp LG(W)      &trans       &trans
-&trans         &trans                      &trans             &trans                       &trans   &trans                   &trans  &trans                                                 &trans
+&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                    &trans     &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
+&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans  &kp LG(V)  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
+&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &trans  &kp LG(C)  &mkp MB4         &kp LG(W)      &mkp MB5     &trans
+&trans         &trans                      &trans             &trans                       &trans   &trans                   &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
