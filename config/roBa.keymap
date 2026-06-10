@@ -71,7 +71,7 @@
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl 4>;
-                
+
             label = "MKP_EXIT_AML";
         };
     };
@@ -134,7 +134,7 @@
             bindings = <
 &kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                    &trans    &kp LC(LG(T))    &kp LC(LS(D))  &trans       &trans
 &kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans  &mkp MB5  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
-&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &trans  &mkp MB4  &kp LG(W)        &kp LG(W)      &trans       &trans
+&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &trans  &mkp MB4  &kp LG(W)        &kp LG(W)      &kp LG(W)    &trans
 &trans         &trans                      &trans             &trans                       &trans   &trans                   &trans  &trans                                                 &trans
             >;
 
@@ -143,10 +143,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans     &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB5  &mkp MB1   &mkp MB3   &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &kp LG(W)  &kp LG(W)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R          &to_layer_0 T                                                &to_layer_0 Y      &to_layer_0 U      &to_layer_0 I      &to_layer_0 O      &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F          &to_layer_0 G      &trans                 &kp LG(V)          &mkp_exit_AML MB5  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V          &to_layer_0 B      &trans                 &kp LG(C)          &mkp_exit_AML MB4  &kp LG(W)          &kp LG(W)          &kp LG(W)          &to_layer_0 SLASH
+&trans         &trans         &trans         &to_layer_0 BACKSPACE  &to_layer_0 LANG2  &to_layer_0 SPACE      &to_layer_0 ENTER  &to_layer_0 LANG1                                                           &to_layer_0 DELETE
             >;
         };
 
