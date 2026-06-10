@@ -110,13 +110,13 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                       &trans  &kp LC(LG(T))    &kp LC(LS(D))  &trans       &trans
-&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &trans      &trans  &trans  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
-&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans      &trans  &trans  &kp LG(W)        &kp LG(W)      &trans       &trans
-&trans         &trans                      &trans             &trans                       &trans   &trans      &trans  &trans                                               &trans
+&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                    &trans  &kp LC(LG(T))    &kp LC(LS(D))  &trans       &trans
+&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans  &trans  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
+&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &trans  &trans  &kp LG(W)        &kp LG(W)      &trans       &trans
+&trans         &trans                      &trans             &trans                       &trans   &trans                   &trans  &trans                                               &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
         MOUSE {
