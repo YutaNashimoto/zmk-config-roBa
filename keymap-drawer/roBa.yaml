@@ -62,7 +62,7 @@ layers:
   - '&to_layer_0 G'
   - {t: ▽, type: trans}
   - '&to_layer_0 SINGLE_QUOTE'
-  - '&mkp_exit_AML MB5'
+  - Gui+V
   - '&mkp_exit_AML MB1'
   - '&mkp_exit_AML MB3'
   - '&mkp_exit_AML MB2'
@@ -74,19 +74,19 @@ layers:
   - '&to_layer_0 B'
   - {t: '&to_layer_0 EQUAL', h: SYMBOLS}
   - '&to_layer_0 BACKSPACE'
-  - '&mkp_exit_AML MB4'
   - Gui+C
+  - '&mkp_exit_AML MB4'
   - Gui+W
-  - Gui+V
+  - '&mkp_exit_AML MB5'
   - '&to_layer_0 SLASH'
   - '&to_layer_0 LEFT_CONTROL'
   - '&to_layer_0 CAPSLOCK'
   - '&to_layer_0 LEFT_ALT'
   - '&to_layer_0 TAB'
-  - {t: '&to_layer_0 LANG2', h: RCMD}
+  - {t: '&to_layer_0 LANG2', h: LCMD}
   - {t: '&to_layer_0 SPACE', h: ARROW}
   - {t: '&to_layer_0 ENTER', h: NUM}
-  - {t: '&to_layer_0 LANG1', h: LCMD}
+  - {t: '&to_layer_0 LANG1', h: RCMD}
   - '&to_layer_0 DELETE'
   SYMBOLS:
   - {t: ▽, type: trans}
@@ -194,7 +194,7 @@ layers:
   - END
   - Gui+KP 0
   - {t: ▽, type: trans}
-  - '&mkp MB5'
+  - Gui+V
   - Sft+Ctl+TAB
   - Gui+T
   - Ctl+TAB
@@ -206,10 +206,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Gui+C
   - '&mkp MB4'
-  - {t: ▽, type: trans}
   - Gui+W
-  - {t: ▽, type: trans}
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,6 +308,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-combos:
-- p: [0, 1]
-  k: TAB
