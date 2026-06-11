@@ -18,11 +18,11 @@
         layers = <8>;
         bindings =
             <&kp LC(TAB)>,
-            // 右,,
+            // 右,,,
             <&kp LC(LS(TAB))>,
-            // 左,,
+            // 左,,,
             <&kp LG(T)>,
-            // 上,,
+            // 上,,,
             <&kp LG(W)>;
 
         // 下
@@ -101,7 +101,7 @@
 
         default_layer {
             bindings = <
-&lt 10 Q            &kp W             &kp E         &kp R    &kp T                                              &kp Y           &lt 9 U  &lt 8 I    &lt 7 O  &lt 6 P
+&lt 10 Q            &kp W             &kp E         &kp R    &kp T                                              &kp Y           &lt 8 U  &lt 9 I    &lt 7 O  &lt 6 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LG(Q)        &kp SINGLE_QUOTE  &kp H           &kp J    &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 2 EQUAL      &kp BACKSPACE     &kp N           &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 4 SPACE      &lt 3 ENTER       &mt RCMD LANG1                               &mt RIGHT_SHIFT ESCAPE
