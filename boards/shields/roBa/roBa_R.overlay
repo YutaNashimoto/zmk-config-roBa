@@ -19,11 +19,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
-        gesture_l8 {
-            layers = <8>;
-            input-processors = <&zip_mouse_gesture_l8>;
-        };
+        input-processors = <&zip_mouse_gesture_l8>;
     };
 };
 
