@@ -88,7 +88,7 @@
 
         default_layer {
             bindings = <
-&lt 7 Q             &kp W         &kp E         &kp R    &kp T                                              &kp Y           &kp U  &lt 6 I    &kp O    &lt 6 P
+&lt 7 Q             &kp W         &kp E         &kp R    &kp T                                              &kp Y           &kp U  &lt 6 I    &lt 8 O  &lt 6 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F    &kp G           &kp LG(Q)        &kp SINGLE_QUOTE  &kp H           &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V    &kp B           &lt 2 EQUAL      &kp BACKSPACE     &kp N           &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL           &kp CAPSLOCK  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 4 SPACE      &lt 3 ENTER       &mt RCMD LANG1                             &mt RIGHT_SHIFT ESCAPE
@@ -100,8 +100,8 @@
         MOUSE {
             bindings = <
 &to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                              &to_layer_0 Y        &to_layer_0 U      &lt 6 I            &to_layer_0 O      &lt 6 P
-&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &trans                      &to_layer_0 SINGLE_QUOTE  &kp LG(V)            &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
-&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &kp LG(C)            &mkp_exit_AML MB4  &kp LG(W)          &mkp_exit_AML MB5  &to_layer_0 SLASH
+&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &trans                      &to_layer_0 SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 MINUS
+&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &to_layer_0 N        &mkp_exit_AML MB4  &kp LG(W)          &mkp_exit_AML MB5  &to_layer_0 SLASH
 &to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 3 ENTER    &mt_to_0 RCMD LANG1                                                           &to_layer_0 ESCAPE
             >;
         };
@@ -128,10 +128,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                        &trans     &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
-&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans      &kp LG(V)  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
-&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &kp DELETE  &kp LG(C)  &mkp MB4         &kp LG(W)      &mkp MB5     &trans
-&trans         &trans                      &trans             &trans                       &trans   &trans                   &trans      &trans                                                  &trans
+&kp ESCAPE     &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                        &trans  &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
+&kp HOME       &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
+&kp LS(LC(V))  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &kp DELETE  &trans  &mkp MB4         &kp LG(W)      &mkp MB5     &trans
+&trans         &trans                      &trans             &trans                       &trans   &trans                   &trans      &trans                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -163,6 +163,33 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        Test_Jesture {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
