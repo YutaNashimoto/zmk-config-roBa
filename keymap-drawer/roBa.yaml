@@ -1,15 +1,15 @@
 layout: {zmk_keyboard: roBa}
 layers:
   default:
-  - {t: Q, h: '6'}
+  - {t: Q, h: BLUETOOTH}
   - W
   - E
   - R
   - T
   - Y
-  - U
-  - {t: I, h: SCROLL}
-  - O
+  - {t: U, h: Window_Jesture}
+  - {t: I, h: Desktop_Jesture}
+  - {t: O, h: Browsing_Jesture}
   - {t: P, h: SCROLL}
   - {t: A, h: LEFT CONTROL}
   - S
@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - '-'
+  - {t: '-', h: ARROW2}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -35,15 +35,15 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - LCTRL
-  - CAPSLOCK
+  - LEFT SHIFT
+  - LEFT CONTROL
   - LEFT ALT
   - TAB
   - {t: LANG2, h: LCMD}
   - {t: SPACE, h: ARROW}
   - {t: ENTER, h: NUM}
   - {t: LANG1, h: RCMD}
-  - DEL
+  - {t: ESCAPE, h: RIGHT SHIFT}
   MOUSE:
   - '&to_layer_0 Q'
   - '&to_layer_0 W'
@@ -51,10 +51,10 @@ layers:
   - '&to_layer_0 R'
   - '&to_layer_0 T'
   - '&to_layer_0 Y'
-  - '&to_layer_0 U'
-  - {t: I, h: SCROLL}
-  - '&to_layer_0 O'
-  - {t: P, h: SCROLL}
+  - {t: '&to_layer_0 U', h: Window_Jesture}
+  - {t: '&to_layer_0 I', h: Desktop_Jesture}
+  - {t: '&to_layer_0 O', h: Browsing_Jesture}
+  - {t: '&to_layer_0 P', h: SCROLL}
   - '&to_layer_0 A'
   - '&to_layer_0 S'
   - '&to_layer_0 D'
@@ -62,11 +62,11 @@ layers:
   - '&to_layer_0 G'
   - {t: ▽, type: trans}
   - '&to_layer_0 SINGLE_QUOTE'
-  - Gui+V
+  - '&to_layer_0 H'
   - '&mkp_exit_AML MB1'
   - '&mkp_exit_AML MB3'
   - '&mkp_exit_AML MB2'
-  - '&to_layer_0 MINUS'
+  - {t: '&to_layer_0 MINUS', h: ARROW2}
   - '&to_layer_0 Z'
   - '&to_layer_0 X'
   - '&to_layer_0 C'
@@ -74,11 +74,11 @@ layers:
   - '&to_layer_0 B'
   - {t: '&to_layer_0 EQUAL', h: SYMBOLS}
   - '&to_layer_0 BACKSPACE'
-  - Gui+C
+  - '&to_layer_0 N'
   - '&mkp_exit_AML MB4'
   - Gui+W
   - '&mkp_exit_AML MB5'
-  - '&to_layer_0 SLASH'
+  - {t: '&to_layer_0 SLASH', h: RIGHT SHIFT}
   - '&to_layer_0 LEFT_CONTROL'
   - '&to_layer_0 CAPSLOCK'
   - '&to_layer_0 LEFT_ALT'
@@ -87,7 +87,7 @@ layers:
   - {t: '&to_layer_0 SPACE', h: ARROW}
   - {t: '&to_layer_0 ENTER', h: NUM}
   - {t: '&to_layer_0 LANG1', h: RCMD}
-  - '&to_layer_0 DELETE'
+  - {t: '&to_layer_0 ESC', h: RSHIFT}
   SYMBOLS:
   - {t: ▽, type: trans}
   - '&'
@@ -110,7 +110,7 @@ layers:
   - (
   - )
   - ':'
-  - {t: ▽, type: trans}
+  - \
   - '`'
   - '!'
   - '@'
@@ -122,7 +122,7 @@ layers:
   - '['
   - ']'
   - ;
-  - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -194,19 +194,19 @@ layers:
   - END
   - Gui+KP 0
   - {t: ▽, type: trans}
-  - Gui+V
+  - {t: ▽, type: trans}
   - Sft+Ctl+TAB
   - Gui+T
   - Ctl+TAB
   - {t: ▽, type: trans}
-  - Sft+Ctl+V
+  - {t: ▽, type: trans}
   - Alt+Ctl+LEFT ARROW
   - Alt+Ctl+ENTER
   - Alt+Ctl+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
-  - Gui+C
   - '&mkp MB4'
   - Gui+W
   - '&mkp MB5'
@@ -220,23 +220,69 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  ARROW2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+Ctl+V
   - Gui+Alt+Ctl+F
   - Gui+Sft+4
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+LEFT
   - {t: ▽, type: trans}
   - Ctl+RIGHT
   - {t: ▽, type: trans}
   - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Sft+3
   - Gui+Sft+7
@@ -246,9 +292,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Ctl+UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Sft+6
   - Gui+Sft+5
@@ -262,9 +308,139 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Browsing_Jesture:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Desktop_Jesture:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Window_Jesture:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  BLUETOOTH:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,3 +484,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
+combos:
+- p: [37, 36]
+  k: CAPSLOCK
