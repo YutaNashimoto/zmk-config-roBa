@@ -11,11 +11,11 @@
 };
 
 &trackball {
-    automouse-layer = <1 12 22>;
-    scroll-layers = <6 17 27>;
+    automouse-layer = <1>;
+    scroll-layers = <6>;
 
     browsing_arrows {
-        layers = <7 18 28>;
+        layers = <7>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,,,
@@ -33,7 +33,7 @@
     };
 
     desktop_arrows {
-        layers = <8 19 29>;
+        layers = <8>;
         bindings =
             <&kp LC(LEFT)>,
             // 右(逆): デスクトップ左,,,
@@ -51,7 +51,7 @@
     };
 
     window_arrows {
-        layers = <9 20 30>;
+        layers = <9>;
         bindings =
             <&kp LC(LA(RIGHT))>,
             // 右: 右半分,,,
