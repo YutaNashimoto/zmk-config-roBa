@@ -1,0 +1,5 @@
+if(CONFIG_ZMK_OS_DETECTION)
+  zephyr_library_named(zmk_os_detection)
+  zephyr_library_sources(${CMAKE_CURRENT_SOURCE_DIR}/src/os_detection.c)
+  zephyr_ld_options(-Wl,--wrap=usb_handle_os_desc)
+endif()
