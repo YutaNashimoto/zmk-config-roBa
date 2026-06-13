@@ -94,6 +94,12 @@ static int layer_for(enum detected_os os) {
 }
 
 static void detection_work_cb(struct k_work *work) {
+    /* USB1接続につき切替は一度だけ。以後の定期的なディスクリプタ要求で
+     * レイヤーを再切替して手動操作（BLUETOOTHレイヤー等）に割り込まない。 */
+    if (st.switched) {
+        return;
+    }
+
     enum detected_os os = classify();
     LOG_INF("OS detection: count=%d 02=%d 04=%d ff=%d last=0x%02x -> %d", st.count, st.cnt_02,
             st.cnt_04, st.cnt_ff, st.last_wlength, os);
@@ -118,6 +124,11 @@ static K_WORK_DELAYABLE_DEFINE(detection_work, detection_work_cb);
 
 /* USB割り込み/スタックコンテキストから呼ばれるため軽量処理のみ */
 static void record_wlength(uint16_t wlength) {
+    /* このUSB接続では既に切替済み。USB切断までは何もしない。 */
+    if (st.switched) {
+        return;
+    }
+
     int64_t now = k_uptime_get();
 
     /* 前回要求から間が空いていたら再列挙とみなしてリセット */
