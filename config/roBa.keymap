@@ -12,7 +12,8 @@
 
 &trackball {
     automouse-layer = <1>;
-    scroll-layers = <6>;
+    // 6=Mac SCROLL, 16=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
+    scroll-layers = <6 16>;
 
     browsing_arrows {
         layers = <7>;
