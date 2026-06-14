@@ -35,6 +35,17 @@ static int profile_name_listener(const zmk_event_t *eh) {
         return ZMK_EV_EVENT_BUBBLE;
     }
 
+    /* 名前変更は未ペアリング（これから繋ぐ）のプロファイルのみ。
+     * ペアリング済みホストは名前をキャッシュ済みで変更しても無意味な上、
+     * zmk_ble_set_device_name() は広告を停止→再開するため、切替のたびに
+     * 呼ぶと再接続と競合して切替が遅く・不安定になる。未ペアリング時だけ
+     * 名前を出せば、新規ペアリング時に roBa_N と表示され、以後その
+     * ホストはその名前を覚える。通常の切替では広告再起動が起きない。 */
+    if (!zmk_ble_active_profile_is_open()) {
+        LOG_DBG("Profile %d already paired, skip rename", ev->index);
+        return ZMK_EV_EVENT_BUBBLE;
+    }
+
     /* プロファイル番号は1始まりで表示（index 0 -> "roBa_1"） */
     snprintf(name_buf, sizeof(name_buf), "%s_%d", CONFIG_ZMK_BLE_PROFILE_NAME_PREFIX,
              ev->index + 1);
