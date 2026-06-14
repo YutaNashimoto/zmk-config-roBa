@@ -22,12 +22,14 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // Windowsのスクロール層(SCROLL_win=16)がアクティブな間だけ、
-        // トラックボールのスクロールを縦横とも反転する。
+        // Windowsデフォルト層(11)がアクティブな間、トラックボールの
+        // スクロールを縦横とも反転する（Macは正方向）。層11はWindowsに
+        // いる間ずっとアクティブなので、デフォルト経路(P長押し→16)でも
+        // オートマウス経路(移動→層1→P長押し→6)でも、どちらの
+        // スクロールも反転される。
         // zip_scroll_transform は WHEEL/HWHEEL のみ反転し、カーソル移動は不変。
-        // → Mac(層6)は正方向、Windows(層16)は反転、とOS別に切り替わる。
         win_scroll_invert {
-            layers = <16>;
+            layers = <11>;
             input-processors = <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };

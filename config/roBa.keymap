@@ -206,6 +206,16 @@
 
             tap-ms = <20>;
         };
+
+        // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
+        encoder_msc_up_down: encoder_msc_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -326,7 +336,8 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 15 SPACE      &lt 14 ENTER      &mt RCMD LANG1                                 &mt RIGHT_SHIFT ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
+            sensor-bindings = <&encoder_msc_up_down>;
         };
 
         MOUSE_win {
