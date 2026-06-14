@@ -36,3 +36,14 @@ config ZMK_OS_DETECTION_DISCONNECT_LAYER
 	default 0
 
 endif
+
+# BLEプロファイル番号を機器名に反映（roBa_1, roBa_2 ...）
+config ZMK_BLE_PROFILE_NAME
+	bool "Append active BLE profile number to the advertised device name"
+	default n
+	depends on ZMK_BLE
+
+config ZMK_BLE_PROFILE_NAME_PREFIX
+	string "Device name prefix used before the profile number"
+	default "roBa"
+	depends on ZMK_BLE_PROFILE_NAME
