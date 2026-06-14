@@ -87,6 +87,31 @@
             bindings = <&to_layer_0 ESC>;
             key-positions = <0 39>;
         };
+
+        Bluetooth_1 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <0 5>;
+        };
+
+        Bluetooth_2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <0 6>;
+        };
+
+        Bluetooth_3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <0 7>;
+        };
+
+        Bluetooth_4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <0 8>;
+        };
+
+        Bluetooth_5 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <0 9>;
+        };
     };
 
     macros {
@@ -202,10 +227,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                              &to_layer_0 Y        &lt_to_layer_0 9 U  &lt_to_layer_0 8 I  &lt_to_layer_0 7 O  &lt_to_layer_0 6 P
-&to_layer_0 A             &to_layer_0 S         &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &trans                      &to_layer_0 SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1   &mkp_exit_AML MB3   &mkp_exit_AML MB2   &lt_to_layer_0 5 MINUS
-&to_layer_0 Z             &to_layer_0 X         &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &to_layer_0 N        &mkp_exit_AML MB4   &kp LG(W)           &mkp_exit_AML MB5   &mt_to_0 RIGHT_SHIFT SLASH
-&to_layer_0 LEFT_CONTROL  &to_layer_0 CAPSLOCK  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 3 ENTER    &mt_to_0 RCMD LANG1                                                              &mt_to_0 RSHIFT ESC
+&lt_to_layer_0 10 Q     &to_layer_0 W      &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                              &to_layer_0 Y        &lt_to_layer_0 9 U  &lt_to_layer_0 8 I  &lt_to_layer_0 7 O  &lt_to_layer_0 6 P
+&mt_to_0 LCTRL A        &to_layer_0 S      &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &kp LG(Q)                   &to_layer_0 SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1   &mkp_exit_AML MB3   &mkp_exit_AML MB2   &lt_to_layer_0 5 MINUS
+&mt_to_0 LEFT_SHIFT Z   &to_layer_0 X      &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 2 EQUAL      &to_layer_0 BACKSPACE     &to_layer_0 N        &mkp_exit_AML MB4   &kp LG(W)           &mkp_exit_AML MB5   &mt_to_0 RIGHT_SHIFT SLASH
+&to_layer_0 LEFT_SHIFT  &to_layer_0 LCTRL  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 4 SPACE      &lt_to_layer_0 3 ENTER    &mt_to_0 RCMD LANG1                                                              &mt_to_0 RSHIFT ESC
             >;
         };
 
