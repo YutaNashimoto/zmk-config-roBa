@@ -20,6 +20,7 @@
 
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
+#include <zephyr/bluetooth/bluetooth.h>
 
 #include <zmk/ble.h>
 #include <zmk/event_manager.h>
@@ -35,22 +36,23 @@ static int profile_name_listener(const zmk_event_t *eh) {
         return ZMK_EV_EVENT_BUBBLE;
     }
 
-    /* 名前変更は未ペアリング（これから繋ぐ）のプロファイルのみ。
-     * ペアリング済みホストは名前をキャッシュ済みで変更しても無意味な上、
-     * zmk_ble_set_device_name() は広告を停止→再開するため、切替のたびに
-     * 呼ぶと再接続と競合して切替が遅く・不安定になる。未ペアリング時だけ
-     * 名前を出せば、新規ペアリング時に roBa_N と表示され、以後その
-     * ホストはその名前を覚える。通常の切替では広告再起動が起きない。 */
-    if (!zmk_ble_active_profile_is_open()) {
-        LOG_DBG("Profile %d already paired, skip rename", ev->index);
-        return ZMK_EV_EVENT_BUBBLE;
-    }
-
     /* プロファイル番号は1始まりで表示（index 0 -> "roBa_1"） */
     snprintf(name_buf, sizeof(name_buf), "%s_%d", CONFIG_ZMK_BLE_PROFILE_NAME_PREFIX,
              ev->index + 1);
 
-    int err = zmk_ble_set_device_name(name_buf);
+    int err;
+    if (zmk_ble_active_profile_is_open()) {
+        /* 未ペアリング: 新規ペアリング時に広告へ新名を載せる必要があるので
+         * 広告ごと更新する（広告停止→再開を含む）。 */
+        err = zmk_ble_set_device_name(name_buf);
+    } else {
+        /* ペアリング済み: GAP Device Name だけ更新（広告は再起動しない）。
+         * 機器名はグローバルに1つしかないため、ここで更新しないと直前に
+         * 別プロファイルで設定した名前（例: roBa_4）のまま固定され、BT_0に
+         * 戻っても roBa_4 と誤表示される。bt_set_name は無線を触らないので
+         * 切替は軽快なまま。接続中ホストがGAP名を読み直せば正しい番号になる。 */
+        err = bt_set_name(name_buf);
+    }
     if (err) {
         LOG_ERR("Failed to set device name for profile %d (err %d)", ev->index, err);
     } else {
