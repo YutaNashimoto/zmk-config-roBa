@@ -97,17 +97,11 @@
             label = "TO_LAYER_0";
         };
 
-        to_layer_0_ipad: to_layer_0_ipad {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0_IPAD";
-        };
 
         to_layer_0_win: to_layer_0_win {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 21 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_WIN";
         };
 
@@ -126,20 +120,6 @@
             label = "MKP_EXIT_AML";
         };
 
-        mkp_exit_AML_ipad: mkp_exit_AML_ipad {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&sl 12>;
-
-            label = "MKP_EXIT_AML_IPAD";
-        };
 
         mkp_exit_AML_win: mkp_exit_AML_win {
             compatible = "zmk,behavior-macro-one-param";
@@ -151,7 +131,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 22>;
+                <&sl 12>;
 
             label = "MKP_EXIT_AML_WIN";
         };
@@ -167,14 +147,6 @@
             tapping-term-ms = <200>;
         };
 
-        lt_to_layer_0_ipad: lt_to_layer_0_ipad {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0_IPAD";
-            bindings = <&mo>, <&to_layer_0_ipad>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
 
         lt_to_layer_0_win: lt_to_layer_0_win {
             compatible = "zmk,behavior-hold-tap";
@@ -194,14 +166,6 @@
             tapping-term-ms = <200>;
         };
 
-        mt_to_0_ipad: mt_to_0_ipad {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&to_layer_0_ipad>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-        };
 
         mt_to_0_win: mt_to_0_win {
             compatible = "zmk,behavior-hold-tap";
@@ -326,13 +290,23 @@
         BLUETOOTH {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 0   &to 11        &to 21        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&to 0   &trans        &to 11        &trans        &trans  &trans      &trans       &trans        &tog 21       &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
-        default_layer_ipad {
+
+
+
+
+
+
+
+
+
+
+        default_layer_win {
             bindings = <
 &lt 10 Q            &kp W             &kp E         &kp R    &kp T                                              &kp Y           &lt 20 U  &lt 19 I    &lt 18 O  &lt 17 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LG(Q)        &kp SINGLE_QUOTE  &kp H           &kp J    &kp K      &kp L    &lt 16 MINUS
@@ -343,110 +317,12 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        MOUSE_ipad {
-            bindings = <
-&to_layer_0_ipad Q             &to_layer_0_ipad W         &to_layer_0_ipad E         &to_layer_0_ipad R    &to_layer_0_ipad T                                                              &to_layer_0_ipad Y        &lt_to_layer_0_ipad 20 U  &lt_to_layer_0_ipad 19 I  &lt_to_layer_0_ipad 18 O  &lt_to_layer_0_ipad 17 P
-&to_layer_0_ipad A             &to_layer_0_ipad S         &to_layer_0_ipad D         &to_layer_0_ipad F    &to_layer_0_ipad G        &trans                      &to_layer_0_ipad SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1   &mkp_exit_AML_ipad MB3   &mkp_exit_AML_ipad MB2   &lt_to_layer_0_ipad 16 MINUS
-&to_layer_0_ipad Z             &to_layer_0_ipad X         &to_layer_0_ipad C         &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 13 EQUAL      &to_layer_0_ipad BACKSPACE     &to_layer_0_ipad N        &mkp_exit_AML_ipad MB4   &kp LG(W)           &mkp_exit_AML_ipad MB5   &mt_to_0_ipad RIGHT_SHIFT SLASH
-&to_layer_0_ipad LEFT_CONTROL  &to_layer_0_ipad CAPSLOCK  &to_layer_0_ipad LEFT_ALT  &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 15 SPACE      &lt_to_layer_0_ipad 14 ENTER    &mt_to_0_ipad RCMD LANG1                                                              &mt_to_0_ipad RSHIFT ESC
-            >;
-        };
-
-        SYMBOLS_ipad {
-            bindings = <
-&trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
-&kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &kp NON_US_BACKSLASH
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp PIPE
-&trans     &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                              &trans
-            >;
-        };
-
-        NUM_ipad {
-            bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                              &kp F13
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
-        };
-
-        ARROW_ipad {
-            bindings = <
-&kp ESCAPE  &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &trans                                        &trans  &kp LG(LS(T))    &kp LS(LA(D))  &trans       &trans
-&kp HOME    &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END  &kp LG(KP_NUMBER_0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
-&trans      &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &trans   &trans                   &kp DELETE  &trans  &mkp MB4         &kp LG(W)      &mkp MB5     &trans
-&trans      &trans                      &trans             &trans                       &trans   &trans                   &trans      &trans                                               &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
-        };
-
-        ARROW2_ipad {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
-            >;
-        };
-
-        SCROLL_ipad {
-            bindings = <
-&trans  &trans        &trans  &trans         &trans                                &trans  &kp LS(LC(V))  &kp LG(LA(LC(F)))     &kp LG(LS(NUMBER_4))  &trans
-&trans  &kp LC(LEFT)  &trans  &kp LC(RIGHT)  &trans  &kp K_MUTE            &trans  &trans  &trans         &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_7))  &trans
-&trans  &trans        &trans  &trans         &trans  &kp LC(UP_ARROW)      &trans  &trans  &trans         &kp LG(LS(NUMBER_6))  &kp LG(LS(NUMBER_5))  &trans
-&trans  &trans        &trans  &trans         &trans  &trans                &trans  &trans                                                             &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        Browsing_Jesture_ipad {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        Desktop_Jesture_ipad {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        Window_Jesture_ipad {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        default_layer_win {
-            bindings = <
-&lt 10 Q            &kp W             &kp E         &kp R    &kp T                                              &kp Y           &lt 30 U  &lt 29 I    &lt 28 O  &lt 27 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LG(Q)        &kp SINGLE_QUOTE  &kp H           &kp J    &kp K      &kp L    &lt 26 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 23 EQUAL      &kp BACKSPACE     &kp N           &kp M    &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 25 SPACE      &lt 24 ENTER       &mt RCMD LANG1                               &mt RIGHT_SHIFT ESCAPE
-            >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
-        };
-
         MOUSE_win {
             bindings = <
-&to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                              &to_layer_0_win Y        &lt_to_layer_0_win 30 U  &lt_to_layer_0_win 29 I  &lt_to_layer_0_win 28 O  &lt_to_layer_0_win 27 P
-&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                      &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1   &mkp_exit_AML_win MB3   &mkp_exit_AML_win MB2   &lt_to_layer_0_win 26 MINUS
-&to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 23 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4   &kp LG(W)           &mkp_exit_AML_win MB5   &mt_to_0_win RIGHT_SHIFT SLASH
-&to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCMD LANG2  &lt_to_layer_0_win 25 SPACE      &lt_to_layer_0_win 24 ENTER    &mt_to_0_win RCMD LANG1                                                              &mt_to_0_win RSHIFT ESC
+&to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                              &to_layer_0_win Y        &lt_to_layer_0_win 20 U  &lt_to_layer_0_win 19 I  &lt_to_layer_0_win 18 O  &lt_to_layer_0_win 17 P
+&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                      &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1   &mkp_exit_AML_win MB3   &mkp_exit_AML_win MB2   &lt_to_layer_0_win 16 MINUS
+&to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4   &kp LG(W)           &mkp_exit_AML_win MB5   &mt_to_0_win RIGHT_SHIFT SLASH
+&to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCMD LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER    &mt_to_0_win RCMD LANG1                                                              &mt_to_0_win RSHIFT ESC
             >;
         };
 
@@ -520,6 +396,18 @@
         };
 
         Window_Jesture_win {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        // レイヤー31: 横画面モード。有効な間トラックボールのX/Yを入れ替える
+        // （入れ替えは roBa_R.overlay の trackball_listener 側で設定）。
+        // 全キー透過なので、このモード中も通常の打鍵はそのまま使える。
+        LANDSCAPE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans

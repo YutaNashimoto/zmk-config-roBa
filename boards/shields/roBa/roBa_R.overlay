@@ -1,4 +1,6 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <6>;
@@ -19,6 +21,16 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        // 横画面モード（レイヤー21）が有効な間だけX/Yを入れ替える。
+        // iPhone等を横向きで使う時に &tog 21 でON/OFFする。
+        // 90度回転は本来「入れ替え＋片方反転」になることが多いので、
+        // 向きが鏡像になる場合は INPUT_TRANSFORM_X_INVERT または
+        // INPUT_TRANSFORM_Y_INVERT を OR で足して調整する。
+        landscape {
+            layers = <21>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;
+        };
     };
 };
 
