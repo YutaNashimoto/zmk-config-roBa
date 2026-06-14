@@ -311,7 +311,7 @@
         BLUETOOTH {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 0   &trans        &to 11        &trans        &trans  &trans      &trans       &trans        &tog 0        &trans        &trans        &trans
+&to 0   &trans        &to 11        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
@@ -331,7 +331,7 @@
         MOUSE_win {
             bindings = <
 &to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 19 U  &lt_to_layer_0_win 18 I  &lt_to_layer_0_win 17 O  &lt_to_layer_0_win 16 P
-&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 0 MINUS
+&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 5 MINUS
 &to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4    &kp LG(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
 &to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCMD LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER   &mt_to_0_win RCMD LANG1                                                                             &mt_to_0_win RSHIFT ESC
             >;
