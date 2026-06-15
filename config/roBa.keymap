@@ -361,7 +361,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 3>;
+                <&sl 2>;
 
             label = "MKP_EXIT_AML";
         };
@@ -391,7 +391,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 2>;
+                <&sl 3>;
 
             label = "MKP_EXIT_AML_IPAD";
         };
@@ -498,21 +498,21 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        MOUSE_ipad {
-            bindings = <
-&lt_to_layer_0_ipad 24 Q     &to_layer_0_ipad W      &to_layer_0_ipad E         &to_layer_0_ipad R    &to_layer_0_ipad T                                                                 &to_layer_0_ipad Y        &lt_to_layer_0_ipad 13 U  &lt_to_layer_0_ipad 11 I  &lt_to_layer_0_ipad 10 O  &lt_to_layer_0_ipad 8 P
-&mt_to_0_ipad LCTRL A        &to_layer_0_ipad S      &to_layer_0_ipad D         &to_layer_0_ipad F    &to_layer_0_ipad G        &kp LG(Q)                   &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2   &lt_to_layer_0_ipad 7 MINUS
-&mt_to_0_ipad LEFT_SHIFT Z   &to_layer_0_ipad X      &to_layer_0_ipad C         &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 4 EQUAL      &to_layer_0_ipad BACKSPACE        &to_layer_0_ipad N        &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5   &mt_to_0_ipad RIGHT_SHIFT SLASH
-&to_layer_0_ipad LEFT_SHIFT  &to_layer_0_ipad LCTRL  &to_layer_0_ipad LEFT_ALT  &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 6 SPACE      &lt_to_layer_0_ipad 5 ENTER       &mt_to_0_ipad RCMD LANG1                                                                &mt_to_0_ipad RSHIFT ESC
-            >;
-        };
-
         MOUSE {
             bindings = <
 &lt_to_layer_0 24 Q     &to_layer_0 W      &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                                 &to_layer_0 Y        &lt_to_layer_0 13 U  &lt_to_layer_0 11 I  &lt_to_layer_0 10 O  &lt_to_layer_0 8 P
 &mt_to_0 LCTRL A        &to_layer_0 S      &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2   &lt_to_layer_0 7 MINUS
 &mt_to_0 LEFT_SHIFT Z   &to_layer_0 X      &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 4 EQUAL      &to_layer_0 BACKSPACE        &to_layer_0 N        &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5   &mt_to_0 RIGHT_SHIFT SLASH
 &to_layer_0 LEFT_SHIFT  &to_layer_0 LCTRL  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 6 SPACE      &lt_to_layer_0 5 ENTER       &mt_to_0 RCMD LANG1                                                                &mt_to_0 RSHIFT ESC
+            >;
+        };
+
+        MOUSE_ipad {
+            bindings = <
+&lt_to_layer_0_ipad 24 Q     &to_layer_0_ipad W      &to_layer_0_ipad E         &to_layer_0_ipad R    &to_layer_0_ipad T                                                                 &to_layer_0_ipad Y        &lt_to_layer_0_ipad 13 U  &lt_to_layer_0_ipad 11 I  &lt_to_layer_0_ipad 10 O  &lt_to_layer_0_ipad 8 P
+&mt_to_0_ipad LCTRL A        &to_layer_0_ipad S      &to_layer_0_ipad D         &to_layer_0_ipad F    &to_layer_0_ipad G        &kp LG(Q)                   &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2   &lt_to_layer_0_ipad 7 MINUS
+&mt_to_0_ipad LEFT_SHIFT Z   &to_layer_0_ipad X      &to_layer_0_ipad C         &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 4 EQUAL      &to_layer_0_ipad BACKSPACE        &to_layer_0_ipad N        &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5   &mt_to_0_ipad RIGHT_SHIFT SLASH
+&to_layer_0_ipad LEFT_SHIFT  &to_layer_0_ipad LCTRL  &to_layer_0_ipad LEFT_ALT  &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 6 SPACE      &lt_to_layer_0_ipad 5 ENTER       &mt_to_0_ipad RCMD LANG1                                                                &mt_to_0_ipad RSHIFT ESC
             >;
         };
 
