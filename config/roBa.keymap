@@ -18,17 +18,18 @@
 
     // 6=Mac SCROLL, 17=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
     // ※editorでレイヤーを増減すると番号がズレるので、SCROLL_winの位置を要確認。
+
     scroll-layers = <6 17>;
 
     browsing_arrows {
         layers = <7>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,
+            // 右: 次のタブ,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,
+            // 左: 前のタブ,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,
+            // 上: 新規タブ,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -42,11 +43,11 @@
         layers = <8>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,
+            // 上: Mission Control,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -60,11 +61,11 @@
         layers = <9>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,
+            // 右: 右半分,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,
+            // 左: 左半分,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,
+            // 上: 最大化,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -258,10 +259,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                              &kp F13
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                             &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans         &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&trans                      &trans           &trans           &trans           &trans        &trans         &trans  &trans                              &kp F13
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
