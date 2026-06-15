@@ -17,7 +17,7 @@ config ZMK_OS_DETECTION_LAYER_MACOS
 
 config ZMK_OS_DETECTION_LAYER_IOS
 	int "Default layer for iOS/iPadOS"
-	default 0
+	default 1
 
 config ZMK_OS_DETECTION_LAYER_WINDOWS
 	int "Default layer for Windows"
