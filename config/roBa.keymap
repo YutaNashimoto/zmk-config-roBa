@@ -25,11 +25,11 @@
         layers = <7>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -43,11 +43,11 @@
         layers = <8>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -61,11 +61,11 @@
         layers = <9>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -118,6 +118,16 @@
         Bluetooth_5 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <0 9>;
+        };
+
+        youtube_slow {
+            bindings = <&kp RS(COMMA)>;
+            key-positions = <33 31>;
+        };
+
+        youtube_fast {
+            bindings = <&kp RS(PERIOD)>;
+            key-positions = <33 32>;
         };
     };
 
