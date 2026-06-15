@@ -13,19 +13,22 @@
 &trackball {
     // 自動マウス層はOS別に出し分けるため、ドライバ側は無効化(-1)。
     // roBa_R.overlay の zip_temp_layer で Mac=層1 / Windows=層12 を切替える。
+
     automouse-layer = <(-1)>;
+
     // 6=Mac SCROLL, 16=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
+
     scroll-layers = <6 16>;
 
     browsing_arrows {
         layers = <7>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,
+            // 右: 次のタブ,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,
+            // 左: 前のタブ,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,
+            // 上: 新規タブ,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -39,11 +42,11 @@
         layers = <8>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,
+            // 右(逆): デスクトップ左,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,
+            // 左(逆): デスクトップ右,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,
+            // 上: Mission Control,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -57,11 +60,11 @@
         layers = <9>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,
+            // 右: 右半分,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,
+            // 左: 左半分,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,
+            // 上: 最大化,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -210,6 +213,7 @@
         };
 
         // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
+
         encoder_msc_up_down: encoder_msc_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_UP_DOWN";
@@ -332,20 +336,21 @@
 
         default_layer_win {
             bindings = <
-&lt 10 Q            &kp W             &kp E         &kp R    &kp T                                               &kp Y           &lt 19 U  &lt 18 I   &lt 17 O  &lt 16 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LG(Q)         &kp SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 5 MINUS
+&lt 10 Q            &kp W             &kp E         &kp R    &kp T                                               &kp Y           &lt 20 U  &lt 19 I   &lt 18 O  &lt 17 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LG(Q)         &kp SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 13 EQUAL      &kp BACKSPACE     &kp N           &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCMD LANG2  &lt 15 SPACE      &lt 14 ENTER      &mt RCMD LANG1                                 &mt RIGHT_SHIFT ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
+
             sensor-bindings = <&encoder_msc_up_down>;
         };
 
         MOUSE_win {
             bindings = <
-&to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 19 U  &lt_to_layer_0_win 18 I  &lt_to_layer_0_win 17 O  &lt_to_layer_0_win 16 P
-&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 5 MINUS
+&to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 20 U  &lt_to_layer_0_win 19 I  &lt_to_layer_0_win 18 O  &lt_to_layer_0_win 17 P
+&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 16 MINUS
 &to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4    &kp LG(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
 &to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCMD LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER   &mt_to_0_win RCMD LANG1                                                                             &mt_to_0_win RSHIFT ESC
             >;
@@ -380,6 +385,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
+        };
+
+        ARROW2_win {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LG(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &trans
+            >;
         };
 
         SCROLL_win {
