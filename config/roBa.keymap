@@ -416,8 +416,8 @@
         default_layer_win {
             bindings = <
 &lt 10 Q            &kp W             &kp E         &kp R    &kp T                                               &kp Y           &lt 20 U  &lt 19 I   &lt 18 O  &lt 17 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LA(F4)        &kp SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 16 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 13 EQUAL      &kp BACKSPACE     &kp N           &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LA(F4)        &kp LS(N7)  &kp H           &kp J     &kp K      &kp L     &lt 16 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 13 LS(MINUS)      &kp BACKSPACE     &kp N           &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCTRL LANG2  &lt 15 SPACE      &lt 14 ENTER      &mt RCTRL LANG1                                 &mt RIGHT_SHIFT ESCAPE
             >;
 
@@ -429,26 +429,26 @@
         MOUSE_win {
             bindings = <
 &to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 20 U  &lt_to_layer_0_win 19 I  &lt_to_layer_0_win 18 O  &lt_to_layer_0_win 17 P
-&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 16 MINUS
-&to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win LS(N7)  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 16 MINUS
+&to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 LS(MINUS)      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
 &to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER   &mt_to_0_win RCTRL LANG1                                                                             &mt_to_0_win RSHIFT ESC
             >;
         };
 
         SYMBOLS_win {
             bindings = <
-&trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
-&kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &kp NON_US_BACKSLASH
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp PIPE
+&trans     &kp LS(N6)    &kp LS(SQT)  &kp LS(N8)  &kp LS(N9)                      &trans  &kp LS(RBKT)        &kp LS(BSLH)        &trans         &trans
+&kp LS(EQUAL)  &kp DOLLAR       &kp PERCENT   &kp EQUAL             &trans                 &trans      &trans  &trans  &kp LS(N8)  &kp LS(N9)  &kp SQT      &kp INT1
+&kp LS(LBKT)  &kp EXCLAMATION  &kp LBKT   &kp HASH              &trans                 &trans      &trans  &trans  &kp RBKT      &kp BSLH      &kp SEMICOLON  &kp LS(INT3)
 &trans     &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                              &trans
             >;
         };
 
         NUM_win {
             bindings = <
-&kp MINUS                   &kp N7  &kp N8  &kp N9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(N0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&kp MINUS                   &kp N7  &kp N8  &kp N9  &kp LS(SEMI)                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp N4  &kp N5  &kp N6  &kp LS(SQT)  &kp LC(LA(N0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp LS(MINUS)                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                              &kp F13
             >;
 
