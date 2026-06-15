@@ -105,9 +105,9 @@
             // 左(逆): 仮想デスクトップ右
             <&kp LG(TAB)>,
             // 上: タスクビュー
-            <&kp LG(D)>;
+            <&dup_tab_win>;
 
-        // 下: デスクトップ表示
+        // 下: タブを複製（Alt+D → Alt+Enter）
 
         tick = <150>;
         wait-ms = <5>;
@@ -201,6 +201,17 @@
             #binding-cells = <1>;
             bindings = <&to 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_WIN";
+        };
+
+        // Windows: タブを複製。Alt+D でアドレスバーのURLを選択し、
+        // Alt+Enter で同じURLを新規タブで開く（＝複製）。
+        dup_tab_win: dup_tab_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LA(D)>, <&kp LA(ENTER)>;
+            label = "DUP_TAB_WIN";
         };
 
         mkp_exit_AML: mkp_exit_AML {
