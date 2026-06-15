@@ -131,6 +131,25 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
+    // ===== iPad用ジェスチャー（層12 = Desktop_Jesture_ipad）=====
+    desktop_arrows_ipad {
+        layers = <12>;
+        bindings =
+            <&split_left>,
+            // 右: 🌐+←（Split View 左）
+            <&split_right>,
+            // 左: 🌐+→（Split View 右）
+            <&app_switcher>,
+            // 上: 🌐+↑（Appスイッチャー）
+            <&ipad_home>;
+
+        // 下: 🌐+H（ホーム）
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
