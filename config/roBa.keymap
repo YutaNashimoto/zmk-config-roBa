@@ -457,7 +457,7 @@
 
         ARROW_win {
             bindings = <
-&kp ESCAPE  &kp LG(LS(LEFT))  &kp UP_ARROW    &kp LG(LS(RIGHT))  &trans                                        &trans  &kp LC(LS(T))    &kp LC(LS(T))  &trans       &trans
+&kp ESCAPE  &kp LG(LS(LEFT))  &kp UP_ARROW    &kp LG(LS(RIGHT))  &trans                                        &trans  &kp LC(LS(T))    &dup_tab_win  &trans       &trans
 &kp HOME    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END  &kp LC(KP_NUMBER_0)      &trans      &trans  &kp LS(LC(TAB))  &kp LC(T)      &kp LC(TAB)  &trans
 &trans      &kp LG(LEFT)      &kp LG(UP)      &kp LG(RIGHT)      &trans   &trans                   &kp DELETE  &trans  &mkp MB4         &kp LC(W)      &mkp MB5     &trans
 &trans      &trans            &trans          &trans             &trans   &trans                   &trans      &trans                                               &trans
