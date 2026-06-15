@@ -21,11 +21,11 @@ config ZMK_OS_DETECTION_LAYER_IOS
 
 config ZMK_OS_DETECTION_LAYER_WINDOWS
 	int "Default layer for Windows"
-	default 13
+	default 14
 
 config ZMK_OS_DETECTION_LAYER_LINUX
 	int "Default layer for Linux"
-	default 13
+	default 14
 
 config ZMK_OS_DETECTION_REVERT_ON_DISCONNECT
 	bool "Revert to disconnect layer when USB is unplugged"
