@@ -25,11 +25,11 @@
         layers = <9>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -43,11 +43,11 @@
         layers = <10>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -61,11 +61,11 @@
         layers = <12>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -82,11 +82,11 @@
         layers = <20>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,
+            // 右: 次のタブ,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,
+            // 左: 前のタブ,,,,,
             <&kp LC(T)>,
-            // 上: 新規タブ,,,,
+            // 上: 新規タブ,,,,,
             <&kp LC(W)>;
 
         // 下: タブを閉じる
@@ -100,11 +100,11 @@
         layers = <21>;
         bindings =
             <&kp LG(LC(LEFT))>,
-            // 右(逆): 仮想デスクトップ左,,,,
+            // 右(逆): 仮想デスクトップ左,,,,,
             <&kp LG(LC(RIGHT))>,
-            // 左(逆): 仮想デスクトップ右,,,,
+            // 左(逆): 仮想デスクトップ右,,,,,
             <&kp LG(TAB)>,
-            // 上: タスクビュー,,,,
+            // 上: タスクビュー,,,,,
             <&dup_tab_win>;
 
         // 下: タブを複製（Alt+D → Alt+Enter）
@@ -118,11 +118,11 @@
         layers = <22>;
         bindings =
             <&kp LG(RIGHT)>,
-            // 右: 右半分スナップ,,,,
+            // 右: 右半分スナップ,,,,,
             <&kp LG(LEFT)>,
-            // 左: 左半分スナップ,,,,
+            // 左: 左半分スナップ,,,,,
             <&kp LG(UP)>,
-            // 上: 最大化,,,,
+            // 上: 最大化,,,,,
             <&kp LC(LS(T))>;
 
         // 下: 閉じたタブ復活
@@ -217,12 +217,20 @@
 
         // iPad用 Globe(🌐)ショートカット。GLOBE保持→キーをタップ→GLOBE解放。
         // GLOBEはコンシューマ入力切替コードなので &kp GLOBE(x) は不可、マクロ必須。
+
         control_center: control_center {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp C>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "CONTROL_CENTER";
         };
 
@@ -231,7 +239,14 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp UP_ARROW>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "APP_SWITCHER";
         };
 
@@ -240,7 +255,14 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp N>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp N>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "NOTIF_CENTER";
         };
 
@@ -249,7 +271,14 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp LEFT_ARROW>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "SPLIT_LEFT";
         };
 
@@ -258,7 +287,14 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp RIGHT_ARROW>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "SPLIT_RIGHT";
         };
 
@@ -267,7 +303,14 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp H>, <&macro_release &kp GLOBE>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
             label = "IPAD_HOME";
         };
 
@@ -447,10 +490,10 @@
 
         SCROLL_ipad {
             bindings = <
-&trans  &trans        &trans  &trans         &trans                                &trans  &trans  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_3))  &trans
-&trans  &kp LC(LEFT)  &trans  &kp LC(RIGHT)  &trans  &kp K_MUTE            &trans  &trans  &trans  &trans                &trans                &trans
-&trans  &trans        &trans  &trans         &trans  &kp LC(UP_ARROW)      &trans  &trans  &trans  &trans                &trans                &trans
-&trans  &trans        &trans  &trans         &trans  &trans                &trans  &trans                                                      &trans
+&trans  &notif_center  &ipad_home     &control_center  &trans                             &trans  &trans  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_3))  &trans
+&trans  &split_left    &app_switcher  &split_right     &trans  &kp K_MUTE         &trans  &trans  &trans  &notif_center         &control_center       &trans
+&trans  &trans         &trans         &trans           &trans  &app_switcher      &trans  &trans  &trans  &trans                &trans                &trans
+&trans  &trans         &trans         &trans           &trans  &trans             &trans  &trans                                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
