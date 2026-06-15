@@ -11,7 +11,9 @@
 };
 
 &trackball {
-    automouse-layer = <1>;
+    // 自動マウス層はOS別に出し分けるため、ドライバ側は無効化(-1)。
+    // roBa_R.overlay の zip_temp_layer で Mac=層1 / Windows=層12 を切替える。
+    automouse-layer = <(-1)>;
     // 6=Mac SCROLL, 16=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
     scroll-layers = <6 16>;
 

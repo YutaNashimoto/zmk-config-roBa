@@ -22,17 +22,29 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // Windowsデフォルト層(11)がアクティブな間、トラックボールの
-        // スクロールを縦横とも反転する（Macは正方向）。層11はWindowsに
-        // いる間ずっとアクティブなので、デフォルト経路(P長押し→16)でも
-        // オートマウス経路(移動→層1→P長押し→6)でも、どちらの
-        // スクロールも反転される。
-        // zip_scroll_transform は WHEEL/HWHEEL のみ反転し、カーソル移動は不変。
-        win_scroll_invert {
+        // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
+        // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
+        input-processors = <&zip_temp_layer 1 100000>;
+
+        // Windows（デフォルト層11がアクティブ）の上書き:
+        //  - 移動で層12(MOUSE_win)を一時有効化（11より上なので隠れず、
+        //    マウス層からの戻り先もWindows(11)になる）
+        //  - スクロールを縦横とも反転（zip_scroll_transformはWHEEL/HWHEELのみ、
+        //    カーソル移動は不変）
+        win {
             layers = <11>;
-            input-processors = <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+            input-processors =
+                <&zip_temp_layer 12 100000>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
+};
+
+// マウスボタンの位置はマウス層を抜けさせない（連続クリック可能にする）。
+// 位置: 18/19/20=MB1/MB3/MB2(右人差し〜小指の行), 30/32=MB4/MB5。
+// Mac(層1)・Windows(層12)でボタン位置は共通。
+&zip_temp_layer {
+    excluded-positions = <18 19 20 30 32>;
 };
 
 &pinctrl {
