@@ -418,7 +418,7 @@
 &lt 10 Q            &kp W             &kp E         &kp R    &kp T                                               &kp Y           &lt 20 U  &lt 19 I   &lt 18 O  &lt 17 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F    &kp G           &kp LA(F4)        &kp SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V    &kp B           &lt 13 EQUAL      &kp BACKSPACE     &kp N           &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCTRL INT5  &lt 15 SPACE      &lt 14 ENTER      &mt RCTRL INT4                                 &mt RIGHT_SHIFT ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &mt LCTRL LANG2  &lt 15 SPACE      &lt 14 ENTER      &mt RCTRL LANG1                                 &mt RIGHT_SHIFT ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
@@ -431,7 +431,7 @@
 &to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 20 U  &lt_to_layer_0_win 19 I  &lt_to_layer_0_win 18 O  &lt_to_layer_0_win 17 P
 &to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G        &trans                           &to_layer_0_win SINGLE_QUOTE  &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 16 MINUS
 &to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B        &lt_to_layer_0_win 13 EQUAL      &to_layer_0_win BACKSPACE     &to_layer_0_win N        &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
-&to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCTRL INT5  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER   &mt_to_0_win RCTRL INT4                                                                             &mt_to_0_win RSHIFT ESC
+&to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 14 ENTER   &mt_to_0_win RCTRL LANG1                                                                             &mt_to_0_win RSHIFT ESC
             >;
         };
 
@@ -458,7 +458,7 @@
         ARROW_win {
             bindings = <
 &kp ESCAPE  &kp LG(LS(LEFT))  &kp UP_ARROW    &kp LG(LS(RIGHT))  &trans                                        &trans  &kp LC(LS(T))    &dup_tab_win  &trans       &trans
-&kp HOME    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END  &kp LC(KP_NUMBER_0)      &trans      &trans  &kp LS(LC(TAB))  &kp LC(T)      &kp LC(TAB)  &trans
+&kp HOME    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END  &kp LC(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LC(T)      &kp LC(TAB)  &trans
 &trans      &kp LG(LEFT)      &kp LG(UP)      &kp LG(RIGHT)      &trans   &trans                   &kp DELETE  &trans  &mkp MB4         &kp LC(W)      &mkp MB5     &trans
 &trans      &trans            &trans          &trans             &trans   &trans                   &trans      &trans                                               &trans
             >;
