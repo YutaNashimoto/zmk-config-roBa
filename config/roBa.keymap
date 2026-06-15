@@ -215,6 +215,62 @@
             label = "DUP_TAB_WIN";
         };
 
+        // iPad用 Globe(🌐)ショートカット。GLOBE保持→キーをタップ→GLOBE解放。
+        // GLOBEはコンシューマ入力切替コードなので &kp GLOBE(x) は不可、マクロ必須。
+        control_center: control_center {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp C>, <&macro_release &kp GLOBE>;
+            label = "CONTROL_CENTER";
+        };
+
+        app_switcher: app_switcher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp UP_ARROW>, <&macro_release &kp GLOBE>;
+            label = "APP_SWITCHER";
+        };
+
+        notif_center: notif_center {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp N>, <&macro_release &kp GLOBE>;
+            label = "NOTIF_CENTER";
+        };
+
+        split_left: split_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp LEFT_ARROW>, <&macro_release &kp GLOBE>;
+            label = "SPLIT_LEFT";
+        };
+
+        split_right: split_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp RIGHT_ARROW>, <&macro_release &kp GLOBE>;
+            label = "SPLIT_RIGHT";
+        };
+
+        ipad_home: ipad_home {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp H>, <&macro_release &kp GLOBE>;
+            label = "IPAD_HOME";
+        };
+
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
