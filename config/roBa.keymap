@@ -16,9 +16,9 @@
 
     automouse-layer = <(-1)>;
 
-    // 6=Mac SCROLL, 16=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
-
-    scroll-layers = <6 16>;
+    // 6=Mac SCROLL, 17=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
+    // ※editorでレイヤーを増減すると番号がズレるので、SCROLL_winの位置を要確認。
+    scroll-layers = <6 17>;
 
     browsing_arrows {
         layers = <7>;
