@@ -19,7 +19,7 @@
     // 6=Mac SCROLL, 17=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
     // ※editorでレイヤーを増減すると番号がズレるので、SCROLL_winの位置を要確認。
 
-    scroll-layers = <6 17>;
+    scroll-layers = <6 16>;
 
     browsing_arrows {
         layers = <7>;
@@ -79,7 +79,7 @@
     // Mac版(7/8/9)と別ブロックにして、Windows相当のショートカットを割当てる。
 
     browsing_arrows_win {
-        layers = <18>;
+        layers = <17>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,
@@ -97,7 +97,7 @@
     };
 
     desktop_arrows_win {
-        layers = <19>;
+        layers = <18>;
         bindings =
             <&kp LG(LC(LEFT))>,
             // 右(逆): 仮想デスクトップ左,
@@ -115,7 +115,7 @@
     };
 
     window_arrows_win {
-        layers = <20>;
+        layers = <19>;
         bindings =
             <&kp LG(RIGHT)>,
             // 右: 右半分スナップ,
