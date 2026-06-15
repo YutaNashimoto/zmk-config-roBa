@@ -74,6 +74,63 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
+    // ===== Windows用ジェスチャー（層18/19/20）=====
+    // Mac版(7/8/9)と別ブロックにして、Windows相当のショートカットを割当てる。
+
+    browsing_arrows_win {
+        layers = <18>;
+        bindings =
+            <&kp LC(TAB)>,
+            // 右: 次のタブ
+            <&kp LC(LS(TAB))>,
+            // 左: 前のタブ
+            <&kp LC(T)>,
+            // 上: 新規タブ
+            <&kp LC(W)>;
+
+        // 下: タブを閉じる
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
+    desktop_arrows_win {
+        layers = <19>;
+        bindings =
+            <&kp LG(LC(LEFT))>,
+            // 右(逆): 仮想デスクトップ左
+            <&kp LG(LC(RIGHT))>,
+            // 左(逆): 仮想デスクトップ右
+            <&kp LG(TAB)>,
+            // 上: タスクビュー
+            <&kp LG(D)>;
+
+        // 下: デスクトップ表示
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
+    window_arrows_win {
+        layers = <20>;
+        bindings =
+            <&kp LG(RIGHT)>,
+            // 右: 右半分スナップ
+            <&kp LG(LEFT)>,
+            // 左: 左半分スナップ
+            <&kp LG(UP)>,
+            // 上: 最大化
+            <&kp LC(LS(T))>;
+
+        // 下: 閉じたタブ復活
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -378,9 +435,9 @@
 
         NUM_win {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&kp MINUS                   &kp N7  &kp N8  &kp N9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(N0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                              &kp F13
             >;
 
