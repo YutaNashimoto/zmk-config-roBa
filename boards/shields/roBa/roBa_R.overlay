@@ -24,7 +24,7 @@
 
         // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
         // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
-        input-processors = <&zip_temp_layer 1 100000>;
+        input-processors = <&zip_temp_layer 2 100000>;
 
         // Windows（デフォルト層11がアクティブ）の上書き:
         //  - 移動で層12(MOUSE_win)を一時有効化（11より上なので隠れず、
@@ -32,9 +32,9 @@
         //  - スクロールを縦横とも反転（zip_scroll_transformはWHEEL/HWHEELのみ、
         //    カーソル移動は不変）
         win {
-            layers = <10>;
+            layers = <13>;
             input-processors =
-                <&zip_temp_layer 11 100000>,
+                <&zip_temp_layer 14 100000>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
