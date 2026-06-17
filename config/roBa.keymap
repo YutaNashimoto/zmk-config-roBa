@@ -528,7 +528,7 @@
 &lt_to_layer_0 24 Q     &to_layer_0 W      &to_layer_0 E         &to_layer_0 R    &to_layer_0 T                                                                 &to_layer_0 Y        &lt_to_layer_0 13 U  &lt_to_layer_0 11 I  &lt_to_layer_0 10 O  &lt_to_layer_0 8 P
 &mt_to_0 LCTRL A        &to_layer_0 S      &to_layer_0 D         &to_layer_0 F    &to_layer_0 G        &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 7 MINUS
 &mt_to_0 LEFT_SHIFT Z   &to_layer_0 X      &to_layer_0 C         &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 4 EQUAL      &to_layer_0 BACKSPACE        &to_layer_0 N        &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
-&to_layer_0 LEFT_SHIFT  &to_layer_0 LCTRL  &to_layer_0 LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 6 SPACE      &lt_to_layer_0 5 ENTER       &mt_to_0 RCMD LANG1                                                                 &lt_to_layer_0 4 ESC
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &to_layer_0 TAB  &mt_to_0 LCMD LANG2  &lt_to_layer_0 6 SPACE      &lt_to_layer_0 5 ENTER       &mt_to_0 RCMD LANG1                                                                 &lt_to_layer_0 4 ESC
             >;
         };
 
@@ -537,7 +537,7 @@
 &lt_to_layer_0_ipad 24 Q     &to_layer_0_ipad W      &to_layer_0_ipad E         &to_layer_0_ipad R    &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 13 U  &lt_to_layer_0_ipad 12 I  &lt_to_layer_0_ipad 10 O  &lt_to_layer_0_ipad 9 P
 &mt_to_0_ipad LCTRL A        &to_layer_0_ipad S      &to_layer_0_ipad D         &to_layer_0_ipad F    &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 7 MINUS
 &mt_to_0_ipad LEFT_SHIFT Z   &to_layer_0_ipad X      &to_layer_0_ipad C         &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 4 EQUAL      &to_layer_0_ipad BACKSPACE        &to_layer_0_ipad N        &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
-&to_layer_0_ipad LEFT_SHIFT  &to_layer_0_ipad LCTRL  &to_layer_0_ipad LEFT_ALT  &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 6 SPACE      &lt_to_layer_0_ipad 5 ENTER       &mt_to_0_ipad RCMD LANG1                                                                                &lt_to_layer_0_ipad 4 ESC
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 6 SPACE      &lt_to_layer_0_ipad 5 ENTER       &mt_to_0_ipad RCMD LANG1                                                                                &lt_to_layer_0_ipad 4 ESC
             >;
         };
 
@@ -657,7 +657,7 @@
 &to_layer_0_win Q             &to_layer_0_win W         &to_layer_0_win E         &to_layer_0_win R    &to_layer_0_win T                                                                           &to_layer_0_win Y         &lt_to_layer_0_win 23 U  &lt_to_layer_0_win 22 I  &lt_to_layer_0_win 21 O  &lt_to_layer_0_win 20 P
 &to_layer_0_win A             &to_layer_0_win S         &to_layer_0_win D         &to_layer_0_win F    &to_layer_0_win G         &trans                               &to_layer_0_win LS(N7)       &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 19 MINUS
 &to_layer_0_win Z             &to_layer_0_win X         &to_layer_0_win C         &to_layer_0_win V    &to_layer_0_win B         &lt_to_layer_0_win 16 LS(MINUS)      &to_layer_0_win BACKSPACE    &to_layer_0_win N         &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
-&to_layer_0_win LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &to_layer_0_win LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 18 SPACE          &lt_to_layer_0_win 17 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 16 ESC
+&kp LEFT_CONTROL  &to_layer_0_win CAPSLOCK  &kp LEFT_ALT  &to_layer_0_win TAB  &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 18 SPACE          &lt_to_layer_0_win 17 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 16 ESC
             >;
         };
 
