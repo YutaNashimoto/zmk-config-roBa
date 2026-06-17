@@ -21,6 +21,10 @@
 
     scroll-layers = <8 9 20>;
 
+    // iPad(層1)では低速CPI(snipe)を使い、カーソルを滑らかに減速。
+    // 速度は roBa_R.conf の CONFIG_PMW3610_SNIPE_CPI で調整（200刻み）。
+    snipe-layers = <1>;
+
     browsing_arrows {
         layers = <10>;
         bindings =

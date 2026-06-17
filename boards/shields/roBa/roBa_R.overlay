@@ -31,12 +31,9 @@
         //  スクロール反転はしない（iPadはMac同様の向き）。
         ipad {
             layers = <1>;
-            input-processors =
-                <&zip_temp_layer 3 100000>,
-                // iPadはカーソルが速すぎるので 2/3 に減速（カーソルのみ。
-                // スクロール/トラックパッド/Mac/Winには影響なし）。
-                // 数値を変えて調整: 1 2=半速 / 3 4=やや減速。
-                <&zip_xy_scaler 2 3>;
+            // カーソル減速は snipe-layers + CONFIG_PMW3610_SNIPE_CPI で実施
+            // （センサーCPIを下げる＝滑らか）。ここでは層出し分けのみ。
+            input-processors = <&zip_temp_layer 3 100000>;
         };
 
         // Windows（デフォルト層11がアクティブ）の上書き:
