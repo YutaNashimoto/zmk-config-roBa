@@ -24,7 +24,7 @@
 
         // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
         // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
-        input-processors = <&zip_temp_layer 2 100000>;
+        input-processors = <&zip_temp_layer 3 100000>;
 
         // iPad（デフォルト層1がアクティブ）の上書き:
         //  移動で層2(MOUSE_ipad)を一時有効化。マウス層からの戻り先もiPad(1)。
@@ -33,7 +33,12 @@
             layers = <1>;
             // カーソル減速は snipe-layers + CONFIG_PMW3610_SNIPE_CPI で実施
             // （センサーCPIを下げる＝滑らか）。ここでは層出し分けのみ。
-            input-processors = <&zip_temp_layer 3 100000>;
+            input-processors = <&zip_temp_layer 4 100000>;
+        };
+
+        iphone {
+            layers = <2>;
+            input-processors = <&zip_temp_layer 5 100000>;
         };
 
         // Windows（デフォルト層11がアクティブ）の上書き:
@@ -42,9 +47,9 @@
         //  - スクロールを縦横とも反転（zip_scroll_transformはWHEEL/HWHEELのみ、
         //    カーソル移動は不変）
         win {
-            layers = <14>;
+            layers = <16>;
             input-processors =
-                <&zip_temp_layer 15 100000>,
+                <&zip_temp_layer 17 100000>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
