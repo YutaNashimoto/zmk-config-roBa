@@ -38,7 +38,10 @@
 
         iphone {
             layers = <2>;
-            input-processors = <&zip_temp_layer 5 100000>;
+            // iPhoneは通常CPI(1000)を0.8倍=実質800に（緩やかなので滑らか）
+            input-processors =
+                <&zip_temp_layer 5 100000>,
+                <&zip_xy_scaler 4 5>;
         };
 
         // Windows（デフォルト層11がアクティブ）の上書き:
