@@ -580,7 +580,8 @@
 &mt_to_0_ipad LCTRL A   &mkp_exit_AML_ipad MB2   &mkp_exit_AML_ipad MB3   &mkp_exit_AML_ipad MB1   &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 9 MINUS
 &mt_to_0_ipad LEFT_SHIFT Z   &mkp_exit_AML_ipad MB4   &to_layer_0_ipad LG(W)   &mkp_exit_AML_ipad MB5   &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &to_layer_0_ipad BACKSPACE        &lt_to_layer_0_ipad 26 N        &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT        &to_layer_0_ipad TAB  &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 8 SPACE      &lt_to_layer_0_ipad 7 ENTER       &mt_to_0_ipad RCMD LANG1                                                                                &lt_to_layer_0_ipad 6 ESC
-            >;j        };
+            >;
+        };
 
         MOUSE_iphone {
             bindings = <
