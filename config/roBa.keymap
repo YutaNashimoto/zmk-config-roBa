@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include "roBa_encoder_behaviors.dtsi"
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
@@ -509,28 +510,6 @@
             tapping-term-ms = <200>;
         };
 
-        encoder_msc_down_up: encoder_msc_down_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-
-        // Mac用: Shift中だけエンコーダの上下スクロールを入れ替える。
-        // Shiftはホストへ残し、macOS/Mac Mouse Fix側の横スクロール変換に任せる。
-
-        encoder_msc_up_shift_reverse: encoder_msc_up_shift_reverse {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
     };
 
     keymap {
