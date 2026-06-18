@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
@@ -517,6 +518,34 @@
             tap-ms = <20>;
         };
 
+        // Mac用: Shift中だけエンコーダの上下スクロールを入れ替える。
+        // Shiftはホストへ残し、macOS/Mac Mouse Fix側の横スクロール変換に任せる。
+
+        encoder_msc_up_shift_reverse: encoder_msc_up_shift_reverse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        encoder_msc_down_shift_reverse: encoder_msc_down_shift_reverse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        encoder_msc_mac_shift_hscroll: encoder_msc_mac_shift_hscroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_MAC_SHIFT_HSCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&encoder_msc_up_shift_reverse>, <&encoder_msc_down_shift_reverse>;
+
+            tap-ms = <20>;
+        };
+
         // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
 
         encoder_msc_up_down: encoder_msc_up_down {
@@ -540,7 +569,7 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
         };
 
         default_layer_ipad {
