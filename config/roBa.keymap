@@ -530,7 +530,34 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        encoder_msc_down_shift_reverse: encoder_msc_down_shift_reverse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        encoder_msc_mac_shift_hscroll: encoder_msc_mac_shift_hscroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_MAC_SHIFT_HSCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&encoder_msc_up_shift_reverse>, <&encoder_msc_down_shift_reverse>;
+
+            tap-ms = <20>;
+        };
+
         // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
+
+        encoder_msc_up_down: encoder_msc_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
