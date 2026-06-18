@@ -31,11 +31,11 @@
         layers = <12>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -49,11 +49,11 @@
         layers = <13>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -67,11 +67,11 @@
         layers = <15>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -88,11 +88,11 @@
         layers = <23>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(W)>;
 
         // 下: タブを閉じる
@@ -106,11 +106,11 @@
         layers = <24>;
         bindings =
             <&kp LG(LC(LEFT))>,
-            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LC(RIGHT))>,
-            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(TAB)>,
-            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,
+            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,
             <&dup_tab_win>;
 
         // 下: タブを複製（Alt+D → Alt+Enter）
@@ -124,11 +124,11 @@
         layers = <25>;
         bindings =
             <&kp LG(RIGHT)>,
-            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LEFT)>,
-            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(UP)>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(T))>;
 
         // 下: 閉じたタブ復活
@@ -144,11 +144,11 @@
         layers = <14>;
         bindings =
             <&split_left>,
-            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,
+            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,
             <&split_right>,
-            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,
+            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,
             <&app_switcher>,
-            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,
+            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,
             <&ipad_home>;
 
         // 下: 🌐+H（ホーム）
@@ -530,34 +530,7 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        encoder_msc_down_shift_reverse: encoder_msc_down_shift_reverse {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        encoder_msc_mac_shift_hscroll: encoder_msc_mac_shift_hscroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_MAC_SHIFT_HSCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&encoder_msc_up_shift_reverse>, <&encoder_msc_down_shift_reverse>;
-
-            tap-ms = <20>;
-        };
-
         // Windows用: スクロール方向を反転したエンコーダ（UP/DOWN入替）
-
-        encoder_msc_up_down: encoder_msc_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_UP_DOWN";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -785,10 +758,10 @@
 
         SCROLL_win {
             bindings = <
-&trans  &trans            &trans  &trans             &trans                           &trans  &kp LG(V)  &trans               &kp LG(LS(S))  &trans
-&trans  &kp LG(LC(LEFT))  &trans  &kp LG(LC(RIGHT))  &trans  &kp K_MUTE       &trans  &trans  &trans     &kp LG(PRINTSCREEN)  &trans         &trans
-&trans  &trans            &trans  &trans             &trans  &kp LG(TAB)      &trans  &trans  &trans     &trans               &trans         &trans
-&trans  &trans            &trans  &trans             &trans  &trans           &trans  &trans                                                 &trans
+&trans  &trans            &trans       &trans             &trans                           &trans  &kp LG(V)  &trans               &kp LG(LS(S))  &trans
+&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp K_MUTE       &trans  &trans  &trans     &kp LG(PRINTSCREEN)  &trans         &trans
+&trans  &trans            &trans       &trans             &trans  &kp LG(TAB)      &trans  &trans  &trans     &trans               &trans         &trans
+&trans  &trans            &trans       &trans             &trans  &trans           &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
