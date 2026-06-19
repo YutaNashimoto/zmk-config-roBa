@@ -498,6 +498,12 @@
     };
 
     behaviors {
+        // JIS Windows用US記号補正(default_layer_winのみ)
+        quote_us: quote_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>, <&kp LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        minus_us: minus_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        equal_us: equal_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(MINUS)>, <&kp LS(SEMICOLON)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lt_minus_us: lt_minus_us { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&minus_us>; };
+        lt_equal_us: lt_equal_us { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&equal_us>; };
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -739,8 +745,8 @@
         default_layer_win {
             bindings = <
 &lt 22 Q            &lt 23 W      &lt 24 E      &lt 25 R  &kp T                                                 &kp Y            &lt 25 U  &lt 24 I   &lt 23 O  &lt 22 P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)            &kp LS(N7)     &kp H            &kp J     &kp K      &kp L     &lt 21 MINUS
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt 18 LS(MINUS)      &kp BACKSPACE  &lt 26 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)            &quote_us     &kp H            &kp J     &kp K      &kp L     &lt_minus_us 21 0
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 18 0      &kp BACKSPACE  &lt 26 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 20 SPACE          &lt 19 ENTER   &mt RCTRL LANG1                                 &lt 18 ESCAPE
             >;
 
