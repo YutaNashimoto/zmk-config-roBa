@@ -210,6 +210,42 @@
     };
 
     macros {
+        left_arrow: left_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <30>;
+            bindings = <&kp RGUI &kp Z &kp H>;
+            label = "LEFT_ARROW";
+        };
+
+        down_arrow: down_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <30>;
+            bindings = <&kp RGUI &kp Z &kp J>;
+            label = "DOWN_ARROW";
+        };
+
+        up_arrow: up_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <30>;
+            bindings = <&kp RGUI &kp Z &kp K>;
+            label = "UP_ARROW";
+        };
+
+        right_arrow: right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <30>;
+            bindings = <&kp RGUI &kp Z &kp L>;
+            label = "RIGHT_ARROW";
+        };
+
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -555,7 +591,7 @@
             bindings = <
 &lt_to_layer_0 10 Q    &lt_to_layer_0 12 W  &lt_to_layer_0 13 E  &lt_to_layer_0 15 R  &to_layer_0 T                                                                 &to_layer_0 Y        &lt_to_layer_0 15 U  &lt_to_layer_0 13 I  &lt_to_layer_0 12 O  &lt_to_layer_0 10 P
 &mt_to_0 LCTRL A       &to_layer_0 S    &to_layer_0 D    &to_layer_0 F    &to_layer_0 G        &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 9 MINUS
-&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X    &to_layer_0 C        &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 6 EQUAL      &to_layer_0 BACKSPACE        &lt_to_layer_0 26 N  &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
+&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X    &to_layer_0 C        &to_layer_0 V    &to_layer_0 B        &lt_to_layer_0 6 EQUAL      &kp BACKSPACE        &lt_to_layer_0 26 N  &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2  &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &mt_to_0 RCMD LANG1                                                                 &lt_to_layer_0 6 ESC
             >;
         };
@@ -564,7 +600,7 @@
             bindings = <
 &lt_to_layer_0_ipad 11 Q    &lt_to_layer_0_ipad 12 W  &lt_to_layer_0_ipad 14 E  &lt_to_layer_0_ipad 15 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 15 U  &lt_to_layer_0_ipad 14 I  &lt_to_layer_0_ipad 12 O  &lt_to_layer_0_ipad 11 P
 &mt_to_0_ipad LCTRL A       &to_layer_0_ipad S    &to_layer_0_ipad D    &to_layer_0_ipad F    &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 9 MINUS
-&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X    &to_layer_0_ipad C        &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &to_layer_0_ipad BACKSPACE        &lt_to_layer_0_ipad 26 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
+&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X    &to_layer_0_ipad C        &to_layer_0_ipad V    &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE        &lt_to_layer_0_ipad 26 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 8 SPACE      &lt_to_layer_0_ipad 7 ENTER       &mt_to_0_ipad RCMD LANG1                                                                                &lt_to_layer_0_ipad 6 ESC
             >;
         };
@@ -573,7 +609,7 @@
             bindings = <
 &lt_to_layer_0_iphone 11 Q    &lt_to_layer_0_iphone 12 W  &lt_to_layer_0_iphone 14 E  &lt_to_layer_0_iphone 15 R  &to_layer_0_iphone T                                                                               &to_layer_0_iphone Y        &lt_to_layer_0_iphone 15 U  &lt_to_layer_0_iphone 14 I  &lt_to_layer_0_iphone 12 O  &lt_to_layer_0_iphone 11 P
 &mt_to_0_iphone LCTRL A       &to_layer_0_iphone S    &to_layer_0_iphone D    &to_layer_0_iphone F    &to_layer_0_iphone G        &kp LG(Q)                          &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H        &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 9 MINUS
-&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X    &to_layer_0_iphone C        &to_layer_0_iphone V    &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &to_layer_0_iphone BACKSPACE        &lt_to_layer_0_iphone 26 N  &mkp_exit_AML_iphone MB4    &to_layer_0_iphone LG(W)    &mkp_exit_AML_iphone MB5    &mt_to_0_iphone RIGHT_SHIFT SLASH
+&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X    &to_layer_0_iphone C        &to_layer_0_iphone V    &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE        &lt_to_layer_0_iphone 26 N  &mkp_exit_AML_iphone MB4    &to_layer_0_iphone LG(W)    &mkp_exit_AML_iphone MB5    &mt_to_0_iphone RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 8 SPACE      &lt_to_layer_0_iphone 7 ENTER       &mt_to_0_iphone RCMD LANG1                                                                                      &lt_to_layer_0_iphone 6 ESC
             >;
         };
@@ -693,7 +729,7 @@
             bindings = <
 &lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                           &to_layer_0_win Y         &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
 &mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S    &to_layer_0_win D    &to_layer_0_win F    &to_layer_0_win G         &trans                               &to_layer_0_win LS(N7)       &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 21 MINUS
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X    &to_layer_0_win C        &to_layer_0_win V    &to_layer_0_win B         &lt_to_layer_0_win 18 LS(MINUS)      &to_layer_0_win BACKSPACE    &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X    &to_layer_0_win C        &to_layer_0_win V    &to_layer_0_win B         &lt_to_layer_0_win 18 LS(MINUS)      &kp BACKSPACE    &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE          &lt_to_layer_0_win 19 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 18 ESC
             >;
         };
