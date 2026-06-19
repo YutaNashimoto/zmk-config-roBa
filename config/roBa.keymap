@@ -498,6 +498,12 @@
     };
 
     behaviors {
+        // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
+        quote_us_mwin: quote_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win LS(N7)>, <&to_layer_0_win LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        minus_us_mwin: minus_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win MINUS>, <&to_layer_0_win LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        equal_us_mwin: equal_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win LS(MINUS)>, <&to_layer_0_win LS(SEMICOLON)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lt_minus_us_mwin: lt_minus_us_mwin { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&minus_us_mwin>; };
+        lt_equal_us_mwin: lt_equal_us_mwin { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&equal_us_mwin>; };
         // JIS Windows用US記号補正(default_layer_winのみ)
         quote_us: quote_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>, <&kp LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         minus_us: minus_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
@@ -758,8 +764,8 @@
         MOUSE_win {
             bindings = <
 &lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                           &to_layer_0_win Y         &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
-&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                               &to_layer_0_win LS(N7)       &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_to_layer_0_win 21 MINUS
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_to_layer_0_win 18 LS(MINUS)      &kp BACKSPACE                &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                               &quote_us_mwin       &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 21 0
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 18 0      &kp BACKSPACE                &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE          &lt_to_layer_0_win 19 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 18 ESC
             >;
         };
