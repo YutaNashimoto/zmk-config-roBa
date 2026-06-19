@@ -714,7 +714,7 @@
         Desktop_Jesture {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
             >;
@@ -724,8 +724,8 @@
 
         Desktop_Jesture_ipad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &notif_center  &ipad_home  &control_center  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &split_left  &app_switcher  &split_right  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
             >;
@@ -827,7 +827,7 @@
         Desktop_Jesture_win {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
             >;
