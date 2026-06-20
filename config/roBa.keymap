@@ -36,11 +36,11 @@
         layers = <12>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -54,11 +54,11 @@
         layers = <13>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -72,11 +72,11 @@
         layers = <15>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -93,11 +93,11 @@
         layers = <23>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(W)>;
 
         // 下: タブを閉じる
@@ -111,11 +111,11 @@
         layers = <24>;
         bindings =
             <&kp LG(LC(LEFT))>,
-            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LC(RIGHT))>,
-            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(TAB)>,
-            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&dup_tab_win>;
 
         // 下: タブを複製（Alt+D → Alt+Enter）
@@ -129,11 +129,11 @@
         layers = <25>;
         bindings =
             <&kp LG(RIGHT)>,
-            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LEFT)>,
-            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(UP)>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(T))>;
 
         // 下: 閉じたタブ復活
@@ -149,11 +149,11 @@
         layers = <14>;
         bindings =
             <&split_left>,
-            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,
+            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,
             <&split_right>,
-            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,
+            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,,
             <&app_switcher>,
-            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,
+            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,,
             <&ipad_home>;
 
         // 下: 🌐+H（ホーム）
@@ -167,6 +167,7 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         win_num {
             if-layers = <7 16>;
             then-layer = <19>;
@@ -512,17 +513,91 @@
 
     behaviors {
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
-        quote_us_mwin: quote_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win LS(N7)>, <&to_layer_0_win LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        minus_us_mwin: minus_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win MINUS>, <&to_layer_0_win LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        equal_us_mwin: equal_us_mwin { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&to_layer_0_win LS(MINUS)>, <&to_layer_0_win LS(SEMICOLON)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lt_minus_us_mwin: lt_minus_us_mwin { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&minus_us_mwin>; };
-        lt_equal_us_mwin: lt_equal_us_mwin { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&equal_us_mwin>; };
+
+        quote_us_mwin: quote_us_mwin {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&to_layer_0_win LS(N7)>, <&to_layer_0_win LS(N2)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_us_mwin: minus_us_mwin {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&to_layer_0_win MINUS>, <&to_layer_0_win LS(INT1)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equal_us_mwin: equal_us_mwin {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings =
+                <&to_layer_0_win LS(MINUS)>,
+                <&to_layer_0_win LS(SEMICOLON)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lt_minus_us_mwin: lt_minus_us_mwin {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&minus_us_mwin>;
+        };
+
+        lt_equal_us_mwin: lt_equal_us_mwin {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&equal_us_mwin>;
+        };
+
         // JIS Windows用US記号補正(default_layer_winのみ)
-        quote_us: quote_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>, <&kp LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        minus_us: minus_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        equal_us: equal_us { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(MINUS)>, <&kp LS(SEMICOLON)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lt_minus_us: lt_minus_us { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&minus_us>; };
-        lt_equal_us: lt_equal_us { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&equal_us>; };
+
+        quote_us: quote_us {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7)>, <&kp LS(N2)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_us: minus_us {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp LS(INT1)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equal_us: equal_us {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(MINUS)>, <&kp LS(SEMICOLON)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lt_minus_us: lt_minus_us {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&minus_us>;
+        };
+
+        lt_equal_us: lt_equal_us {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&equal_us>;
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -670,10 +745,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                             &trans         &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans         &trans  &kp COLON      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &trans  &kp SEMICOLON  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans        &trans         &trans  &trans                                 &kp F13
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                 &trans         &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &kp COLON      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &kp F1  &kp F2  &kp F3  &kp F12
+&trans                      &trans           &trans           &trans           &trans        &kp BACKSPACE      &trans  &trans                                 &kp F13
             >;
         };
 
@@ -732,10 +807,10 @@
 
         Desktop_Jesture {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
+&trans  &trans        &trans            &trans         &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans            &trans         &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans            &trans         &trans  &trans          &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -743,10 +818,10 @@
 
         Desktop_Jesture_ipad {
             bindings = <
-&trans  &notif_center  &ipad_home  &control_center  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &split_left  &app_switcher  &split_right  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
+&trans  &notif_center  &ipad_home     &control_center  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &split_left    &app_switcher  &split_right     &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans           &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans         &trans           &trans  &trans          &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -763,10 +838,10 @@
 
         default_layer_win {
             bindings = <
-&lt 22 Q            &lt 23 W      &lt 24 E      &lt 25 R  &kp T                                                 &kp Y            &lt 25 U  &lt 24 I   &lt 23 O  &lt 22 P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)            &quote_us     &kp H            &kp J     &kp K      &kp L     &lt_minus_us 21 0
+&lt 22 Q            &lt 23 W      &lt 24 E      &lt 25 R  &kp T                                                  &kp Y            &lt 25 U  &lt 24 I   &lt 23 O  &lt 22 P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H            &kp J     &kp K      &kp L     &lt_minus_us 21 0
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 18 0      &kp BACKSPACE  &lt 26 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 20 SPACE          &lt 19 ENTER   &mt RCTRL LANG1                                 &lt 18 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 20 SPACE           &lt 19 ENTER   &mt RCTRL LANG1                                 &lt 18 ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
@@ -776,10 +851,10 @@
 
         MOUSE_win {
             bindings = <
-&lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                           &to_layer_0_win Y         &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
-&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                               &quote_us_mwin       &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 21 0
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 18 0      &kp BACKSPACE                &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE          &lt_to_layer_0_win 19 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 18 ESC
+&lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                       &to_layer_0_win Y         &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
+&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 21 0
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 18 0           &kp BACKSPACE                &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE      &lt_to_layer_0_win 19 ENTER  &mt_to_0_win RCTRL LANG1                                                                             &lt_to_layer_0_win 18 ESC
             >;
         };
 
@@ -797,7 +872,7 @@
 &kp MINUS          &kp N7  &kp N8  &kp N9  &kp LS(SEMI)                              &trans      &kp F7  &kp F8  &kp F9  &kp F10
 &kp SLASH          &kp N4  &kp N5  &kp N6  &kp LS(SQT)   &kp LC(LA(N0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
 &mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp LS(MINUS)       &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans             &trans  &trans  &trans  &trans        &trans              &trans  &trans                              &kp F13
+&trans             &trans  &trans  &trans  &trans        &kp BACKSPACE       &trans  &trans                              &kp F13
             >;
         };
 
@@ -845,10 +920,10 @@
 
         Desktop_Jesture_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp K_MUTE  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
+&trans  &trans            &trans       &trans             &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans       &trans             &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans       &trans             &trans  &trans          &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
