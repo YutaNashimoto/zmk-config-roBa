@@ -165,8 +165,21 @@
 };
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        win_num {
+            if-layers = <7 16>;
+            then-layer = <19>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
+
+        num_toggle {
+            bindings = <&tog 7>;
+            key-positions = <4 27>;
+        };
 
         capslock {
             bindings = <&kp CAPSLOCK>;
