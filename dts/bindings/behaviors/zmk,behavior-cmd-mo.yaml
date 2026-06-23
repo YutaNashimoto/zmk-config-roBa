@@ -1,0 +1,4 @@
+description: Hold Right-GUI (Cmd) and momentarily activate a layer
+compatible: "zmk,behavior-cmd-mo"
+
+include: one_param.yaml

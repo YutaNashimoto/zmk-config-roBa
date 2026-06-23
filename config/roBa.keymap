@@ -510,6 +510,8 @@
     };
 
     behaviors {
+        cmd_mo: cmd_mo { compatible = "zmk,behavior-cmd-mo"; #binding-cells = <1>; };
+        rlang: rlang { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&cmd_mo>, <&kp>; };
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
 
         quote_us_mwin: quote_us_mwin {
@@ -677,7 +679,7 @@
 &lt 10 Q            &lt 12 W          &lt 13 E      &lt 15 R  &kp T                                                    &kp Y           &lt 15 U  &lt 13 I   &lt 12 O  &lt 10 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 26 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -688,7 +690,7 @@
 &lt 11 Q            &lt 12 W          &lt 14 E      &lt 15 R  &kp T                                                    &kp Y           &lt 15 U  &lt 14 I   &lt 12 O  &lt 11 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 26 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -699,7 +701,7 @@
 &lt 11 Q            &lt 12 W          &lt 14 E      &lt 15 R  &kp T                                                    &kp Y           &lt 15 U  &lt 14 I   &lt 12 O  &lt 11 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 26 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
