@@ -693,7 +693,7 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
         };
 
         default_layer_iphone {
@@ -704,7 +704,7 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
         };
 
         MOUSE {
