@@ -702,7 +702,7 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &mt RCMD LANG1                                 &lt 6 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -868,7 +868,7 @@
         NUM_win {
             bindings = <
 &lt 22 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans          &kp UP_ARROW    &trans           &trans
-&kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp COLON      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans          &trans          &trans           &trans
 &kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                                          &trans
             >;
