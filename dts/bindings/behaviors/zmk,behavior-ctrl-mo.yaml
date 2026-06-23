@@ -1,0 +1,5 @@
+description: Hold Right-Control and momentarily activate a layer (Windows)
+
+compatible: "zmk,behavior-ctrl-mo"
+
+include: one_param.yaml
