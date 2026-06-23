@@ -36,11 +36,11 @@
         layers = <12>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -54,11 +54,11 @@
         layers = <13>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -72,11 +72,11 @@
         layers = <15>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -93,11 +93,11 @@
         layers = <23>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(W)>;
 
         // 下: タブを閉じる
@@ -111,11 +111,11 @@
         layers = <24>;
         bindings =
             <&kp LG(LC(LEFT))>,
-            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LC(RIGHT))>,
-            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(TAB)>,
-            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&dup_tab_win>;
 
         // 下: タブを複製（Alt+D → Alt+Enter）
@@ -129,11 +129,11 @@
         layers = <25>;
         bindings =
             <&kp LG(RIGHT)>,
-            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LEFT)>,
-            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(UP)>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(T))>;
 
         // 下: 閉じたタブ復活
@@ -149,11 +149,11 @@
         layers = <14>;
         bindings =
             <&split_left>,
-            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&split_right>,
-            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&app_switcher>,
-            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&ipad_home>;
 
         // 下: 🌐+H（ホーム）
@@ -176,7 +176,7 @@
 
         num_toggle_win {
             bindings = <&tog 19>;
-            key-positions = <4 27>;
+            key-positions = <0 1>;
             layers = <16 17 19>;
         };
 
@@ -510,11 +510,37 @@
     };
 
     behaviors {
-        cmd_mo: cmd_mo { compatible = "zmk,behavior-cmd-mo"; #binding-cells = <1>; };
-        nomod: nomod { compatible = "zmk,behavior-nomod"; #binding-cells = <1>; };
-        ctrl_mo: ctrl_mo { compatible = "zmk,behavior-ctrl-mo"; #binding-cells = <1>; };
-        rlang: rlang { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&cmd_mo>, <&kp>; };
-        rlang_win: rlang_win { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&ctrl_mo>, <&kp>; };
+        cmd_mo: cmd_mo {
+            compatible = "zmk,behavior-cmd-mo";
+            #binding-cells = <1>;
+        };
+
+        nomod: nomod {
+            compatible = "zmk,behavior-nomod";
+            #binding-cells = <1>;
+        };
+
+        ctrl_mo: ctrl_mo {
+            compatible = "zmk,behavior-ctrl-mo";
+            #binding-cells = <1>;
+        };
+
+        rlang: rlang {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&cmd_mo>, <&kp>;
+        };
+
+        rlang_win: rlang_win {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&ctrl_mo>, <&kp>;
+        };
+
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
 
         quote_us_mwin: quote_us_mwin {
@@ -715,7 +741,7 @@
 &lt_to_layer_0 10 Q    &lt_to_layer_0 12 W  &lt_to_layer_0 13 E  &lt_to_layer_0 15 R  &to_layer_0 T                                                                 &to_layer_0 Y        &lt_to_layer_0 15 U  &lt_to_layer_0 13 I  &lt_to_layer_0 12 O  &lt_to_layer_0 10 P
 &mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &to_layer_0 G        &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &to_layer_0 H        &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 9 MINUS
 &mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B        &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 26 N  &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2  &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 9 LANG1                                                                     &lt_to_layer_0 6 ESC
+&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2  &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 9 LANG1                                                                      &lt_to_layer_0 6 ESC
             >;
         };
 
@@ -769,9 +795,9 @@
         FUNCTION {
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
-&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans       &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13   &trans  &trans        &trans             &trans             &trans              &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &trans  &trans                                                      &trans
+&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &trans             &trans             &trans              &trans
+&trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
             >;
         };
 
@@ -841,10 +867,10 @@
 
         default_layer_win {
             bindings = <
-&lt 22 Q            &lt 23 W      &lt 24 E      &lt 25 R  &kp T                                                  &kp Y            &lt 25 U  &lt 24 I   &lt 23 O  &lt 22 P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H            &kp J     &kp K      &kp L     &lt_minus_us 21 0
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 18 0      &kp BACKSPACE  &lt 26 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 20 SPACE           &lt 19 ENTER   &rlang_win 21 LANG1                             &lt 18 ESCAPE
+&lt 22 Q            &lt 23 W      &lt 24 E      &lt 25 R  &kp T                                                  &kp Y                &lt 25 U  &lt 24 I   &lt 23 O  &lt 22 P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 21 0
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 18 0      &kp BACKSPACE  &lt 26 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 20 SPACE           &lt 19 ENTER   &rlang_win 21 LANG1                                 &lt 18 ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
@@ -854,10 +880,10 @@
 
         MOUSE_win {
             bindings = <
-&lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                       &to_layer_0_win Y         &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
-&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H         &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 21 0
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 18 0           &kp BACKSPACE                &lt_to_layer_0_win 26 N   &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE      &lt_to_layer_0_win 19 ENTER  &rlang_win 21 LANG1                                                                                  &lt_to_layer_0_win 18 ESC
+&lt_to_layer_0_win 22 Q      &lt_to_layer_0_win 23 W  &lt_to_layer_0_win 24 E  &lt_to_layer_0_win 25 R  &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 25 U  &lt_to_layer_0_win 24 I  &lt_to_layer_0_win 23 O  &lt_to_layer_0_win 22 P
+&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 21 0
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 18 0           &kp BACKSPACE                &lt_to_layer_0_win 26 N  &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 20 SPACE      &lt_to_layer_0_win 19 ENTER  &rlang_win 21 LANG1                                                                                 &lt_to_layer_0_win 18 ESC
             >;
         };
 
@@ -893,9 +919,9 @@
         FUNCTION_win {
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
-&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans       &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13   &trans  &trans        &trans             &trans             &trans              &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &trans  &trans                                                      &trans
+&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &trans             &trans             &trans              &trans
+&trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
             >;
         };
 
