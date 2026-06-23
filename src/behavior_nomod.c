@@ -36,9 +36,32 @@ static int nomod_released(struct zmk_behavior_binding *binding,
     return ZMK_BEHAVIOR_OPAQUE;
 }
 
+#if IS_ENABLED(CONFIG_ZMK_BEHAVIOR_METADATA)
+// キーマップエディタ/ZMK Studio で param1 を「キーコード」ピッカーとして表示させる。
+static const struct behavior_parameter_value_metadata nomod_param_values[] = {
+    {
+        .display_name = "Key",
+        .type = BEHAVIOR_PARAMETER_VALUE_TYPE_HID_USAGE,
+    },
+};
+
+static const struct behavior_parameter_metadata_set nomod_param_metadata_set[] = {{
+    .param1_values = nomod_param_values,
+    .param1_values_len = ARRAY_SIZE(nomod_param_values),
+}};
+
+static const struct behavior_parameter_metadata nomod_metadata = {
+    .sets_len = ARRAY_SIZE(nomod_param_metadata_set),
+    .sets = nomod_param_metadata_set,
+};
+#endif
+
 static const struct behavior_driver_api behavior_nomod_driver_api = {
     .binding_pressed = nomod_pressed,
     .binding_released = nomod_released,
+#if IS_ENABLED(CONFIG_ZMK_BEHAVIOR_METADATA)
+    .parameter_metadata = &nomod_metadata,
+#endif
 };
 
 BEHAVIOR_DT_INST_DEFINE(0, NULL, NULL, NULL, NULL, POST_KERNEL,
