@@ -511,6 +511,7 @@
 
     behaviors {
         cmd_mo: cmd_mo { compatible = "zmk,behavior-cmd-mo"; #binding-cells = <1>; };
+        nomod: nomod { compatible = "zmk,behavior-nomod"; #binding-cells = <1>; };
         rlang: rlang { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&cmd_mo>, <&kp>; };
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
 
@@ -765,9 +766,9 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F10                       &kp F      &kp RS(COMMA)   &kp UP_ARROW    &kp RS(PERIOD)   &trans
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans       &trans  &kp SPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp F13      &trans  &trans     &trans          &trans          &trans           &trans
+&trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
+&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans       &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13   &trans  &trans        &trans             &trans             &trans              &trans
 &trans  &trans  &trans  &trans  &trans   &trans       &trans  &trans                                                      &trans
             >;
         };

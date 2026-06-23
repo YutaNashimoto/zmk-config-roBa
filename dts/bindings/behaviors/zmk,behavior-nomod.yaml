@@ -1,0 +1,5 @@
+description: Send a key with the cmd_mo-held modifier temporarily removed
+
+compatible: "zmk,behavior-nomod"
+
+include: one_param.yaml

@@ -9,6 +9,8 @@ if(CONFIG_ZMK_OS_DETECTION OR CONFIG_ZMK_BLE_PROFILE_NAME OR CONFIG_ZMK_SPLIT_RO
   # 未定義参照になるため除外する。
   zephyr_library_sources_ifdef(CONFIG_ZMK_SPLIT_ROLE_CENTRAL
     ${CMAKE_CURRENT_SOURCE_DIR}/src/behavior_cmd_mo.c)
+  zephyr_library_sources_ifdef(CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/behavior_nomod.c)
 endif()
 
 if(CONFIG_ZMK_OS_DETECTION)
