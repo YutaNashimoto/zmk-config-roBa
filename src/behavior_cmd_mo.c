@@ -33,9 +33,33 @@ static int cmd_mo_released(struct zmk_behavior_binding *binding,
     return ZMK_BEHAVIOR_OPAQUE;
 }
 
+#if IS_ENABLED(CONFIG_ZMK_BEHAVIOR_METADATA)
+// キーマップエディタ/ZMK Studio で param1 を「レイヤー」ピッカーとして表示させる。
+// これにより rlang（hold-tap）の hold 側パラメータがレイヤー選択式になる。
+static const struct behavior_parameter_value_metadata cmd_mo_param_values[] = {
+    {
+        .display_name = "Layer",
+        .type = BEHAVIOR_PARAMETER_VALUE_TYPE_LAYER_ID,
+    },
+};
+
+static const struct behavior_parameter_metadata_set cmd_mo_param_metadata_set[] = {{
+    .param1_values = cmd_mo_param_values,
+    .param1_values_len = ARRAY_SIZE(cmd_mo_param_values),
+}};
+
+static const struct behavior_parameter_metadata cmd_mo_metadata = {
+    .sets_len = ARRAY_SIZE(cmd_mo_param_metadata_set),
+    .sets = cmd_mo_param_metadata_set,
+};
+#endif
+
 static const struct behavior_driver_api behavior_cmd_mo_driver_api = {
     .binding_pressed = cmd_mo_pressed,
     .binding_released = cmd_mo_released,
+#if IS_ENABLED(CONFIG_ZMK_BEHAVIOR_METADATA)
+    .parameter_metadata = &cmd_mo_metadata,
+#endif
 };
 
 BEHAVIOR_DT_INST_DEFINE(0, NULL, NULL, NULL, NULL, POST_KERNEL,
