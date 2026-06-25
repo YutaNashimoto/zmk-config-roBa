@@ -895,7 +895,7 @@
         SYMBOLS_win {
             bindings = <
 &trans         &kp LS(N6)       &kp LS(SQT)  &kp LS(N8)  &kp LS(N9)                      &trans  &kp LS(RBKT)   &kp LS(BSLH)  &trans        &trans
-&kp LS(EQUAL)  &kp DOLLAR       &kp PERCENT  &kp EQUAL   &trans      &trans      &trans  &kp SQT        &kp LS(N8)     &kp LS(N9)    &kp INT1       &trans
+&kp LS(EQUAL)  &kp DOLLAR       &kp PERCENT  &kp EQUAL   &trans      &trans      &trans  &kp SQT        &kp LS(N8)     &kp LS(N9)    &kp INT1       &kp LS(EQUAL)
 &kp LS(LBKT)   &kp EXCLAMATION  &kp LBKT     &kp HASH    &trans      &trans      &trans  &kp SEMICOLON  &kp RBKT       &kp BSLH      &kp LS(INT3)   &trans
 &trans         &trans           &trans       &trans      &trans      &trans      &trans  &trans                                             &trans
             >;
