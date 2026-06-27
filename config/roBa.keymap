@@ -201,6 +201,26 @@
             layers = <17 18 20>;
         };
 
+        // U+I 同時押しで、現在のOSに応じたスクロール層をトグル。
+        // スコープに「デフォルト層＋マウス層＋トグル先(OFF用)」を含める。
+        scroll_toggle_mac {
+            bindings = <&tog 10>;
+            key-positions = <6 7>;
+            layers = <0 3 10>;
+        };
+
+        scroll_toggle_ipad {
+            bindings = <&tog 11>;
+            key-positions = <6 7>;
+            layers = <1 2 4 5 11>;
+        };
+
+        scroll_toggle_win {
+            bindings = <&tog 23>;
+            key-positions = <6 7>;
+            layers = <17 18 23>;
+        };
+
         capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <37 38>;
