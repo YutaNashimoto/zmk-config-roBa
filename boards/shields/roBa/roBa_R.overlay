@@ -50,9 +50,9 @@
         //  - スクロールを縦横とも反転（zip_scroll_transformはWHEEL/HWHEELのみ、
         //    カーソル移動は不変）
         win {
-            layers = <16>;
+            layers = <17>;
             input-processors =
-                <&zip_temp_layer 17 5000>,
+                <&zip_temp_layer 18 5000>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
