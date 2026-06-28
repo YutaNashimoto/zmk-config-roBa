@@ -830,7 +830,7 @@
 &lt 11 Q            &lt 12 W          &lt 14 E      &lt 16 R  &kp T                                                    &kp Y           &lt 16 U  &lt 14 I   &lt 12 O  &lt 11 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 27 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 28 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -861,7 +861,7 @@
 &lt_to_layer_0_ipad 11 Q    &lt_to_layer_0_ipad 12 W  &lt_to_layer_0_ipad 14 E  &lt_to_layer_0_ipad 16 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 16 U  &lt_to_layer_0_ipad 14 I  &lt_to_layer_0_ipad 12 O  &lt_to_layer_0_ipad 11 P
 &mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 9 MINUS
 &mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 27 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 8 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 9 LANG1                                                                                          &lt_to_layer_0_ipad 6 ESC
+&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 28 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 9 LANG1                                                                                          &lt_to_layer_0_ipad 6 ESC
             >;
         };
 
@@ -1093,6 +1093,17 @@
 &to 0   &to 17  &trans  &trans  &trans  &trans      &trans       &trans   &trans    &trans      &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans   &trans    &trans      &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                       &bt BT_CLR_ALL
+            >;
+        };
+
+        // iPad用ARROW。Mac版ARROW(8)ベース。ナビ/ブラウザ系は流用、
+        // ウィンドウ操作はiPadOS(🌐+Ctrl+矢印/🌐+F)へ。iPad非対応機能は透過。
+        ARROW_ipad {
+            bindings = <
+&kp ESCAPE   &trans            &kp UP_ARROW      &trans            &trans                                       &trans  &kp LG(LS(T))    &trans     &kp LG(N)    &trans
+&kp HOME     &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp END        &kp LG(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)  &kp LC(TAB)  &trans
+&kp PAGE_UP  &ipad_tile_left   &ipad_fullscreen  &ipad_tile_right  &kp PAGE_DOWN  &trans          &kp DELETE  &trans  &mkp MB4         &kp LG(W)  &mkp MB5     &trans
+&trans       &trans            &trans            &trans            &trans         &trans          &trans      &trans                                          &trans
             >;
         };
 
