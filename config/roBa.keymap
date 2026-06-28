@@ -530,6 +530,23 @@
             label = "IPAD_SHOW_WINDOWS";
         };
 
+        // 開いているアプリの新規ウィンドウを開く（Stage Manager: Add Another Window = 🌐+Ctrl+↑）。
+        ipad_add_window: ipad_add_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp LC(UP_ARROW)>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IPAD_ADD_WINDOW";
+        };
+
         // Bluetoothプロファイル切替＋デフォルトレイヤー切替を同時に行う。
         // prof1=Mac(0) / prof2=iPad(1) / prof3=iPhone(1) / prof5=Windows(13)。
 
@@ -910,11 +927,13 @@
 
         ARROW_ipad {
             bindings = <
-&kp ESCAPE   &trans           &kp UP_ARROW      &trans            &trans                                     &trans  &kp LG(LS(T))    &trans     &kp LG(N)    &trans
+&kp ESCAPE   &trans           &kp UP_ARROW      &trans            &trans                                     &trans  &kp LG(LS(T))    &trans     &ipad_add_window    &trans
 &kp HOME     &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp END        &kp LG(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)  &kp LC(TAB)  &trans
 &kp PAGE_UP  &ipad_tile_left  &ipad_fullscreen  &ipad_tile_right  &kp PAGE_DOWN  &trans          &kp DELETE  &trans  &mkp MB4         &kp LG(W)  &mkp MB5     &trans
 &trans       &trans           &trans            &trans            &trans         &trans          &trans      &trans                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
         FUNCTION {
