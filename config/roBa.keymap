@@ -169,15 +169,15 @@
     window_arrows_ipad {
         layers = <16>;
         bindings =
-            <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,
-            <&kp LC(LA(LEFT))>,
-            // 左: 左半分,
-            <&kp LC(LA(ENTER))>,
-            // 上: 最大化,
-            <&kp LS(LG(T))>;
+            <&ipad_tile_right>,
+            // 右: 右にタイル（🌐+Ctrl+→）
+            <&ipad_tile_left>,
+            // 左: 左にタイル（🌐+Ctrl+←）
+            <&ipad_fullscreen>,
+            // 上: フルスクリーン（🌐+F）
+            <&ipad_show_windows>;
 
-        // 下: Shift+Cmd+T
+        // 下: 全ウィンドウ表示（🌐+↓）
 
         tick = <150>;
         wait-ms = <5>;
@@ -461,6 +461,71 @@
                 <&kp GLOBE>;
 
             label = "IPAD_HOME";
+        };
+
+        // iPadOS ウィンドウ操作（Globe併用）。Macのウィンドウ分割の代替。
+        ipad_tile_left: ipad_tile_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp LC(LEFT_ARROW)>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IPAD_TILE_LEFT";
+        };
+
+        ipad_tile_right: ipad_tile_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp LC(RIGHT_ARROW)>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IPAD_TILE_RIGHT";
+        };
+
+        ipad_fullscreen: ipad_fullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IPAD_FULLSCREEN";
+        };
+
+        ipad_show_windows: ipad_show_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IPAD_SHOW_WINDOWS";
         };
 
         // Bluetoothプロファイル切替＋デフォルトレイヤー切替を同時に行う。
