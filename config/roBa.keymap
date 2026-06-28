@@ -25,7 +25,7 @@
     // 6=Mac SCROLL, 17=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
     // ※editorでレイヤーを増減すると番号がズレるので、SCROLL_winの位置を要確認。
 
-    scroll-layers = <10 11 23>;
+    scroll-layers = <11 12 24>;
 
     // iPad(層1)では低速CPI(snipe)を使い、カーソルを滑らかに減速。
     // 速度は roBa_R.conf の CONFIG_PMW3610_SNIPE_CPI で調整（200刻み）。
@@ -33,7 +33,7 @@
     snipe-layers = <1 4>;
 
     browsing_arrows {
-        layers = <12>;
+        layers = <13>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -51,7 +51,7 @@
     };
 
     desktop_arrows {
-        layers = <13>;
+        layers = <14>;
         bindings =
             <&kp LC(LEFT)>,
             // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -69,7 +69,7 @@
     };
 
     window_arrows {
-        layers = <15>;
+        layers = <16>;
         bindings =
             <&kp LC(LA(RIGHT))>,
             // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -90,7 +90,7 @@
     // Mac版(7/8/9)と別ブロックにして、Windows相当のショートカットを割当てる。
 
     browsing_arrows_win {
-        layers = <24>;
+        layers = <25>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -108,7 +108,7 @@
     };
 
     desktop_arrows_win {
-        layers = <25>;
+        layers = <26>;
         bindings =
             <&kp LG(LC(LEFT))>,
             // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -126,7 +126,7 @@
     };
 
     window_arrows_win {
-        layers = <26>;
+        layers = <27>;
         bindings =
             <&kp LG(RIGHT)>,
             // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -146,7 +146,7 @@
     // ===== iPad用ジェスチャー（層12 = Desktop_Jesture_ipad）=====
 
     desktop_arrows_ipad {
-        layers = <14>;
+        layers = <15>;
         bindings =
             <&split_left>,
             // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -167,7 +167,7 @@
     // 設定はMac版(window_arrows)と同一。
 
     window_arrows_ipad {
-        layers = <16>;
+        layers = <17>;
         bindings =
             <&ipad_tile_right>,
             // 右: 右にタイル（🌐+Ctrl+→）
@@ -196,29 +196,29 @@
         };
 
         num_toggle_win {
-            bindings = <&tog 20>;
+            bindings = <&tog 21>;
             key-positions = <0 1>;
-            layers = <17 18 20>;
+            layers = <18 19 21>;
         };
 
         // U+I 同時押しで、現在のOSに応じたスクロール層をトグル。
         // スコープに「デフォルト層＋マウス層＋トグル先(OFF用)」を含める。
         scroll_toggle_mac {
-            bindings = <&tog 10>;
+            bindings = <&tog 11>;
             key-positions = <6 7>;
-            layers = <0 3 10>;
+            layers = <0 3 11>;
         };
 
         scroll_toggle_ipad {
-            bindings = <&tog 11>;
+            bindings = <&tog 12>;
             key-positions = <6 7>;
-            layers = <1 2 4 5 11>;
+            layers = <1 2 4 5 12>;
         };
 
         scroll_toggle_win {
-            bindings = <&tog 23>;
+            bindings = <&tog 24>;
             key-positions = <6 7>;
-            layers = <17 18 23>;
+            layers = <18 19 24>;
         };
 
         capslock {
@@ -334,7 +334,7 @@
         to_layer_0_win: to_layer_0_win {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 17 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 18 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_WIN";
         };
 
@@ -555,7 +555,7 @@
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4 &to 17>;
+            bindings = <&bt BT_SEL 4 &to 18>;
             label = "BT_WIN";
         };
 
@@ -816,10 +816,10 @@
 
         default_layer {
             bindings = <
-&lt 10 Q            &lt 12 W          &lt 13 E      &lt 15 R  &kp T                                                            &kp Y                   &lt 15 U  &lt 13 I   &lt 12 O  &lt 10 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LS(LC(LEFT_ALT)) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LS(LC(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 9 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 27 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                         &lt 6 ESCAPE
+&lt 11 Q            &lt 13 W          &lt 14 E      &lt 16 R  &kp T                                                            &kp Y                   &lt 16 U  &lt 14 I   &lt 13 O  &lt 11 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LS(LC(LEFT_ALT)) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LS(LC(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 10 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                         &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -827,10 +827,10 @@
 
         default_layer_ipad {
             bindings = <
-&lt 11 Q            &lt 12 W          &lt 14 E      &lt 16 R  &kp T                                                    &kp Y           &lt 16 U  &lt 14 I   &lt 12 O  &lt 11 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 27 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 28 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
+&lt 12 Q            &lt 13 W          &lt 15 E      &lt 17 R  &kp T                                                    &kp Y           &lt 17 U  &lt 15 I   &lt 13 O  &lt 12 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 10 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 9 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -838,10 +838,10 @@
 
         default_layer_iphone {
             bindings = <
-&lt 11 Q            &lt 12 W          &lt 14 E      &lt 15 R  &kp T                                                    &kp Y           &lt 15 U  &lt 14 I   &lt 12 O  &lt 11 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 9 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 27 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 9 LANG1                                 &lt 6 ESCAPE
+&lt 12 Q            &lt 13 W          &lt 15 E      &lt 16 R  &kp T                                                    &kp Y           &lt 16 U  &lt 15 I   &lt 13 O  &lt 12 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H           &kp J     &kp K      &kp L     &lt 10 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N        &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -849,28 +849,28 @@
 
         MOUSE {
             bindings = <
-&lt_to_layer_0 10 Q    &lt_to_layer_0 12 W  &lt_to_layer_0 13 E  &lt_to_layer_0 15 R  &to_layer_0 T                                                                         &kp Y                        &lt_to_layer_0 15 U  &lt_to_layer_0 13 I  &lt_to_layer_0 12 O  &lt_to_layer_0 10 P
-&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LS(LC(LEFT_ALT)) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LS(LC(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 9 MINUS
-&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 27 N          &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 9 LANG1                                                                              &lt_to_layer_0 6 ESC
+&lt_to_layer_0 11 Q    &lt_to_layer_0 13 W  &lt_to_layer_0 14 E  &lt_to_layer_0 16 R  &to_layer_0 T                                                                         &kp Y                        &lt_to_layer_0 16 U  &lt_to_layer_0 14 I  &lt_to_layer_0 13 O  &lt_to_layer_0 11 P
+&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LS(LC(LEFT_ALT)) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LS(LC(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 10 MINUS
+&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 28 N          &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 10 LANG1                                                                              &lt_to_layer_0 6 ESC
             >;
         };
 
         MOUSE_ipad {
             bindings = <
-&lt_to_layer_0_ipad 11 Q    &lt_to_layer_0_ipad 12 W  &lt_to_layer_0_ipad 14 E  &lt_to_layer_0_ipad 16 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 16 U  &lt_to_layer_0_ipad 14 I  &lt_to_layer_0_ipad 12 O  &lt_to_layer_0_ipad 11 P
-&mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 9 MINUS
-&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 27 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 28 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 9 LANG1                                                                                          &lt_to_layer_0_ipad 6 ESC
+&lt_to_layer_0_ipad 12 Q    &lt_to_layer_0_ipad 13 W  &lt_to_layer_0_ipad 15 E  &lt_to_layer_0_ipad 17 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 17 U  &lt_to_layer_0_ipad 15 I  &lt_to_layer_0_ipad 13 O  &lt_to_layer_0_ipad 12 P
+&mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 10 MINUS
+&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 28 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 9 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 10 LANG1                                                                                          &lt_to_layer_0_ipad 6 ESC
             >;
         };
 
         MOUSE_iphone {
             bindings = <
-&lt_to_layer_0_iphone 11 Q    &lt_to_layer_0_iphone 12 W  &lt_to_layer_0_iphone 14 E  &lt_to_layer_0_iphone 15 R  &to_layer_0_iphone T                                                                               &to_layer_0_iphone Y        &lt_to_layer_0_iphone 15 U  &lt_to_layer_0_iphone 14 I  &lt_to_layer_0_iphone 12 O  &lt_to_layer_0_iphone 11 P
-&mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                          &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H        &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 9 MINUS
-&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE                       &lt_to_layer_0_iphone 27 N  &mkp_exit_AML_iphone MB4    &to_layer_0_iphone LG(W)    &mkp_exit_AML_iphone MB5    &mt_to_0_iphone RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 8 SPACE      &lt_to_layer_0_iphone 7 ENTER       &rlang 9 LANG1                                                                                                  &lt_to_layer_0_iphone 6 ESC
+&lt_to_layer_0_iphone 12 Q    &lt_to_layer_0_iphone 13 W  &lt_to_layer_0_iphone 15 E  &lt_to_layer_0_iphone 16 R  &to_layer_0_iphone T                                                                               &to_layer_0_iphone Y        &lt_to_layer_0_iphone 16 U  &lt_to_layer_0_iphone 15 I  &lt_to_layer_0_iphone 13 O  &lt_to_layer_0_iphone 12 P
+&mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                          &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H        &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 10 MINUS
+&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE                       &lt_to_layer_0_iphone 28 N  &mkp_exit_AML_iphone MB4    &to_layer_0_iphone LG(W)    &mkp_exit_AML_iphone MB5    &mt_to_0_iphone RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 8 SPACE      &lt_to_layer_0_iphone 7 ENTER       &rlang 10 LANG1                                                                                                  &lt_to_layer_0_iphone 6 ESC
             >;
         };
 
@@ -885,7 +885,7 @@
 
         NUM {
             bindings = <
-&lt 10 MINUS                &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
+&lt 11 MINUS                &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
 &kp SLASH                   &kp KP_NUMBER_4       &kp KP_NUMBER_5        &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB          &trans        &kp BACKSPACE      &trans  &trans                                 &trans
@@ -901,6 +901,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
+        };
+
+        // iPad用ARROW。Mac版ARROW(8)ベース。ナビ/ブラウザ系は流用、
+        // ウィンドウ操作はiPadOS(🌐+Ctrl+矢印/🌐+F)へ。iPad非対応機能は透過。
+        ARROW_ipad {
+            bindings = <
+&kp ESCAPE   &trans            &kp UP_ARROW      &trans            &trans                                       &trans  &kp LG(LS(T))    &trans     &kp LG(N)    &trans
+&kp HOME     &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp END        &kp LG(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)  &kp LC(TAB)  &trans
+&kp PAGE_UP  &ipad_tile_left   &ipad_fullscreen  &ipad_tile_right  &kp PAGE_DOWN  &trans          &kp DELETE  &trans  &mkp MB4         &kp LG(W)  &mkp MB5     &trans
+&trans       &trans            &trans            &trans            &trans         &trans          &trans      &trans                                          &trans
+            >;
         };
 
         FUNCTION {
@@ -969,7 +980,7 @@
 
         Window_Jesture {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 10  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 11  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
@@ -978,7 +989,7 @@
 
         Window_Jesture_ipad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 11  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 12  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
@@ -987,10 +998,10 @@
 
         default_layer_win {
             bindings = <
-&lt 23 Q            &lt 24 W      &lt 25 E      &lt 26 R  &kp T                                                  &kp Y                &lt 26 U  &lt 25 I   &lt 24 O  &lt 23 P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 22 0
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 19 0      &kp BACKSPACE  &lt 27 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 21 SPACE           &lt 20 ENTER   &rlang_win 22 LANG1                                 &lt 19 ESCAPE
+&lt 24 Q            &lt 25 W      &lt 26 E      &lt 27 R  &kp T                                                  &kp Y                &lt 27 U  &lt 26 I   &lt 25 O  &lt 24 P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 23 0
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 20 0      &kp BACKSPACE  &lt 28 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 22 SPACE           &lt 21 ENTER   &rlang_win 23 LANG1                                 &lt 20 ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
@@ -1000,10 +1011,10 @@
 
         MOUSE_win {
             bindings = <
-&lt_to_layer_0_win 23 Q      &lt_to_layer_0_win 24 W  &lt_to_layer_0_win 25 E  &lt_to_layer_0_win 26 R  &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 26 U  &lt_to_layer_0_win 25 I  &lt_to_layer_0_win 24 O  &lt_to_layer_0_win 23 P
-&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 22 0
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 19 0           &kp BACKSPACE                &lt_to_layer_0_win 27 N  &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 21 SPACE      &lt_to_layer_0_win 20 ENTER  &rlang_win 22 LANG1                                                                                 &lt_to_layer_0_win 19 ESC
+&lt_to_layer_0_win 24 Q      &lt_to_layer_0_win 25 W  &lt_to_layer_0_win 26 E  &lt_to_layer_0_win 27 R  &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 27 U  &lt_to_layer_0_win 26 I  &lt_to_layer_0_win 25 O  &lt_to_layer_0_win 24 P
+&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 23 0
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 20 0           &kp BACKSPACE                &lt_to_layer_0_win 28 N  &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 22 SPACE      &lt_to_layer_0_win 21 ENTER  &rlang_win 23 LANG1                                                                                 &lt_to_layer_0_win 20 ESC
             >;
         };
 
@@ -1018,7 +1029,7 @@
 
         NUM_win {
             bindings = <
-&lt 23 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
+&lt 24 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
 &kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT        &trans  &trans  &trans  &trans
 &mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                 &trans
@@ -1047,7 +1058,7 @@
 
         SCROLL_win {
             bindings = <
-&trans  &tog 20           &trans       &trans             &trans                             &trans  &trans     &trans               &kp LG(LS(S))  &trans
+&trans  &tog 21           &trans       &trans             &trans                             &trans  &trans     &trans               &kp LG(LS(S))  &trans
 &trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp C_BRI_MAX      &trans  &trans  &kp LG(V)  &kp LG(PRINTSCREEN)  &trans         &trans
 &trans  &trans            &trans       &trans             &trans  &kp LG(TAB)        &trans  &trans  &trans     &trans               &trans         &trans
 &trans  &trans            &trans       &trans             &trans  &trans             &trans  &trans                                                 &trans
@@ -1080,7 +1091,7 @@
 
         Window_Jesture_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 23  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 24  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
@@ -1090,20 +1101,9 @@
         BLUETOOTH {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt_mac  &bt_ipad  &bt_iphone  &bt BT_SEL 3  &bt_win
-&to 0   &to 17  &trans  &trans  &trans  &trans      &trans       &trans   &trans    &trans      &trans        &trans
+&to 0   &to 18  &trans  &trans  &trans  &trans      &trans       &trans   &trans    &trans      &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans   &trans    &trans      &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                       &bt BT_CLR_ALL
-            >;
-        };
-
-        // iPad用ARROW。Mac版ARROW(8)ベース。ナビ/ブラウザ系は流用、
-        // ウィンドウ操作はiPadOS(🌐+Ctrl+矢印/🌐+F)へ。iPad非対応機能は透過。
-        ARROW_ipad {
-            bindings = <
-&kp ESCAPE   &trans            &kp UP_ARROW      &trans            &trans                                       &trans  &kp LG(LS(T))    &trans     &kp LG(N)    &trans
-&kp HOME     &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp END        &kp LG(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)  &kp LC(TAB)  &trans
-&kp PAGE_UP  &ipad_tile_left   &ipad_fullscreen  &ipad_tile_right  &kp PAGE_DOWN  &trans          &kp DELETE  &trans  &mkp MB4         &kp LG(W)  &mkp MB5     &trans
-&trans       &trans            &trans            &trans            &trans         &trans          &trans      &trans                                          &trans
             >;
         };
 
