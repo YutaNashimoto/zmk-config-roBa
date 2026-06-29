@@ -915,9 +915,9 @@
 
         NUM {
             bindings = <
-&lt 11 MINUS                &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
-&kp SLASH                   &kp KP_NUMBER_4       &kp KP_NUMBER_5        &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
+&lt 11 MINUS                &kp N7       &kp N8        &kp N9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
+&kp SLASH                   &kp N4       &kp N5        &kp N6  &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
+&mt LEFT_SHIFT N0  &kp N1       &kp N2        &kp N3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB          &trans        &kp BACKSPACE      &trans  &trans                                 &trans
             >;
         };
