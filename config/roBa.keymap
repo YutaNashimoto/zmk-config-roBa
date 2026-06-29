@@ -530,6 +530,34 @@
             label = "IPAD_SHOW_WINDOWS";
         };
 
+        // FUNCTION層は右LANGホールドでCmd/Ctrlを保持中。マウスボタンに修飾が
+        // 乗ると「戻る/進む」が新タブで開く等の誤動作になるため、保持中modを
+        // 一時解除→ボタン送出→復帰する（&mkpを包む）。nomodのマウスボタン版。
+        mb_back_mac: mb_back_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp RGUI &macro_tap &mkp MB4 &macro_press &kp RGUI>;
+            label = "MB_BACK_MAC";
+        };
+        mb_fwd_mac: mb_fwd_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp RGUI &macro_tap &mkp MB5 &macro_press &kp RGUI>;
+            label = "MB_FWD_MAC";
+        };
+        mb_back_win: mb_back_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp RCTRL &macro_tap &mkp MB4 &macro_press &kp RCTRL>;
+            label = "MB_BACK_WIN";
+        };
+        mb_fwd_win: mb_fwd_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp RCTRL &macro_tap &mkp MB5 &macro_press &kp RCTRL>;
+            label = "MB_FWD_WIN";
+        };
+
         // Bluetoothプロファイル切替＋デフォルトレイヤー切替を同時に行う。
         // prof1=Mac(0) / prof2=iPad(1) / prof3=iPhone(1) / prof5=Windows(13)。
 
@@ -889,7 +917,7 @@
             bindings = <
 &lt 11 MINUS                &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
 &kp SLASH                   &kp KP_NUMBER_4       &kp KP_NUMBER_5        &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &mkp MB4  &kp LG(W)  &mkp MB5  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB          &trans        &kp BACKSPACE      &trans  &trans                                 &trans
             >;
         };
@@ -923,7 +951,7 @@
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
 &trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &trans             &trans             &trans              &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_mac             &nomod LG(W)             &mb_fwd_mac              &trans
 &trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
             >;
         };
@@ -1036,7 +1064,7 @@
             bindings = <
 &lt 24 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
 &kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT        &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &mkp MB4  &kp LC(W)  &mkp MB5  &trans
+&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                 &trans
             >;
         };
@@ -1056,7 +1084,7 @@
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
 &trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &trans             &trans             &trans              &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_win             &nomod LC(W)             &mb_fwd_win              &trans
 &trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
             >;
         };
