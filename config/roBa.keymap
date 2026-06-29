@@ -853,7 +853,7 @@
             bindings = <
 &lt_to_layer_0 11 Q    &lt_to_layer_0 13 W  &lt_to_layer_0 14 E  &lt_to_layer_0 16 R  &to_layer_0 T                                                                         &kp Y                        &lt_to_layer_0 16 U  &lt_to_layer_0 14 I  &lt_to_layer_0 13 O  &lt_to_layer_0 11 P
 &mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LS(LC(LEFT_ALT)) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LS(LC(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 10 MINUS
-&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 28 N          &mkp_exit_AML MB4    &to_layer_0 LG(W)    &mkp_exit_AML MB5    &mt_to_0 RIGHT_SHIFT SLASH
+&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 28 N          &to_layer_0 M    &to_layer_0 COMMA    &to_layer_0 DOT    &mt_to_0 RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 10 LANG1                                                                             &lt_to_layer_0 6 ESC
             >;
         };
@@ -862,7 +862,7 @@
             bindings = <
 &lt_to_layer_0_ipad 12 Q    &lt_to_layer_0_ipad 13 W  &lt_to_layer_0_ipad 15 E  &lt_to_layer_0_ipad 17 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 17 U  &lt_to_layer_0_ipad 15 I  &lt_to_layer_0_ipad 13 O  &lt_to_layer_0_ipad 12 P
 &mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 10 MINUS
-&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 28 N  &mkp_exit_AML_ipad MB4    &to_layer_0_ipad LG(W)    &mkp_exit_AML_ipad MB5    &mt_to_0_ipad RIGHT_SHIFT SLASH
+&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 28 N  &to_layer_0_ipad M    &to_layer_0_ipad COMMA    &to_layer_0_ipad DOT    &mt_to_0_ipad RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 9 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 10 LANG1                                                                                         &lt_to_layer_0_ipad 6 ESC
             >;
         };
@@ -871,7 +871,7 @@
             bindings = <
 &lt_to_layer_0_iphone 12 Q    &lt_to_layer_0_iphone 13 W  &lt_to_layer_0_iphone 15 E  &lt_to_layer_0_iphone 16 R  &to_layer_0_iphone T                                                                               &to_layer_0_iphone Y        &lt_to_layer_0_iphone 16 U  &lt_to_layer_0_iphone 15 I  &lt_to_layer_0_iphone 13 O  &lt_to_layer_0_iphone 12 P
 &mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                          &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H        &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 10 MINUS
-&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE                       &lt_to_layer_0_iphone 28 N  &mkp_exit_AML_iphone MB4    &to_layer_0_iphone LG(W)    &mkp_exit_AML_iphone MB5    &mt_to_0_iphone RIGHT_SHIFT SLASH
+&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE                       &lt_to_layer_0_iphone 28 N  &to_layer_0_iphone M    &to_layer_0_iphone COMMA    &to_layer_0_iphone DOT    &mt_to_0_iphone RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 8 SPACE      &lt_to_layer_0_iphone 7 ENTER       &rlang 10 LANG1                                                                                                 &lt_to_layer_0_iphone 6 ESC
             >;
         };
@@ -889,7 +889,7 @@
             bindings = <
 &lt 11 MINUS                &kp KP_NUMBER_7       &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
 &kp SLASH                   &kp KP_NUMBER_4       &kp KP_NUMBER_5        &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &mkp MB4  &kp LG(W)  &mkp MB5  &trans
 &kp ENTER                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB          &trans        &kp BACKSPACE      &trans  &trans                                 &trans
             >;
         };
@@ -1018,7 +1018,7 @@
             bindings = <
 &lt_to_layer_0_win 24 Q      &lt_to_layer_0_win 25 W  &lt_to_layer_0_win 26 E  &lt_to_layer_0_win 27 R  &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 27 U  &lt_to_layer_0_win 26 I  &lt_to_layer_0_win 25 O  &lt_to_layer_0_win 24 P
 &mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 23 0
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 20 0           &kp BACKSPACE                &lt_to_layer_0_win 28 N  &mkp_exit_AML_win MB4    &kp LC(W)                &mkp_exit_AML_win MB5    &mt_to_0_win RIGHT_SHIFT SLASH
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 20 0           &kp BACKSPACE                &lt_to_layer_0_win 28 N  &to_layer_0_win M    &to_layer_0_win COMMA                &to_layer_0_win DOT    &mt_to_0_win RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 22 SPACE      &lt_to_layer_0_win 21 ENTER  &rlang_win 23 LANG1                                                                                 &lt_to_layer_0_win 20 ESC
             >;
         };
@@ -1036,7 +1036,7 @@
             bindings = <
 &lt 24 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
 &kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT        &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
+&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &mkp MB4  &kp LC(W)  &mkp MB5  &trans
 &kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                 &trans
             >;
         };
