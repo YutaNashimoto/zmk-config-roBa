@@ -283,7 +283,7 @@
         };
 
         AquaVoice {
-            bindings = <&kp LS(LC(LEFT_ALT))>;
+            bindings = <&kp LC(LS(LA(A)))>;
             key-positions = <4 39>;
         };
     };
@@ -847,7 +847,7 @@
         default_layer {
             bindings = <
 &lt 11 Q            &lt 13 W          &lt 14 E      &lt 16 R  &kp T                                                            &kp Y                   &lt 16 U  &lt 14 I   &lt 13 O  &lt 11 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LS(LC(LEFT_ALT)) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LS(LC(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 10 MINUS
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LA(A))) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LA(A))) H  &kp J     &kp K      &kp L     &lt 10 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                        &lt 6 ESCAPE
             >;
@@ -880,7 +880,7 @@
         MOUSE {
             bindings = <
 &lt_to_layer_0 11 Q    &lt_to_layer_0 13 W  &lt_to_layer_0 14 E  &lt_to_layer_0 16 R  &to_layer_0 T                                                                         &kp Y                        &lt_to_layer_0 16 U  &lt_to_layer_0 14 I  &lt_to_layer_0 13 O  &lt_to_layer_0 11 P
-&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LS(LC(LEFT_ALT)) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LS(LC(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 10 MINUS
+&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LC(LS(LA(A))) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LC(LS(LA(A))) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 10 MINUS
 &mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 28 N          &to_layer_0 M    &to_layer_0 COMMA    &to_layer_0 DOT    &mt_to_0 RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 10 LANG1                                                                             &lt_to_layer_0 6 ESC
             >;
@@ -924,7 +924,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE   &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &kp LC(LS(LEFT_ALT))                              &trans  &kp LG(LS(T))    &kp LS(LA(D))  &kp LG(N)    &trans
+&kp ESCAPE   &kp LC(LG(LA(LEFT_ARROW)))  &kp UP_ARROW       &kp LA(LG(LC(RIGHT_ARROW)))  &kp LC(LS(LA(A)))                              &trans  &kp LG(LS(T))    &kp LS(LA(D))  &kp LG(N)    &trans
 &kp HOME     &kp LEFT_ARROW              &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END               &kp LG(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LG(T)      &kp LC(TAB)  &trans
 &kp PAGE_UP  &kp LA(LC(LEFT_ARROW))      &kp LA(LC(ENTER))  &kp LA(LC(RIGHT_ARROW))      &kp PAGE_DOWN         &kp LG(N0)      &kp DELETE  &trans  &mkp MB4         &kp LG(W)      &mkp MB5     &trans
 &trans       &trans                      &trans             &trans                       &trans                &trans          &trans      &trans                                               &trans
