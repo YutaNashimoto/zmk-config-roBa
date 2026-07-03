@@ -30,7 +30,8 @@
     // iPad(層1)では低速CPI(snipe)を使い、カーソルを滑らかに減速。
     // 速度は roBa_R.conf の CONFIG_PMW3610_SNIPE_CPI で調整（200刻み）。
 
-    snipe-layers = <1 4>;
+    // snipe-layers = <1 4>;  // 廃止: iPadをzip_xy_scaler化(overlay)したため。
+    // 精密モード(層28)が最上位になるとsnipe判定が外れる問題を回避。CPIは全OS zip_xy_scalerに統一。
 
     browsing_arrows {
         layers = <13>;

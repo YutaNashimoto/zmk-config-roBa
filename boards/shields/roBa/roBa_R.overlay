@@ -41,9 +41,10 @@
         //  スクロール反転はしない（iPadはMac同様の向き）。
         ipad {
             layers = <1>;
-            // カーソル減速は snipe-layers + CONFIG_PMW3610_SNIPE_CPI で実施
-            // （センサーCPIを下げる＝滑らか）。ここでは層出し分けのみ。
-            input-processors = <&zip_temp_layer 4 5000>;
+            // iPadもソフト倍率化: base1000×3/5=実効600（精密モード(層28)がsnipe判定を
+            // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi の 1/2 が
+            // さらに掛かり実効300になる。
+            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 3 5>;
         };
 
         iphone {
