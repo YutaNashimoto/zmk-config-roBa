@@ -1,0 +1,4 @@
+description: Like &to but preserves the CHANGE_CPI (precision) layer state
+compatible: "zmk,behavior-to-base-keep-cpi"
+
+include: one_param.yaml

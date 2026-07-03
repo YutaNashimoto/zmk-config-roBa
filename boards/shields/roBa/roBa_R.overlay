@@ -26,6 +26,16 @@
         // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
         input-processors = <&zip_temp_layer 3 5000>;
 
+        // 精密モード(層28 CHANGE_CPI)がONの間だけカーソルを半分に。
+        // process-next で後続のOS別子ノード＋baseへ連鎖するので、temp_layer遷移や
+        // Winのスクロール反転はそのまま維持される（zip_xy_scalerはX/Yのみ）。
+        // 定義順・名前順ともに先頭なので最初に評価される。
+        change_cpi {
+            layers = <28>;
+            process-next;
+            input-processors = <&zip_xy_scaler 1 2>;
+        };
+
         // iPad（デフォルト層1がアクティブ）の上書き:
         //  移動で層2(MOUSE_ipad)を一時有効化。マウス層からの戻り先もiPad(1)。
         //  スクロール反転はしない（iPadはMac同様の向き）。

@@ -286,6 +286,14 @@
             bindings = <&kp LC(LS(LEFT_ALT))>;
             key-positions = <4 39>;
         };
+
+        // m + , (位置30/31) で精密モード(層28 CHANGE_CPI)をトグル。
+        // スコープ=各OSのデフォルト層＋マウス層＋28(OFF用)。
+        change_cpi_toggle {
+            bindings = <&tog 28>;
+            key-positions = <30 31>;
+            layers = <0 1 2 3 4 5 18 19 28>;
+        };
     };
 
     macros {
@@ -328,28 +336,28 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to_base_keep_cpi 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
         to_layer_0_win: to_layer_0_win {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 18 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to_base_keep_cpi 18 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_WIN";
         };
 
         to_layer_0_ipad: to_layer_0_ipad {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to_base_keep_cpi 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_IPAD";
         };
 
         to_layer_0_iphone: to_layer_0_iphone {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to_base_keep_cpi 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_IPHONE";
         };
 
@@ -666,6 +674,11 @@
             #binding-cells = <1>;
         };
 
+        to_base_keep_cpi: to_base_keep_cpi {
+            compatible = "zmk,behavior-to-base-keep-cpi";
+            #binding-cells = <1>;
+        };
+
         rlang: rlang {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -848,7 +861,7 @@
             bindings = <
 &lt 11 Q            &lt 13 W          &lt 14 E      &lt 16 R  &kp T                                                            &kp Y                   &lt 16 U  &lt 14 I   &lt 13 O  &lt 11 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LEFT_ALT)) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                        &lt 6 ESCAPE
             >;
 
@@ -859,7 +872,7 @@
             bindings = <
 &lt 12 Q            &lt 13 W          &lt 15 E      &lt 17 R  &kp T                                                    &kp Y            &lt 17 U  &lt 15 I   &lt 13 O  &lt 12 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 9 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
             >;
 
@@ -870,7 +883,7 @@
             bindings = <
 &lt 12 Q            &lt 13 W          &lt 15 E      &lt 16 R  &kp T                                                    &kp Y            &lt 16 U  &lt 15 I   &lt 13 O  &lt 12 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 28 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
             >;
 
@@ -1033,7 +1046,7 @@
             bindings = <
 &lt 24 Q            &lt 25 W      &lt 26 E      &lt 27 R  &kp T                                                  &kp Y                &lt 27 U  &lt 26 I   &lt 25 O  &lt 24 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 23 0
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 20 0      &kp BACKSPACE  &lt 28 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 20 0      &kp BACKSPACE  &lt 29 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 22 SPACE           &lt 21 ENTER   &rlang_win 23 LANG1                                 &lt 20 ESCAPE
             >;
 
@@ -1128,6 +1141,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
+            >;
+        };
+
+        CHANGE_CPI {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
