@@ -183,6 +183,47 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
+    // ===== FUNCTION(層10)ジェスチャー: 左右振りでウィンドウを外部ディスプレイへ移動 =====
+    // FUNCTIONは右LANGホールド中でCmd(RGUI)が保持されるため、&nomodで保持Cmdを外してから
+    // 完全なショートカットを送る。Mac: Rectangle「次/前のディスプレイへ移動」=Ctrl+Opt+Cmd+→/←。
+    function_display_move {
+        layers = <10>;
+        bindings =
+            <&nomod LC(LA(LG(RIGHT)))>,
+            // 右: 次(右)のディスプレイへ移動
+            <&nomod LC(LA(LG(LEFT)))>,
+            // 左: 前(左)のディスプレイへ移動
+            <&none>,
+            // 上: なし
+            <&none>;
+
+        // 下: なし
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
+    // Windows版(層23 FUNCTION_win): 「次/前のモニターへ移動」=Win+Shift+→/←。
+    // FUNCTION_winはCtrl(RCTRL)保持なので&nomodで外す。
+    function_display_move_win {
+        layers = <23>;
+        bindings =
+            <&nomod LG(LS(RIGHT))>,
+            // 右: 次(右)のモニターへ移動
+            <&nomod LG(LS(LEFT))>,
+            // 左: 前(左)のモニターへ移動
+            <&none>,
+            // 上: なし
+            <&none>;
+
+        // 下: なし
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
