@@ -196,9 +196,9 @@
             // 左: 前(左)のディスプレイへ移動
             <&nomod LC(LA(ENTER))>,
             // 上: 全画面表示（Magnet 最大化 = Ctrl+Opt+Enter）
-            <&none>;
+            <&nomod LC(LA(LG(C)))>;
 
-        // 下: なし
+        // 下: 画面中央へ移動（Ctrl+Opt+Cmd+C、サイズは維持）
 
         tick = <150>;
         wait-ms = <5>;
