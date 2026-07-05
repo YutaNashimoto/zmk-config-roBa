@@ -26,7 +26,7 @@
         // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
         input-processors = <&zip_temp_layer 3 5000>;
 
-        // 精密モード(層28 CHANGE_CPI)がONの間だけカーソルを半分に。
+        // 精密モード(層28 CHANGE_CPI)がONの間だけカーソルを×2/5(0.4倍)に。
         // process-next で後続のOS別子ノード＋baseへ連鎖するので、temp_layer遷移や
         // Winのスクロール反転はそのまま維持される（zip_xy_scalerはX/Yのみ）。
         // 定義順・名前順ともに先頭なので最初に評価される。
@@ -41,15 +41,15 @@
         //  スクロール反転はしない（iPadはMac同様の向き）。
         ipad {
             layers = <1>;
-            // iPadもソフト倍率化: base1000×3/5=実効600（精密モード(層28)がsnipe判定を
-            // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi の 1/2 が
-            // さらに掛かり実効300になる。
+            // iPadもソフト倍率化: base1000×2/5=実効400（精密モード(層28)がsnipe判定を
+            // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi(×2/5)が
+            // さらに掛かり実効160になる。
             input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 2 5>;
         };
 
         iphone {
             layers = <2>;
-            // iPhoneは通常CPI(1000)を0.8倍=実質800に（緩やかなので滑らか）
+            // iPhoneは通常CPI(1000)を0.4倍=実効400に（緩やかなので滑らか）
             input-processors =
                 <&zip_temp_layer 5 5000>,
                 <&zip_xy_scaler 2 5>;
