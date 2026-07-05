@@ -44,7 +44,7 @@
             // iPadもソフト倍率化: base1000×3/5=実効600（精密モード(層28)がsnipe判定を
             // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi の 1/2 が
             // さらに掛かり実効300になる。
-            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 3 5>;
+            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 2 5>;
         };
 
         iphone {
