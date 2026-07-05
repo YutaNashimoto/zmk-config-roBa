@@ -44,7 +44,7 @@
             // iPadもソフト倍率化: base1000×3/5=実効600（精密モード(層28)がsnipe判定を
             // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi の 1/2 が
             // さらに掛かり実効300になる。
-            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 1 2>;
+            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 3 5>;
         };
 
         iphone {
@@ -52,7 +52,7 @@
             // iPhoneは通常CPI(1000)を0.8倍=実質800に（緩やかなので滑らか）
             input-processors =
                 <&zip_temp_layer 5 5000>,
-                <&zip_xy_scaler 1 2>;
+                <&zip_xy_scaler 3 5>;
         };
 
         // Windows（デフォルト層11がアクティブ）の上書き:
@@ -67,7 +67,7 @@
             layers = <18>;
             input-processors =
                 <&zip_temp_layer 19 5000>,
-                <&zip_xy_scaler 1 2>,
+                <&zip_xy_scaler 3 5>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
