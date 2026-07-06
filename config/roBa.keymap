@@ -1094,7 +1094,7 @@
 
         FUNCTION {
             bindings = <
-&trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
+&trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &nomod LG(N)
 &trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
 &trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_mac       &nomod LG(W)       &mb_fwd_mac         &trans
 &trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
