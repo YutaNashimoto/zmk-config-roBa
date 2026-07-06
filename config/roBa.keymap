@@ -35,11 +35,11 @@
         layers = <13>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(W)>;
 
         // 下: タブを閉じる
@@ -53,11 +53,11 @@
         layers = <14>;
         bindings =
             <&kp LC(LEFT)>,
-            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(RIGHT)>,
-            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(UP)>,
-            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: Mission Control,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LA(D))>;
 
         // 下: Shift+Opt+D
@@ -71,11 +71,11 @@
         layers = <16>;
         bindings =
             <&kp LC(LA(RIGHT))>,
-            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(LEFT))>,
-            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LA(ENTER))>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LS(LG(T))>;
 
         // 下: Shift+Cmd+T
@@ -92,11 +92,11 @@
         layers = <25>;
         bindings =
             <&kp LC(TAB)>,
-            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(TAB))>,
-            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 前のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(T)>,
-            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 新規タブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(W)>;
 
         // 下: タブを閉じる
@@ -110,11 +110,11 @@
         layers = <26>;
         bindings =
             <&kp LG(LC(LEFT))>,
-            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LC(RIGHT))>,
-            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左(逆): 仮想デスクトップ右,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(TAB)>,
-            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: タスクビュー,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&dup_tab_win>;
 
         // 下: タブを複製（Alt+D → Alt+Enter）
@@ -128,11 +128,11 @@
         layers = <27>;
         bindings =
             <&kp LG(RIGHT)>,
-            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(LEFT)>,
-            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 左半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LG(UP)>,
-            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 最大化,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&kp LC(LS(T))>;
 
         // 下: 閉じたタブ復活
@@ -148,11 +148,11 @@
         layers = <15>;
         bindings =
             <&split_left>,
-            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&split_right>,
-            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 左: 🌐+→（Split View 右）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&app_switcher>,
-            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            // 上: 🌐+↑（Appスイッチャー）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&ipad_home>;
 
         // 下: 🌐+H（ホーム）
@@ -169,11 +169,11 @@
         layers = <17>;
         bindings =
             <&ipad_tile_right>,
-            // 右: 右にタイル（🌐+Ctrl+→）,,,,,,
+            // 右: 右にタイル（🌐+Ctrl+→）,,,,,,,
             <&ipad_tile_left>,
-            // 左: 左にタイル（🌐+Ctrl+←）,,,,,,
+            // 左: 左にタイル（🌐+Ctrl+←）,,,,,,,
             <&ipad_fullscreen>,
-            // 上: フルスクリーン（🌐+F）,,,,,,
+            // 上: フルスクリーン（🌐+F）,,,,,,,
             <&ipad_show_windows>;
 
         // 下: 全ウィンドウ表示（🌐+↓）
@@ -186,15 +186,16 @@
     // ===== FUNCTION(層10)ジェスチャー: 左右振りでウィンドウを外部ディスプレイへ移動 =====
     // FUNCTIONは右LANGホールド中でCmd(RGUI)が保持されるため、&nomodで保持Cmdを外してから
     // 完全なショートカットを送る。Mac: Rectangle「次/前のディスプレイへ移動」=Ctrl+Opt+Cmd+→/←。
+
     function_display_move {
         layers = <10>;
         bindings =
             <&nomod LC(LA(LG(RIGHT)))>,
-            // 右: 次(右)のディスプレイへ移動
+            // 右: 次(右)のディスプレイへ移動,
             <&nomod LC(LA(LG(LEFT)))>,
-            // 左: 前(左)のディスプレイへ移動
+            // 左: 前(左)のディスプレイへ移動,
             <&nomod LC(LA(ENTER))>,
-            // 上: 全画面表示（Magnet 最大化 = Ctrl+Opt+Enter）
+            // 上: 全画面表示（Magnet 最大化 = Ctrl+Opt+Enter）,
             <&nomod LC(LA(LG(C)))>;
 
         // 下: 画面中央へ移動（Ctrl+Opt+Cmd+C、サイズは維持）
@@ -206,15 +207,16 @@
 
     // Windows版(層23 FUNCTION_win): 「次/前のモニターへ移動」=Win+Shift+→/←。
     // FUNCTION_winはCtrl(RCTRL)保持なので&nomodで外す。
+
     function_display_move_win {
         layers = <23>;
         bindings =
             <&nomod LG(LS(RIGHT))>,
-            // 右: 次(右)のモニターへ移動
+            // 右: 次(右)のモニターへ移動,
             <&nomod LG(LS(LEFT))>,
-            // 左: 前(左)のモニターへ移動
+            // 左: 前(左)のモニターへ移動,
             <&nomod LG(UP)>,
-            // 上: 全画面表示（Win+↑ 最大化）
+            // 上: 全画面表示（Win+↑ 最大化）,
             <&none>;
 
         // 下: なし
@@ -230,36 +232,36 @@
         compatible = "zmk,combos";
 
         num_toggle {
-            bindings = <&tog 7>;
+            bindings = <&tog 11>;
             key-positions = <1 0>;
-            layers = <0 1 2 3 4 5 7>;
+            layers = <0 1 2 4 5 6 11>;
         };
 
         num_toggle_win {
-            bindings = <&tog 21>;
+            bindings = <&tog 12>;
             key-positions = <0 1>;
-            layers = <18 19 21>;
+            layers = <3 7 12>;
         };
 
         // U+I 同時押しで、現在のOSに応じたスクロール層をトグル。
         // スコープに「デフォルト層＋マウス層＋トグル先(OFF用)」を含める。
 
         scroll_toggle_mac {
-            bindings = <&tog 11>;
+            bindings = <&tog 18>;
             key-positions = <6 7>;
-            layers = <0 3 11>;
+            layers = <0 4 18>;
         };
 
         scroll_toggle_ipad {
-            bindings = <&tog 12>;
+            bindings = <&tog 19>;
             key-positions = <6 7>;
-            layers = <1 2 4 5 12>;
+            layers = <1 2 5 6 19>;
         };
 
         scroll_toggle_win {
-            bindings = <&tog 24>;
+            bindings = <&tog 20>;
             key-positions = <6 7>;
-            layers = <18 19 24>;
+            layers = <3 7 20>;
         };
 
         capslock {
@@ -331,9 +333,9 @@
         // スコープ=各OSのデフォルト層＋マウス層＋28(OFF用)。
 
         change_cpi_toggle {
-            bindings = <&tog 28>;
+            bindings = <&tog 8>;
             key-positions = <30 31>;
-            layers = <0 1 2 3 4 5 18 19 28>;
+            layers = <0 1 2 4 5 6 3 7 8>;
         };
     };
 
@@ -666,7 +668,7 @@
         bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4 &to 18>;
+            bindings = <&bt BT_SEL 4 &to 3>;
             label = "BT_WIN";
         };
 
@@ -680,7 +682,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 3>;
+                <&sl 4>;
 
             label = "MKP_EXIT_AML";
         };
@@ -695,7 +697,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 17>;
+                <&sl 27>;
 
             label = "MKP_EXIT_AML_WIN";
         };
@@ -710,7 +712,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 4>;
+                <&sl 5>;
 
             label = "MKP_EXIT_AML_IPAD";
         };
@@ -725,7 +727,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 5>;
+                <&sl 6>;
 
             label = "MKP_EXIT_AML_IPHONE";
         };
@@ -932,10 +934,10 @@
 
         default_layer {
             bindings = <
-&lt 11 Q            &lt 13 W          &lt 14 E      &lt 16 R  &kp T                                                            &kp Y                   &lt 16 U  &lt 14 I   &lt 13 O  &lt 11 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LEFT_ALT)) G  &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                        &lt 6 ESCAPE
+&lt 18 Q            &lt 21 W          &lt 23 E      &lt 26 R  &kp T                                                             &kp Y                   &lt 26 U  &lt 23 I   &lt 21 O  &lt 18 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LEFT_ALT)) G  &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 16 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 13 SPACE      &lt 11 ENTER            &rlang 10 LANG1                                        &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -943,10 +945,10 @@
 
         default_layer_ipad {
             bindings = <
-&lt 12 Q            &lt 13 W          &lt 15 E      &lt 17 R  &kp T                                                    &kp Y            &lt 17 U  &lt 15 I   &lt 13 O  &lt 12 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 9 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
+&lt 19 Q            &lt 21 W          &lt 24 E      &lt 27 R  &kp T                                                     &kp Y            &lt 27 U  &lt 24 I   &lt 21 O  &lt 19 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 14 SPACE      &lt 11 ENTER            &rlang 10 LANG1                                 &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -954,39 +956,70 @@
 
         default_layer_iphone {
             bindings = <
-&lt 12 Q            &lt 13 W          &lt 15 E      &lt 16 R  &kp T                                                    &kp Y            &lt 16 U  &lt 15 I   &lt 13 O  &lt 12 P
-&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)        &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 10 MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 6 EQUAL      &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 8 SPACE      &lt 7 ENTER             &rlang 10 LANG1                                 &lt 6 ESCAPE
+&lt 19 Q            &lt 21 W          &lt 24 E      &lt 26 R  &kp T                                                     &kp Y            &lt 26 U  &lt 24 I   &lt 21 O  &lt 19 P
+&mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 10 LANG1                                 &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
+        default_layer_win {
+            bindings = <
+&lt 20 Q            &lt 22 W      &lt 25 E      &lt 28 R  &kp T                                                  &kp Y                &lt 28 U  &lt 25 I   &lt 22 O  &lt 20 P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 17 0
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 10 0      &kp BACKSPACE  &lt 29 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 23 LANG1                                 &lt 10 ESCAPE
+            >;
+
+            // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
+
+            sensor-bindings = <&encoder_msc_up_down>;
+        };
+
         MOUSE {
             bindings = <
-&lt_to_layer_0 11 Q    &lt_to_layer_0 13 W  &lt_to_layer_0 14 E  &lt_to_layer_0 16 R  &to_layer_0 T                                                                         &kp Y                        &lt_to_layer_0 16 U  &lt_to_layer_0 14 I  &lt_to_layer_0 13 O  &lt_to_layer_0 11 P
-&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LC(LS(LEFT_ALT)) G  &kp LG(Q)                   &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LC(LS(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 10 MINUS
-&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 6 EQUAL      &kp BACKSPACE                &lt_to_layer_0 28 N          &to_layer_0 M        &to_layer_0 COMMA    &to_layer_0 DOT      &mt_to_0 RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 8 SPACE      &lt_to_layer_0 7 ENTER       &rlang 10 LANG1                                                                             &lt_to_layer_0 6 ESC
+&lt_to_layer_0 18 Q    &lt_to_layer_0 21 W  &lt_to_layer_0 23 E  &lt_to_layer_0 26 R  &to_layer_0 T                                                                          &kp Y                        &lt_to_layer_0 26 U  &lt_to_layer_0 23 I  &lt_to_layer_0 21 O  &lt_to_layer_0 18 P
+&mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LC(LS(LEFT_ALT)) G  &kp LG(Q)                    &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LC(LS(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 16 MINUS
+&mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 9 EQUAL       &kp BACKSPACE                &lt_to_layer_0 8 N           &to_layer_0 M        &to_layer_0 COMMA    &to_layer_0 DOT      &mt_to_0 RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 13 SPACE      &lt_to_layer_0 11 ENTER      &rlang 10 LANG1                                                                             &lt_to_layer_0 9 ESC
             >;
         };
 
         MOUSE_ipad {
             bindings = <
-&lt_to_layer_0_ipad 12 Q    &lt_to_layer_0_ipad 13 W  &lt_to_layer_0_ipad 15 E  &lt_to_layer_0_ipad 17 R  &to_layer_0_ipad T                                                                           &to_layer_0_ipad Y        &lt_to_layer_0_ipad 17 U  &lt_to_layer_0_ipad 15 I  &lt_to_layer_0_ipad 13 O  &lt_to_layer_0_ipad 12 P
-&mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                        &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H        &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 10 MINUS
-&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 6 EQUAL      &kp BACKSPACE                     &lt_to_layer_0_ipad 28 N  &to_layer_0_ipad M        &to_layer_0_ipad COMMA    &to_layer_0_ipad DOT      &mt_to_0_ipad RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 9 SPACE      &lt_to_layer_0_ipad 7 ENTER       &rlang 10 LANG1                                                                                         &lt_to_layer_0_ipad 6 ESC
+&lt_to_layer_0_ipad 19 Q    &lt_to_layer_0_ipad 21 W  &lt_to_layer_0_ipad 24 E  &lt_to_layer_0_ipad 27 R  &to_layer_0_ipad T                                                                            &to_layer_0_ipad Y       &lt_to_layer_0_ipad 27 U  &lt_to_layer_0_ipad 24 I  &lt_to_layer_0_ipad 21 O  &lt_to_layer_0_ipad 19 P
+&mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                         &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H       &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 16 MINUS
+&mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 9 EQUAL       &kp BACKSPACE                     &lt_to_layer_0_ipad 8 N  &to_layer_0_ipad M        &to_layer_0_ipad COMMA    &to_layer_0_ipad DOT      &mt_to_0_ipad RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 14 SPACE      &lt_to_layer_0_ipad 11 ENTER      &rlang 10 LANG1                                                                                        &lt_to_layer_0_ipad 9 ESC
             >;
         };
 
         MOUSE_iphone {
             bindings = <
-&lt_to_layer_0_iphone 12 Q    &lt_to_layer_0_iphone 13 W  &lt_to_layer_0_iphone 15 E  &lt_to_layer_0_iphone 16 R  &to_layer_0_iphone T                                                                               &to_layer_0_iphone Y        &lt_to_layer_0_iphone 16 U  &lt_to_layer_0_iphone 15 I  &lt_to_layer_0_iphone 13 O  &lt_to_layer_0_iphone 12 P
-&mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                          &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H        &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 10 MINUS
-&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 6 EQUAL      &kp BACKSPACE                       &lt_to_layer_0_iphone 28 N  &to_layer_0_iphone M        &to_layer_0_iphone COMMA    &to_layer_0_iphone DOT      &mt_to_0_iphone RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 8 SPACE      &lt_to_layer_0_iphone 7 ENTER       &rlang 10 LANG1                                                                                                 &lt_to_layer_0_iphone 6 ESC
+&lt_to_layer_0_iphone 19 Q    &lt_to_layer_0_iphone 21 W  &lt_to_layer_0_iphone 24 E  &lt_to_layer_0_iphone 26 R  &to_layer_0_iphone T                                                                                &to_layer_0_iphone Y       &lt_to_layer_0_iphone 26 U  &lt_to_layer_0_iphone 24 I  &lt_to_layer_0_iphone 21 O  &lt_to_layer_0_iphone 19 P
+&mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                           &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H       &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 16 MINUS
+&mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 9 EQUAL       &kp BACKSPACE                       &lt_to_layer_0_iphone 8 N  &to_layer_0_iphone M        &to_layer_0_iphone COMMA    &to_layer_0_iphone DOT      &mt_to_0_iphone RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 13 SPACE      &lt_to_layer_0_iphone 11 ENTER      &rlang 10 LANG1                                                                                                &lt_to_layer_0_iphone 9 ESC
+            >;
+        };
+
+        MOUSE_win {
+            bindings = <
+&lt_to_layer_0_win 20 Q      &lt_to_layer_0_win 22 W  &lt_to_layer_0_win 25 E  &lt_to_layer_0_win 28 R  &to_layer_0_win T                                                                       &to_layer_0_win Y       &lt_to_layer_0_win 28 U  &lt_to_layer_0_win 25 I  &lt_to_layer_0_win 22 O  &lt_to_layer_0_win 20 P
+&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H       &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 17 0
+&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 10 0           &kp BACKSPACE                &lt_to_layer_0_win 8 N  &to_layer_0_win M        &to_layer_0_win COMMA    &to_layer_0_win DOT      &mt_to_0_win RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 12 ENTER  &rlang_win 23 LANG1                                                                                &lt_to_layer_0_win 10 ESC
+            >;
+        };
+
+        CHANGE_CPI {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -999,12 +1032,30 @@
             >;
         };
 
+        SYMBOLS_win {
+            bindings = <
+&trans         &kp LS(N6)       &kp LS(SQT)  &kp LS(N8)  &kp LS(N9)                      &trans         &kp LS(RBKT)  &kp LS(BSLH)  &trans        &trans
+&kp LS(EQUAL)  &kp DOLLAR       &kp PERCENT  &kp EQUAL   &trans      &trans      &trans  &kp SQT        &kp LS(N8)    &kp LS(N9)    &kp INT1      &kp LS(EQUAL)
+&kp LS(LBKT)   &kp EXCLAMATION  &kp LBKT     &kp HASH    &trans      &trans      &trans  &kp SEMICOLON  &kp RBKT      &kp BSLH      &kp LS(INT3)  &trans
+&trans         &trans           &trans       &trans      &trans      &trans      &trans  &trans                                                   &trans
+            >;
+        };
+
         NUM {
             bindings = <
-&lt 11 MINUS       &kp N7                &kp N8                 &kp N9   &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
+&lt 18 MINUS       &kp N7                &kp N8                 &kp N9   &kp PLUS                                 &trans         &trans  &trans  &trans  &trans
 &kp SLASH          &kp N4                &kp N5                 &kp N6   &kp ASTERISK  &trans             &trans  &kp COLON      &trans  &trans  &trans  &trans
 &mt LEFT_SHIFT N0  &kp N1                &kp N2                 &kp N3   &kp PERIOD    &kp EQUAL          &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
 &kp ENTER          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TAB  &trans        &kp BACKSPACE      &trans  &trans                                 &trans
+            >;
+        };
+
+        NUM_win {
+            bindings = <
+&lt 20 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
+&kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT        &trans  &trans  &trans  &trans
+&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
+&kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                 &trans
             >;
         };
 
@@ -1019,9 +1070,6 @@
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
-        // iPad用ARROW。Mac版ARROW(8)ベース。ナビ/ブラウザ系は流用、
-        // ウィンドウ操作はiPadOS(🌐+Ctrl+矢印/🌐+F)へ。iPad非対応機能は透過。
-
         ARROW_ipad {
             bindings = <
 &kp ESCAPE   &trans           &kp UP_ARROW      &trans            &trans                                     &trans  &kp LG(LS(T))    &trans     &kp LG(N)    &trans
@@ -1033,6 +1081,17 @@
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
+        ARROW_win {
+            bindings = <
+&kp ESCAPE   &kp LG(LS(LEFT))  &kp UP_ARROW    &kp LG(LS(RIGHT))  &trans                                     &trans  &kp LC(LS(T))    &dup_tab_win  &kp LC(N)    &trans
+&kp HOME     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END        &kp LC(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LC(T)     &kp LC(TAB)  &trans
+&kp PAGE_UP  &kp LG(LEFT)      &kp LG(UP)      &kp LG(RIGHT)      &kp PAGE_DOWN  &kp LC(N0)      &kp DELETE  &trans  &mkp MB4         &kp LC(W)     &mkp MB5     &trans
+&trans       &trans            &trans          &trans             &trans         &trans          &trans      &trans                                              &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMICOLON)>;
+        };
+
         FUNCTION {
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
@@ -1042,9 +1101,18 @@
             >;
         };
 
+        FUNCTION_win {
+            bindings = <
+&trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
+&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_win       &nomod LC(W)       &mb_fwd_win         &trans
+&trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
+            >;
+        };
+
         SCROLL {
             bindings = <
-&trans  &tog 7        &trans            &trans         &trans                                        &trans  &trans         &kp LG(LA(LC(F)))     &kp LG(LS(NUMBER_4))  &trans
+&trans  &tog 11       &trans            &trans         &trans                                        &trans  &trans         &kp LG(LA(LC(F)))     &kp LG(LS(NUMBER_4))  &trans
 &trans  &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &kp C_BRIGHTNESS_MAXIMUM      &trans  &trans  &kp LS(LC(V))  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_7))  &trans
 &trans  &trans        &trans            &trans         &trans  &kp C_BRI_MAX                 &trans  &trans  &trans         &kp LG(LS(NUMBER_6))  &kp LG(LS(NUMBER_5))  &trans
 &trans  &trans        &trans            &trans         &trans  &trans                        &trans  &trans                                                             &trans
@@ -1064,6 +1132,17 @@
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
+        SCROLL_win {
+            bindings = <
+&trans  &tog 12           &trans       &trans             &trans                             &trans  &trans     &trans               &kp LG(LS(S))  &trans
+&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp C_BRI_MAX      &trans  &trans  &kp LG(V)  &kp LG(PRINTSCREEN)  &trans         &trans
+&trans  &trans            &trans       &trans             &trans  &kp C_BRI_MAX      &trans  &trans  &trans     &trans               &trans         &trans
+&trans  &trans            &trans       &trans             &trans  &trans             &trans  &trans                                                 &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
+        };
+
         Browsing_Jesture {
             bindings = <
 &trans  &trans  &trans  &trans     &trans                          &trans  &trans     &trans  &trans  &trans
@@ -1073,6 +1152,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
+        };
+
+        Browsing_Jesture_win {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans                          &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(R)  &trans  &kp LC(N0)      &trans  &trans  &kp LC(R)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &kp LC(N0)      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans          &trans  &trans                             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMICOLON)>;
         };
 
         Desktop_Jesture {
@@ -1097,106 +1187,6 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        Window_Jesture {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 11  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
-            >;
-        };
-
-        Window_Jesture_ipad {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 12  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
-            >;
-        };
-
-        default_layer_win {
-            bindings = <
-&lt 24 Q            &lt 25 W      &lt 26 E      &lt 27 R  &kp T                                                  &kp Y                &lt 27 U  &lt 26 I   &lt 25 O  &lt 24 P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 23 0
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 20 0      &kp BACKSPACE  &lt 29 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 22 SPACE           &lt 21 ENTER   &rlang_win 23 LANG1                                 &lt 20 ESCAPE
-            >;
-
-            // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
-
-            sensor-bindings = <&encoder_msc_up_down>;
-        };
-
-        MOUSE_win {
-            bindings = <
-&lt_to_layer_0_win 24 Q      &lt_to_layer_0_win 25 W  &lt_to_layer_0_win 26 E  &lt_to_layer_0_win 27 R  &to_layer_0_win T                                                                       &to_layer_0_win Y        &lt_to_layer_0_win 27 U  &lt_to_layer_0_win 26 I  &lt_to_layer_0_win 25 O  &lt_to_layer_0_win 24 P
-&mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H        &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 23 0
-&mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 20 0           &kp BACKSPACE                &lt_to_layer_0_win 28 N  &to_layer_0_win M        &to_layer_0_win COMMA    &to_layer_0_win DOT      &mt_to_0_win RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 22 SPACE      &lt_to_layer_0_win 21 ENTER  &rlang_win 23 LANG1                                                                                 &lt_to_layer_0_win 20 ESC
-            >;
-        };
-
-        SYMBOLS_win {
-            bindings = <
-&trans         &kp LS(N6)       &kp LS(SQT)  &kp LS(N8)  &kp LS(N9)                      &trans         &kp LS(RBKT)  &kp LS(BSLH)  &trans        &trans
-&kp LS(EQUAL)  &kp DOLLAR       &kp PERCENT  &kp EQUAL   &trans      &trans      &trans  &kp SQT        &kp LS(N8)    &kp LS(N9)    &kp INT1      &kp LS(EQUAL)
-&kp LS(LBKT)   &kp EXCLAMATION  &kp LBKT     &kp HASH    &trans      &trans      &trans  &kp SEMICOLON  &kp RBKT      &kp BSLH      &kp LS(INT3)  &trans
-&trans         &trans           &trans       &trans      &trans      &trans      &trans  &trans                                                   &trans
-            >;
-        };
-
-        NUM_win {
-            bindings = <
-&lt 24 MINUS       &kp N7      &kp N8      &kp N9   &kp LS(SEMI)                              &trans         &trans  &trans  &trans  &trans
-&kp SLASH          &kp N4      &kp N5      &kp N6   &kp LS(SQT)   &kp LC(LA(N0))      &trans  &kp SQT        &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT N0  &kp N1      &kp N2      &kp N3   &kp PERIOD    &kp LS(MINUS)       &trans  &kp SEMICOLON  &trans  &trans  &trans  &trans
-&kp ENTER          &kp LS(N8)  &kp LS(N9)  &kp TAB  &trans        &kp BACKSPACE       &trans  &trans                                 &trans
-            >;
-        };
-
-        ARROW_win {
-            bindings = <
-&kp ESCAPE   &kp LG(LS(LEFT))  &kp UP_ARROW    &kp LG(LS(RIGHT))  &trans                                     &trans  &kp LC(LS(T))    &dup_tab_win  &kp LC(N)    &trans
-&kp HOME     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END        &kp LC(N0)      &trans      &trans  &kp LS(LC(TAB))  &kp LC(T)     &kp LC(TAB)  &trans
-&kp PAGE_UP  &kp LG(LEFT)      &kp LG(UP)      &kp LG(RIGHT)      &kp PAGE_DOWN  &kp LC(N0)      &kp DELETE  &trans  &mkp MB4         &kp LC(W)     &mkp MB5     &trans
-&trans       &trans            &trans          &trans             &trans         &trans          &trans      &trans                                              &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMICOLON)>;
-        };
-
-        FUNCTION_win {
-            bindings = <
-&trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
-&trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_win       &nomod LC(W)       &mb_fwd_win         &trans
-&trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
-            >;
-        };
-
-        SCROLL_win {
-            bindings = <
-&trans  &tog 21           &trans       &trans             &trans                             &trans  &trans     &trans               &kp LG(LS(S))  &trans
-&trans  &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &trans  &kp C_BRI_MAX      &trans  &trans  &kp LG(V)  &kp LG(PRINTSCREEN)  &trans         &trans
-&trans  &trans            &trans       &trans             &trans  &kp C_BRI_MAX      &trans  &trans  &trans     &trans               &trans         &trans
-&trans  &trans            &trans       &trans             &trans  &trans             &trans  &trans                                                 &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
-        };
-
-        Browsing_Jesture_win {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans                          &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(R)  &trans  &kp LC(N0)      &trans  &trans  &kp LC(R)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &kp LC(N0)      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans          &trans  &trans                             &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMICOLON)>;
-        };
-
         Desktop_Jesture_win {
             bindings = <
 &trans  &trans            &trans       &trans             &trans                          &trans  &trans  &trans  &trans  &trans
@@ -1208,27 +1198,36 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        Window_Jesture_win {
+        Window_Jesture {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 24  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 18  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
-        CHANGE_CPI {
+        Window_Jesture_ipad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 19  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
+            >;
+        };
+
+        Window_Jesture_win {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &tog 20  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
         BLUETOOTH {
             bindings = <
-&to 0   &to 1   &to 2   &trans  &to 18                      &bt_mac  &bt_ipad  &bt_iphone  &bt BT_SEL 3  &bt_win
+&to 0   &to 1   &to 2   &trans  &to 3                       &bt_mac  &bt_ipad  &bt_iphone  &bt BT_SEL 3  &bt_win
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &trans    &trans      &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &trans    &trans      &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &bt BT_CLR_ALL
