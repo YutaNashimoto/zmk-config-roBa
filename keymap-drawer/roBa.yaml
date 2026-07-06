@@ -162,7 +162,7 @@ layers:
   - '&to_layer_0 B'
   - {t: '&to_layer_0 EQUAL', h: SYMBOLS}
   - BACKSPACE
-  - {t: '&to_layer_0 N', h: BLUETOOTH}
+  - {t: '&to_layer_0 N', h: CHANGE_CPI}
   - '&to_layer_0 M'
   - '&to_layer_0 COMMA'
   - '&to_layer_0 DOT'
@@ -206,7 +206,7 @@ layers:
   - '&to_layer_0_ipad B'
   - {t: '&to_layer_0_ipad EQUAL', h: SYMBOLS}
   - BACKSPACE
-  - {t: '&to_layer_0_ipad N', h: BLUETOOTH}
+  - {t: '&to_layer_0_ipad N', h: CHANGE_CPI}
   - '&to_layer_0_ipad M'
   - '&to_layer_0_ipad COMMA'
   - '&to_layer_0_ipad DOT'
@@ -250,7 +250,7 @@ layers:
   - '&to_layer_0_iphone B'
   - {t: '&to_layer_0_iphone EQUAL', h: SYMBOLS}
   - BACKSPACE
-  - {t: '&to_layer_0_iphone N', h: BLUETOOTH}
+  - {t: '&to_layer_0_iphone N', h: CHANGE_CPI}
   - '&to_layer_0_iphone M'
   - '&to_layer_0_iphone COMMA'
   - '&to_layer_0_iphone DOT'
@@ -866,7 +866,7 @@ layers:
   - '&to_layer_0_win B'
   - {t: '&to_layer_0_win LS(MINUS)', h: SYMBOLS_win, s: '&to_layer_0_win LS(SEMICOLON)'}
   - BACKSPACE
-  - {t: '&to_layer_0_win N', h: BLUETOOTH}
+  - {t: '&to_layer_0_win N', h: CHANGE_CPI}
   - '&to_layer_0_win M'
   - '&to_layer_0_win COMMA'
   - '&to_layer_0_win DOT'
@@ -1232,6 +1232,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  CHANGE_CPI:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   BLUETOOTH:
   - {t: default, h: toggle}
   - {t: default_layer_ipad, h: toggle}
@@ -1318,3 +1362,6 @@ combos:
   k: '&up_arrow'
 - p: [4, 39]
   k: Ctl+Sft+LEFT ALT
+- p: [30, 31]
+  k: {t: CHANGE_CPI, h: toggle}
+  l: [default, default_layer_ipad, default_layer_iphone, MOUSE, MOUSE_ipad, MOUSE_iphone, default_layer_win, MOUSE_win, CHANGE_CPI]
