@@ -42,7 +42,7 @@ layers:
   - {t: LANG2, h: LCMD}
   - {t: SPACE, h: ARROW}
   - {t: ENTER, h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: ESCAPE, h: SYMBOLS}
   default_layer_ipad:
   - {t: Q, h: SCROLL_ipad}
@@ -86,7 +86,7 @@ layers:
   - {t: LANG2, h: LCMD}
   - {t: SPACE, h: ARROW_ipad}
   - {t: ENTER, h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: ESCAPE, h: SYMBOLS}
   default_layer_iphone:
   - {t: Q, h: SCROLL_ipad}
@@ -130,8 +130,52 @@ layers:
   - {t: LANG2, h: LCMD}
   - {t: SPACE, h: ARROW}
   - {t: ENTER, h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: ESCAPE, h: SYMBOLS}
+  default_layer_win:
+  - {t: Q, h: SCROLL_win}
+  - {t: W, h: Browsing_Jesture_win}
+  - {t: E, h: Desktop_Jesture_win}
+  - {t: R, h: Window_Jesture_win}
+  - T
+  - Y
+  - {t: U, h: Window_Jesture_win}
+  - {t: I, h: Desktop_Jesture_win}
+  - {t: O, h: Browsing_Jesture_win}
+  - {t: P, h: SCROLL_win}
+  - {t: A, h: LEFT CONTROL}
+  - S
+  - D
+  - F
+  - G
+  - Alt+F4
+  - {t: Sft+7, s: Sft+2}
+  - H
+  - J
+  - K
+  - L
+  - {t: '-', h: FUNCTION_win, s: Sft+INT1}
+  - {t: Z, h: LEFT SHIFT}
+  - X
+  - C
+  - V
+  - B
+  - {t: Sft+-, h: SYMBOLS_win, s: Sft+;}
+  - BACKSPACE
+  - {t: N, h: BLUETOOTH}
+  - M
+  - ','
+  - .
+  - {t: /, h: RIGHT SHIFT}
+  - LEFT SHIFT
+  - LEFT GUI
+  - LEFT ALT
+  - TAB
+  - {t: LANG2, h: LCTRL}
+  - {t: SPACE, h: ARROW_win}
+  - {t: ENTER, h: NUM_win}
+  - {t: LANG1, h: '&ctrl_mo 17'}
+  - {t: ESCAPE, h: SYMBOLS_win}
   MOUSE:
   - {t: '&to_layer_0 Q', h: SCROLL}
   - {t: '&to_layer_0 W', h: Browsing_Jesture}
@@ -174,7 +218,7 @@ layers:
   - {t: '&to_layer_0 LANG2', h: LCMD}
   - {t: '&to_layer_0 SPACE', h: ARROW}
   - {t: '&to_layer_0 ENTER', h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: '&to_layer_0 ESC', h: SYMBOLS}
   MOUSE_ipad:
   - {t: '&to_layer_0_ipad Q', h: SCROLL_ipad}
@@ -218,7 +262,7 @@ layers:
   - {t: '&to_layer_0_ipad LANG2', h: LCMD}
   - {t: '&to_layer_0_ipad SPACE', h: ARROW_ipad}
   - {t: '&to_layer_0_ipad ENTER', h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: '&to_layer_0_ipad ESC', h: SYMBOLS}
   MOUSE_iphone:
   - {t: '&to_layer_0_iphone Q', h: SCROLL_ipad}
@@ -262,8 +306,96 @@ layers:
   - {t: '&to_layer_0_iphone LANG2', h: LCMD}
   - {t: '&to_layer_0_iphone SPACE', h: ARROW}
   - {t: '&to_layer_0_iphone ENTER', h: NUM}
-  - {t: LANG1, h: '&cmd_mo 10'}
+  - {t: LANG1, h: '&cmd_mo 16'}
   - {t: '&to_layer_0_iphone ESC', h: SYMBOLS}
+  MOUSE_win:
+  - {t: '&to_layer_0_win Q', h: SCROLL_win}
+  - {t: '&to_layer_0_win W', h: Browsing_Jesture_win}
+  - {t: '&to_layer_0_win E', h: Desktop_Jesture_win}
+  - {t: '&to_layer_0_win R', h: Window_Jesture_win}
+  - '&to_layer_0_win T'
+  - '&to_layer_0_win Y'
+  - {t: '&to_layer_0_win U', h: Window_Jesture_win}
+  - {t: '&to_layer_0_win I', h: Desktop_Jesture_win}
+  - {t: '&to_layer_0_win O', h: Browsing_Jesture_win}
+  - {t: '&to_layer_0_win P', h: SCROLL_win}
+  - {t: '&to_layer_0_win A', h: LEFT CONTROL}
+  - '&to_layer_0_win S'
+  - '&to_layer_0_win D'
+  - '&to_layer_0_win F'
+  - '&to_layer_0_win G'
+  - {t: ▽, type: trans}
+  - {t: '&to_layer_0_win LS(N7)', s: '&to_layer_0_win LS(N2)'}
+  - '&to_layer_0_win H'
+  - '&mkp_exit_AML_win MB1'
+  - '&mkp_exit_AML_win MB3'
+  - '&mkp_exit_AML_win MB2'
+  - {t: '&to_layer_0_win MINUS', h: FUNCTION_win, s: '&to_layer_0_win LS(INT1)'}
+  - {t: '&to_layer_0_win Z', h: LEFT SHIFT}
+  - '&to_layer_0_win X'
+  - '&to_layer_0_win C'
+  - '&to_layer_0_win V'
+  - '&to_layer_0_win B'
+  - {t: '&to_layer_0_win LS(MINUS)', h: SYMBOLS_win, s: '&to_layer_0_win LS(SEMICOLON)'}
+  - BACKSPACE
+  - {t: '&to_layer_0_win N', h: CHANGE_CPI}
+  - '&to_layer_0_win M'
+  - '&to_layer_0_win COMMA'
+  - '&to_layer_0_win DOT'
+  - {t: '&to_layer_0_win SLASH', h: RIGHT SHIFT}
+  - LEFT SHIFT
+  - LEFT GUI
+  - LEFT ALT
+  - '&to_layer_0_win TAB'
+  - {t: '&to_layer_0_win LANG2', h: LCTRL}
+  - {t: '&to_layer_0_win SPACE', h: ARROW_win}
+  - {t: '&to_layer_0_win ENTER', h: NUM_win}
+  - {t: LANG1, h: '&ctrl_mo 17'}
+  - {t: '&to_layer_0_win ESC', h: SYMBOLS_win}
+  CHANGE_CPI:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SYMBOLS:
   - {t: ▽, type: trans}
   - '&'
@@ -298,6 +430,50 @@ layers:
   - '['
   - ']'
   - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYMBOLS_win:
+  - {t: ▽, type: trans}
+  - Sft+6
+  - Sft+'
+  - Sft+8
+  - Sft+9
+  - {t: ▽, type: trans}
+  - Sft+]
+  - Sft+\
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+=
+  - $
+  - '%'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''''
+  - Sft+8
+  - Sft+9
+  - INT1
+  - Sft+=
+  - Sft+[
+  - '!'
+  - '['
+  - '#'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ;
+  - ']'
+  - \
+  - Sft+INT3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -352,6 +528,50 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  NUM_win:
+  - {t: '-', h: SCROLL_win}
+  - '7'
+  - '8'
+  - '9'
+  - Sft+;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - Sft+'
+  - Ctl+Alt+0
+  - {t: ▽, type: trans}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '0', h: LEFT SHIFT}
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - Sft+-
+  - {t: ▽, type: trans}
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - Sft+8
+  - Sft+9
+  - TAB
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   ARROW:
   - ESCAPE
   - Ctl+Gui+Alt+LEFT ARROW
@@ -389,7 +609,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+Ctl+C
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -440,6 +660,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  ARROW_win:
+  - ESCAPE
+  - Gui+Sft+LEFT
+  - UP ARROW
+  - Gui+Sft+RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+T
+  - '&dup_tab_win'
+  - Ctl+N
+  - {t: ▽, type: trans}
+  - HOME
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - END
+  - Ctl+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+Ctl+TAB
+  - Ctl+T
+  - Ctl+TAB
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - Gui+LEFT
+  - Gui+UP
+  - Gui+RIGHT
+  - PAGE DOWN
+  - Ctl+0
+  - DELETE
+  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - Ctl+W
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   FUNCTION:
   - {t: ▽, type: trans}
   - '&nomod F7'
@@ -474,6 +738,50 @@ layers:
   - '&mb_back_mac'
   - '&nomod LG(W)'
   - '&mb_fwd_mac'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FUNCTION_win:
+  - {t: ▽, type: trans}
+  - '&nomod F7'
+  - '&nomod F8'
+  - '&nomod F9'
+  - '&nomod F10'
+  - '&nomod F'
+  - '&nomod RS(COMMA)'
+  - '&nomod UP_ARROW'
+  - '&nomod RS(PERIOD)'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&nomod F4'
+  - '&nomod F5'
+  - '&nomod F6'
+  - '&nomod F11'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&nomod SPACE'
+  - '&nomod LEFT_ARROW'
+  - '&nomod DOWN_ARROW'
+  - '&nomod RIGHT_ARROW'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '&nomod F1'
+  - '&nomod F2'
+  - '&nomod F3'
+  - '&nomod F12'
+  - '&nomod F13'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mb_back_win'
+  - '&nomod LC(W)'
+  - '&mb_fwd_win'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -572,6 +880,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  SCROLL_win:
+  - {type: held}
+  - {t: NUM_win, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Sft+S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Ctl+LEFT
+  - Gui+TAB
+  - Gui+Ctl+RIGHT
+  - {t: ▽, type: trans}
+  - BRI MAX
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+V
+  - Gui+PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRI MAX
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Browsing_Jesture:
   - {t: ▽, type: trans}
   - {type: held}
@@ -601,6 +953,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Browsing_Jesture_win:
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+R
+  - {t: ▽, type: trans}
+  - Ctl+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+R
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -675,6 +1071,50 @@ layers:
   - '&split_left'
   - '&app_switcher'
   - '&split_right'
+  - {t: ▽, type: trans}
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Desktop_Jesture_win:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Ctl+LEFT
+  - Gui+TAB
+  - Gui+Ctl+RIGHT
   - {t: ▽, type: trans}
   - MUTE
   - {t: ▽, type: trans}
@@ -792,402 +1232,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  default_layer_win:
-  - {t: Q, h: SCROLL_win}
-  - {t: W, h: Browsing_Jesture_win}
-  - {t: E, h: Desktop_Jesture_win}
-  - {t: R, h: Window_Jesture_win}
-  - T
-  - Y
-  - {t: U, h: Window_Jesture_win}
-  - {t: I, h: Desktop_Jesture_win}
-  - {t: O, h: Browsing_Jesture_win}
-  - {t: P, h: SCROLL_win}
-  - {t: A, h: LEFT CONTROL}
-  - S
-  - D
-  - F
-  - G
-  - Alt+F4
-  - {t: Sft+7, s: Sft+2}
-  - H
-  - J
-  - K
-  - L
-  - {t: '-', h: FUNCTION_win, s: Sft+INT1}
-  - {t: Z, h: LEFT SHIFT}
-  - X
-  - C
-  - V
-  - B
-  - {t: Sft+-, h: SYMBOLS_win, s: Sft+;}
-  - BACKSPACE
-  - {t: N, h: BLUETOOTH}
-  - M
-  - ','
-  - .
-  - {t: /, h: RIGHT SHIFT}
-  - LEFT SHIFT
-  - LEFT GUI
-  - LEFT ALT
-  - TAB
-  - {t: LANG2, h: LCTRL}
-  - {t: SPACE, h: ARROW_win}
-  - {t: ENTER, h: NUM_win}
-  - {t: LANG1, h: '&ctrl_mo 23'}
-  - {t: ESCAPE, h: SYMBOLS_win}
-  MOUSE_win:
-  - {t: '&to_layer_0_win Q', h: SCROLL_win}
-  - {t: '&to_layer_0_win W', h: Browsing_Jesture_win}
-  - {t: '&to_layer_0_win E', h: Desktop_Jesture_win}
-  - {t: '&to_layer_0_win R', h: Window_Jesture_win}
-  - '&to_layer_0_win T'
-  - '&to_layer_0_win Y'
-  - {t: '&to_layer_0_win U', h: Window_Jesture_win}
-  - {t: '&to_layer_0_win I', h: Desktop_Jesture_win}
-  - {t: '&to_layer_0_win O', h: Browsing_Jesture_win}
-  - {t: '&to_layer_0_win P', h: SCROLL_win}
-  - {t: '&to_layer_0_win A', h: LEFT CONTROL}
-  - '&to_layer_0_win S'
-  - '&to_layer_0_win D'
-  - '&to_layer_0_win F'
-  - '&to_layer_0_win G'
-  - {t: ▽, type: trans}
-  - {t: '&to_layer_0_win LS(N7)', s: '&to_layer_0_win LS(N2)'}
-  - '&to_layer_0_win H'
-  - '&mkp_exit_AML_win MB1'
-  - '&mkp_exit_AML_win MB3'
-  - '&mkp_exit_AML_win MB2'
-  - {t: '&to_layer_0_win MINUS', h: FUNCTION_win, s: '&to_layer_0_win LS(INT1)'}
-  - {t: '&to_layer_0_win Z', h: LEFT SHIFT}
-  - '&to_layer_0_win X'
-  - '&to_layer_0_win C'
-  - '&to_layer_0_win V'
-  - '&to_layer_0_win B'
-  - {t: '&to_layer_0_win LS(MINUS)', h: SYMBOLS_win, s: '&to_layer_0_win LS(SEMICOLON)'}
-  - BACKSPACE
-  - {t: '&to_layer_0_win N', h: CHANGE_CPI}
-  - '&to_layer_0_win M'
-  - '&to_layer_0_win COMMA'
-  - '&to_layer_0_win DOT'
-  - {t: '&to_layer_0_win SLASH', h: RIGHT SHIFT}
-  - LEFT SHIFT
-  - LEFT GUI
-  - LEFT ALT
-  - '&to_layer_0_win TAB'
-  - {t: '&to_layer_0_win LANG2', h: LCTRL}
-  - {t: '&to_layer_0_win SPACE', h: ARROW_win}
-  - {t: '&to_layer_0_win ENTER', h: NUM_win}
-  - {t: LANG1, h: '&ctrl_mo 23'}
-  - {t: '&to_layer_0_win ESC', h: SYMBOLS_win}
-  SYMBOLS_win:
-  - {t: ▽, type: trans}
-  - Sft+6
-  - Sft+'
-  - Sft+8
-  - Sft+9
-  - {t: ▽, type: trans}
-  - Sft+]
-  - Sft+\
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+=
-  - $
-  - '%'
-  - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''''
-  - Sft+8
-  - Sft+9
-  - INT1
-  - Sft+=
-  - Sft+[
-  - '!'
-  - '['
-  - '#'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - ;
-  - ']'
-  - \
-  - Sft+INT3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  NUM_win:
-  - {t: '-', h: SCROLL_win}
-  - '7'
-  - '8'
-  - '9'
-  - Sft+;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
-  - '4'
-  - '5'
-  - '6'
-  - Sft+'
-  - Ctl+Alt+0
-  - {t: ▽, type: trans}
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '0', h: LEFT SHIFT}
-  - '1'
-  - '2'
-  - '3'
-  - .
-  - Sft+-
-  - {t: ▽, type: trans}
-  - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ENTER
-  - Sft+8
-  - Sft+9
-  - TAB
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  ARROW_win:
-  - ESCAPE
-  - Gui+Sft+LEFT
-  - UP ARROW
-  - Gui+Sft+RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Sft+T
-  - '&dup_tab_win'
-  - Ctl+N
-  - {t: ▽, type: trans}
-  - HOME
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - END
-  - Ctl+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+Ctl+TAB
-  - Ctl+T
-  - Ctl+TAB
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - Gui+LEFT
-  - Gui+UP
-  - Gui+RIGHT
-  - PAGE DOWN
-  - Ctl+0
-  - DELETE
-  - {t: ▽, type: trans}
-  - '&mkp MB4'
-  - Ctl+W
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  FUNCTION_win:
-  - {t: ▽, type: trans}
-  - '&nomod F7'
-  - '&nomod F8'
-  - '&nomod F9'
-  - '&nomod F10'
-  - '&nomod F'
-  - '&nomod RS(COMMA)'
-  - '&nomod UP_ARROW'
-  - '&nomod RS(PERIOD)'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&nomod F4'
-  - '&nomod F5'
-  - '&nomod F6'
-  - '&nomod F11'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&nomod SPACE'
-  - '&nomod LEFT_ARROW'
-  - '&nomod DOWN_ARROW'
-  - '&nomod RIGHT_ARROW'
-  - {type: held}
-  - {t: ▽, type: trans}
-  - '&nomod F1'
-  - '&nomod F2'
-  - '&nomod F3'
-  - '&nomod F12'
-  - '&nomod F13'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mb_back_win'
-  - '&nomod LC(W)'
-  - '&mb_fwd_win'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SCROLL_win:
-  - {type: held}
-  - {t: NUM_win, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Sft+S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Ctl+LEFT
-  - Gui+TAB
-  - Gui+Ctl+RIGHT
-  - {t: ▽, type: trans}
-  - BRI MAX
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+V
-  - Gui+PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BRI MAX
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Browsing_Jesture_win:
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+R
-  - {t: ▽, type: trans}
-  - Ctl+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+R
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Desktop_Jesture_win:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Ctl+LEFT
-  - Gui+TAB
-  - Gui+Ctl+RIGHT
-  - {t: ▽, type: trans}
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Window_Jesture_win:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1219,50 +1263,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  CHANGE_CPI:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
