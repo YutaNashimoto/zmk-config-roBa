@@ -18,21 +18,21 @@
 
 &trackball {
     // 自動マウス層はOS別に出し分けるため、ドライバ側は無効化(-1)。
-    // roBa_R.overlay の zip_temp_layer で Mac=層1 / Windows=層12 を切替える。
+    // roBa_R.overlay の zip_temp_layer で Mac=層4 / Windows=層7 を切替える。
 
     automouse-layer = <(-1)>;
 
-    // 6=Mac SCROLL, 17=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
+    // 18=Mac SCROLL, 20=SCROLL_win（Windows用）。Windowsでもスクロールを有効化。
     // ※editorでレイヤーを増減すると番号がズレるので、SCROLL_winの位置を要確認。
 
-    scroll-layers = <11 12 24>;
+    scroll-layers = <18 19 20>;
 
     // iPad(層1)等のCPIは overlay の zip_xy_scaler で調整（旧実装は低速CPI=snipe機能だった）。
     // snipe-layers = <1 4>;  // 廃止: iPadをzip_xy_scaler化(overlay)したため。
     // 精密モード(層28)が最上位になるとsnipe判定が外れる問題を回避。CPIは全OS zip_xy_scalerに統一。
 
     browsing_arrows {
-        layers = <13>;
+        layers = <21>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -50,7 +50,7 @@
     };
 
     desktop_arrows {
-        layers = <14>;
+        layers = <23>;
         bindings =
             <&kp LC(LEFT)>,
             // 右(逆): デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -68,7 +68,7 @@
     };
 
     window_arrows {
-        layers = <16>;
+        layers = <26>;
         bindings =
             <&kp LC(LA(RIGHT))>,
             // 右: 右半分,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -85,11 +85,11 @@
         tap-ms = <5>;
     };
 
-    // ===== Windows用ジェスチャー（層18/19/20）=====
-    // Mac版(7/8/9)と別ブロックにして、Windows相当のショートカットを割当てる。
+    // ===== Windows用ジェスチャー（層22/25/28）=====
+    // Mac版(21/23/26)と別ブロックにして、Windows相当のショートカットを割当てる。
 
     browsing_arrows_win {
-        layers = <25>;
+        layers = <22>;
         bindings =
             <&kp LC(TAB)>,
             // 右: 次のタブ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -107,7 +107,7 @@
     };
 
     desktop_arrows_win {
-        layers = <26>;
+        layers = <25>;
         bindings =
             <&kp LG(LC(LEFT))>,
             // 右(逆): 仮想デスクトップ左,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -125,7 +125,7 @@
     };
 
     window_arrows_win {
-        layers = <27>;
+        layers = <28>;
         bindings =
             <&kp LG(RIGHT)>,
             // 右: 右半分スナップ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -142,10 +142,10 @@
         tap-ms = <5>;
     };
 
-    // ===== iPad用ジェスチャー（層12 = Desktop_Jesture_ipad）=====
+    // ===== iPad用ジェスチャー（層24 = Desktop_Jesture_ipad）=====
 
     desktop_arrows_ipad {
-        layers = <15>;
+        layers = <24>;
         bindings =
             <&split_left>,
             // 右: 🌐+←（Split View 左）,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -162,11 +162,11 @@
         tap-ms = <5>;
     };
 
-    // ===== iPad用ウィンドウジェスチャー（層16 = Window_Jesture_ipad）=====
+    // ===== iPad用ウィンドウジェスチャー（層27 = Window_Jesture_ipad）=====
     // 設定はMac版(window_arrows)と同一。
 
     window_arrows_ipad {
-        layers = <17>;
+        layers = <27>;
         bindings =
             <&ipad_tile_right>,
             // 右: 右にタイル（🌐+Ctrl+→）,,,,,,,
@@ -183,12 +183,12 @@
         tap-ms = <5>;
     };
 
-    // ===== FUNCTION(層10)ジェスチャー: 左右振りでウィンドウを外部ディスプレイへ移動 =====
+    // ===== FUNCTION(層16)ジェスチャー: 左右振りでウィンドウを外部ディスプレイへ移動 =====
     // FUNCTIONは右LANGホールド中でCmd(RGUI)が保持されるため、&nomodで保持Cmdを外してから
     // 完全なショートカットを送る。Mac: Rectangle「次/前のディスプレイへ移動」=Ctrl+Opt+Cmd+→/←。
 
     function_display_move {
-        layers = <10>;
+        layers = <16>;
         bindings =
             <&nomod LC(LA(LG(RIGHT)))>,
             // 右: 次(右)のディスプレイへ移動,
@@ -205,11 +205,11 @@
         tap-ms = <5>;
     };
 
-    // Windows版(層23 FUNCTION_win): 「次/前のモニターへ移動」=Win+Shift+→/←。
+    // Windows版(層17 FUNCTION_win): 「次/前のモニターへ移動」=Win+Shift+→/←。
     // FUNCTION_winはCtrl(RCTRL)保持なので&nomodで外す。
 
     function_display_move_win {
-        layers = <23>;
+        layers = <17>;
         bindings =
             <&nomod LG(LS(RIGHT))>,
             // 右: 次(右)のモニターへ移動,
@@ -386,7 +386,7 @@
         to_layer_0_win: to_layer_0_win {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to_base_keep_cpi 18 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to_base_keep_cpi 3 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0_WIN";
         };
 

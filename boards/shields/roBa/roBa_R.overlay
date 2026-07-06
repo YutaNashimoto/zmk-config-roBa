@@ -23,50 +23,50 @@
         device = <&trackball>;
 
         // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
-        // ベース（Mac等、Win以外）: 移動で層1(MOUSE)を一時有効化。
-        input-processors = <&zip_temp_layer 3 5000>;
+        // ベース（Mac等、Win以外）: 移動で層4(MOUSE)を一時有効化。
+        input-processors = <&zip_temp_layer 4 5000>;
 
-        // 精密モード(層28 CHANGE_CPI)がONの間だけカーソルを×2/5(0.4倍)に。
+        // 精密モード(層8 CHANGE_CPI)がONの間だけカーソルを×2/5(0.4倍)に。
         // process-next で後続のOS別子ノード＋baseへ連鎖するので、temp_layer遷移や
         // Winのスクロール反転はそのまま維持される（zip_xy_scalerはX/Yのみ）。
         // 定義順・名前順ともに先頭なので最初に評価される。
         change_cpi {
-            layers = <28>;
+            layers = <8>;
             process-next;
             input-processors = <&zip_xy_scaler 2 5>;
         };
 
         // iPad（デフォルト層1がアクティブ）の上書き:
-        //  移動で層2(MOUSE_ipad)を一時有効化。マウス層からの戻り先もiPad(1)。
+        //  移動で層5(MOUSE_ipad)を一時有効化。マウス層からの戻り先もiPad(1)。
         //  スクロール反転はしない（iPadはMac同様の向き）。
         ipad {
             layers = <1>;
-            // iPadもソフト倍率化: base1000×2/5=実効400（精密モード(層28)がsnipe判定を
+            // iPadもソフト倍率化: base1000×2/5=実効400（精密モード(層8)がsnipe判定を
             // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi(×2/5)が
             // さらに掛かり実効160になる。
-            input-processors = <&zip_temp_layer 4 5000>, <&zip_xy_scaler 2 5>;
+            input-processors = <&zip_temp_layer 5 5000>, <&zip_xy_scaler 2 5>;
         };
 
         iphone {
             layers = <2>;
             // iPhoneは通常CPI(1000)を0.4倍=実効400に（緩やかなので滑らか）
             input-processors =
-                <&zip_temp_layer 5 5000>,
+                <&zip_temp_layer 6 5000>,
                 <&zip_xy_scaler 2 5>;
         };
 
-        // Windows（デフォルト層11がアクティブ）の上書き:
-        //  - 移動で層12(MOUSE_win)を一時有効化（11より上なので隠れず、
-        //    マウス層からの戻り先もWindows(11)になる）
+        // Windows（デフォルト層3がアクティブ）の上書き:
+        //  - 移動で層7(MOUSE_win)を一時有効化（3より上なので隠れず、
+        //    マウス層からの戻り先もWindows(3)になる）
         //  - カーソルを0.6倍=実効600に（zip_xy_scaler 3 5）。物理CPIはグローバル
         //    (Mac共通1000)なので下げられず、ソフト倍率でWindowsだけ分離する。
         //    Windows側「ポインターの速度」は初期値10(等倍)に戻す前提。
         //  - スクロールを縦横とも反転（zip_scroll_transformはWHEEL/HWHEELのみ、
         //    カーソル移動は不変）
         win {
-            layers = <18>;
+            layers = <3>;
             input-processors =
-                <&zip_temp_layer 19 5000>,
+                <&zip_temp_layer 7 5000>,
                 <&zip_xy_scaler 3 5>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         };

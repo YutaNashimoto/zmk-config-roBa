@@ -10,8 +10,8 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 // 精密モード層(CHANGE_CPI)。&to による全レイヤークリアから保護する層番号。
-// レイヤー構成を変更したら必ずここも更新すること（現在: 28）。
-#define CHANGE_CPI_LAYER 28
+// レイヤー構成を変更したら必ずここも更新すること（現在: 8）。
+#define CHANGE_CPI_LAYER 8
 
 #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
