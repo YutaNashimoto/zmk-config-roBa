@@ -582,7 +582,7 @@ layers:
   - Gui+Sft+T
   - Sft+Alt+D
   - Gui+N
-  - {t: ▽, type: trans}
+  - Gui+N
   - HOME
   - LEFT ARROW
   - DOWN ARROW
@@ -714,7 +714,7 @@ layers:
   - '&nomod RS(COMMA)'
   - '&nomod UP_ARROW'
   - '&nomod RS(PERIOD)'
-  - {t: ▽, type: trans}
+  - '&nomod LG(N)'
   - {t: ▽, type: trans}
   - '&nomod F4'
   - '&nomod F5'
