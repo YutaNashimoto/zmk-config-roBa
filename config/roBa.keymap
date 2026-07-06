@@ -697,7 +697,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 27>;
+                <&sl 7>;
 
             label = "MKP_EXIT_AML_WIN";
         };
