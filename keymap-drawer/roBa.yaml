@@ -1327,13 +1327,13 @@ combos:
 - p: [0, 1]
   k: {t: NUM_win, h: toggle}
   l: [default_layer_win, MOUSE_win, NUM_win]
-- p: [6, 7]
+- p: [8, 9]
   k: {t: SCROLL, h: toggle}
   l: [default, MOUSE, SCROLL]
-- p: [6, 7]
+- p: [8, 9]
   k: {t: SCROLL_ipad, h: toggle}
   l: [default_layer_ipad, default_layer_iphone, MOUSE_ipad, MOUSE_iphone, SCROLL_ipad]
-- p: [6, 7]
+- p: [8, 9]
   k: {t: SCROLL_win, h: toggle}
   l: [default_layer_win, MOUSE_win, SCROLL_win]
 - p: [37, 38]

@@ -348,10 +348,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL">
-<text x="588" y="32" class="combo tap layer-activator">SCROLL</text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator">SCROLL</text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -666,10 +666,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_ipad">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -984,10 +984,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_ipad">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -1304,10 +1304,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_win">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -1694,10 +1694,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL">
-<text x="588" y="32" class="combo tap layer-activator">SCROLL</text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator">SCROLL</text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -2084,10 +2084,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_ipad">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -2474,10 +2474,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_ipad">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -2868,10 +2868,10 @@ path.combo {
 </a><text x="56" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_win">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -5955,10 +5955,10 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL">
-<text x="588" y="32" class="combo tap layer-activator">SCROLL</text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator">SCROLL</text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -6228,10 +6228,10 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_ipad">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 64%">SCROLL_ipad</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
@@ -6507,10 +6507,10 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="574" y="19" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="687" y="39" width="28" height="26" class="combo"/>
 <a href="#SCROLL_win">
-<text x="588" y="32" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
-</a><text x="588" y="43" class="combo hold">toggle</text>
+<text x="701" y="52" class="combo tap layer-activator"><tspan style="font-size: 70%">SCROLL_win</tspan></text>
+</a><text x="701" y="63" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="226" y="215" width="28" height="26" class="combo"/>
