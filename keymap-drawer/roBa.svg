@@ -442,6 +442,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-default_layer_ipad">
@@ -760,6 +764,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 678)" class="layer-default_layer_iphone">
@@ -1077,6 +1085,10 @@ path.combo {
 <a href="#CHANGE_CPI">
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -1397,6 +1409,10 @@ path.combo {
 <a href="#CHANGE_CPI">
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -1788,6 +1804,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1694)" class="layer-MOUSE_ipad">
@@ -2178,6 +2198,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2033)" class="layer-MOUSE_iphone">
@@ -2567,6 +2591,10 @@ path.combo {
 <a href="#CHANGE_CPI">
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -2962,6 +2990,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2711)" class="layer-CHANGE_CPI">
@@ -3227,6 +3259,10 @@ path.combo {
 <text x="588" y="144" class="combo tap layer-activator"><tspan style="font-size: 70%">CHANGE_CPI</tspan></text>
 </a><text x="588" y="155" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 3050)" class="layer-SYMBOLS">
@@ -3485,6 +3521,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -3746,6 +3786,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -4014,6 +4058,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -4284,6 +4332,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -4580,6 +4632,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 4744)" class="layer-ARROW_ipad">
@@ -4858,6 +4914,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -5145,6 +5205,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -5451,6 +5515,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 5760)" class="layer-FUNCTION_win">
@@ -5754,6 +5822,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 6099)" class="layer-SCROLL">
@@ -6045,6 +6117,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 6438)" class="layer-SCROLL_ipad">
@@ -6317,6 +6393,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -6597,6 +6677,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 7116)" class="layer-Browsing_Jesture">
@@ -6856,6 +6940,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 7455)" class="layer-Browsing_Jesture_win">
@@ -7114,6 +7202,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -7380,6 +7472,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 8132)" class="layer-Desktop_Jesture_ipad">
@@ -7639,6 +7735,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -7903,6 +8003,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 8810)" class="layer-Window_Jesture">
@@ -8163,6 +8267,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -8425,6 +8533,10 @@ path.combo {
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
 </g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 9488)" class="layer-Window_Jesture_win">
@@ -8685,6 +8797,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>
@@ -8957,6 +9073,10 @@ path.combo {
 <text x="293" y="145" class="combo tap">
 <tspan x="293" dy="-0.6em" style="font-size: 64%">Ctl+Sft+LE…</tspan><tspan x="293" dy="1.2em" style="font-size: 64%">ALT</tspan>
 </text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="42" y="151" width="28" height="26" class="combo"/>
+<text x="56" y="164" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_ls…</tspan></text>
 </g>
 </g>
 </g>

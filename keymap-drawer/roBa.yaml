@@ -1365,3 +1365,5 @@ combos:
 - p: [30, 31]
   k: {t: CHANGE_CPI, h: toggle}
   l: [default, default_layer_ipad, default_layer_iphone, MOUSE, MOUSE_ipad, MOUSE_iphone, default_layer_win, MOUSE_win, CHANGE_CPI]
+- p: [22, 23]
+  k: '&toggle_lshift'
