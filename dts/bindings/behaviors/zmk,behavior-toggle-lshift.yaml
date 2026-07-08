@@ -1,0 +1,4 @@
+description: Toggle Left-Shift held/released (like &tog, but for a modifier)
+compatible: "zmk,behavior-toggle-lshift"
+
+include: zero_param.yaml

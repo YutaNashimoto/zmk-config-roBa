@@ -337,6 +337,16 @@
             key-positions = <30 31>;
             layers = <0 1 2 4 5 6 3 7 8>;
         };
+
+        // Z + X 同時押しで LSHFT の押しっぱなし状態をトグル。エンコーダのmod-morph
+        // （encoder_msc_mac_shift_hscroll等）がShift押下中かを見て上下を反転させる
+        // 仕組みを利用し、物理的にShiftを押さえ続けなくても横スクロール相当に切替
+        // できる。全レイヤー共通（layers指定なし）。もう一度押すと解除。
+
+        toggle_shift_scroll {
+            bindings = <&toggle_lshift>;
+            key-positions = <22 23>;
+        };
     };
 
     macros {
@@ -752,6 +762,11 @@
         to_base_keep_cpi: to_base_keep_cpi {
             compatible = "zmk,behavior-to-base-keep-cpi";
             #binding-cells = <1>;
+        };
+
+        toggle_lshift: toggle_lshift {
+            compatible = "zmk,behavior-toggle-lshift";
+            #binding-cells = <0>;
         };
 
         rlang: rlang {
