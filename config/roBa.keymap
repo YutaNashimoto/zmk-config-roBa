@@ -977,7 +977,9 @@
 &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            // Mac/iPadと同じshift判定ロジックを共用。Z+Xで疑似Shift保持中は横スクロール相当に。
+
+            sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
         };
 
         default_layer_win {
@@ -988,9 +990,11 @@
 &kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 17 LANG1                                 &lt 10 ESCAPE
             >;
 
-            // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）
+            // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）。
+            // shift判定ロジックも追加（Z+Xで疑似Shift保持中は横スクロール相当）。
+            // ただしWindowsのShift+ホイール=横スクロールは純正機能ではなくアプリ依存。
 
-            sensor-bindings = <&encoder_msc_up_down>;
+            sensor-bindings = <&encoder_msc_win_shift_hscroll>;
         };
 
         MOUSE {
