@@ -269,14 +269,22 @@
             key-positions = <37 38>;
         };
 
+        // alfredは位置39(SPACE)を含み、SPACEは最頻出キーのため隣接する
+        // 位置41(右LANG1、親指クラスタ)を巻き込みやすい。&to_layer_0はBTに触れず
+        // レイヤー0(Mac)へ直接切替するため、誤爆するとBT切替なしにWindowsの
+        // Ctrl位置がCmd(Windowsホストからは押下でWinキーと認識される)に変わる。
+        // Bluetoothコンボと同じ理由でrequire-prior-idle-msを追加。
+
         alfred {
             bindings = <&to_layer_0 RG(SPACE)>;
             key-positions = <41 39>;
+            require-prior-idle-ms = <200>;
         };
 
         Escape {
             bindings = <&to_layer_0 ESC>;
             key-positions = <0 39>;
+            require-prior-idle-ms = <200>;
         };
 
         // BluetoothコンボはNキー(位置29)+Y/U/I/O/Pの組み合わせで、"know"/"funny"/
