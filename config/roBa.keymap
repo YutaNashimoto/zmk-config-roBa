@@ -279,29 +279,40 @@
             key-positions = <0 39>;
         };
 
+        // BluetoothコンボはNキー(位置29)+Y/U/I/O/Pの組み合わせで、"know"/"funny"/
+        // "into"/"menu"/"input"等の日常語で頻出する2文字と一致するため、layers指定
+        // なし(常時発火)と合わさってタイピング中に誤爆しやすい。require-prior-idle-ms
+        // で「直前の通常キー入力から200ms以内はコンボ扱いしない」を追加し、連続タイピング
+        // 中は個々のキーとして送出、意図的に一拍置いて押した時だけコンボとして発火させる。
+
         Bluetooth_1 {
             bindings = <&bt_mac>;
             key-positions = <5 29>;
+            require-prior-idle-ms = <200>;
         };
 
         Bluetooth_2 {
             bindings = <&bt_ipad>;
             key-positions = <6 29>;
+            require-prior-idle-ms = <200>;
         };
 
         Bluetooth_3 {
             bindings = <&bt_iphone>;
             key-positions = <7 29>;
+            require-prior-idle-ms = <200>;
         };
 
         Bluetooth_4 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <8 29>;
+            require-prior-idle-ms = <200>;
         };
 
         Bluetooth_5 {
             bindings = <&bt_win>;
             key-positions = <9 29>;
+            require-prior-idle-ms = <200>;
         };
 
         right_arrow {
