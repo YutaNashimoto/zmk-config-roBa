@@ -1,0 +1,8 @@
+# Copyright (c) 2026 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Zero out pointer movement (REL_X/REL_Y) for a window after each keypress
+
+compatible: "zmk,input-processor-typing-guard"
+
+include: ip_one_param.yaml

@@ -17,6 +17,17 @@
 };
 
 / {
+    // 直前のキー打鍵から指定ms以内はトラックボールのX/Y移動量を0に潰す。
+    // ベアリング増設+ガスケットマウントケース化でボールが極めて高感度になり、
+    // 連続タイピング中の打鍵振動がそのままカーソル移動として報告される問題への対策。
+    // STOPで破棄する方式はv0.3-branchのinput_listenerがprocess-nextなし子ノード
+    // (ipad/iphone/win)内でSTOPを握り潰す仕様のため使えず、value=0方式を採用
+    // （全チェーンで位置に依らず確実に効く）。スクロール(WHEEL/HWHEEL)は対象外。
+    zip_typing_guard: zip_typing_guard {
+        compatible = "zmk,input-processor-typing-guard";
+        #input-processor-cells = <1>;
+    };
+
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
@@ -24,7 +35,7 @@
 
         // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
         // ベース（Mac等、Win以外）: 移動で層4(MOUSE)を一時有効化。
-        input-processors = <&zip_temp_layer 4 5000>;
+        input-processors = <&zip_typing_guard 250>, <&zip_temp_layer 4 5000>;
 
         // 精密モード(層8 CHANGE_CPI)がONの間だけカーソルを×2/5(0.4倍)に。
         // process-next で後続のOS別子ノード＋baseへ連鎖するので、temp_layer遷移や
@@ -33,7 +44,7 @@
         change_cpi {
             layers = <8>;
             process-next;
-            input-processors = <&zip_xy_scaler 2 5>;
+            input-processors = <&zip_typing_guard 250>, <&zip_xy_scaler 2 5>;
         };
 
         // iPad（デフォルト層1がアクティブ）の上書き:
@@ -44,13 +55,14 @@
             // iPadもソフト倍率化: base1000×2/5=実効400（精密モード(層8)がsnipe判定を
             // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi(×2/5)が
             // さらに掛かり実効160になる。
-            input-processors = <&zip_temp_layer 5 5000>, <&zip_xy_scaler 2 5>;
+            input-processors = <&zip_typing_guard 250>, <&zip_temp_layer 5 5000>, <&zip_xy_scaler 2 5>;
         };
 
         iphone {
             layers = <2>;
             // iPhoneは通常CPI(1000)を0.4倍=実効400に（緩やかなので滑らか）
             input-processors =
+                <&zip_typing_guard 250>,
                 <&zip_temp_layer 6 5000>,
                 <&zip_xy_scaler 2 5>;
         };
@@ -66,6 +78,7 @@
         win {
             layers = <3>;
             input-processors =
+                <&zip_typing_guard 250>,
                 <&zip_temp_layer 7 5000>,
                 <&zip_xy_scaler 3 5>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;

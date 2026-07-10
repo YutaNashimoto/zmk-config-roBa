@@ -17,6 +17,8 @@ if(CONFIG_ZMK_OS_DETECTION OR CONFIG_ZMK_BLE_PROFILE_NAME OR CONFIG_ZMK_SPLIT_RO
     ${CMAKE_CURRENT_SOURCE_DIR}/src/behavior_to_base_keep_cpi.c)
   zephyr_library_sources_ifdef(CONFIG_ZMK_SPLIT_ROLE_CENTRAL
     ${CMAKE_CURRENT_SOURCE_DIR}/src/behavior_toggle_lshift.c)
+  zephyr_library_sources_ifdef(CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/input_processor_typing_guard.c)
 endif()
 
 if(CONFIG_ZMK_OS_DETECTION)
