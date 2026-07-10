@@ -269,21 +269,65 @@
             key-positions = <37 38>;
         };
 
-        // alfredは位置39(SPACE)を含み、SPACEは最頻出キーのため隣接する
-        // 位置41(右LANG1、親指クラスタ)を巻き込みやすい。&to_layer_0はBTに触れず
-        // レイヤー0(Mac)へ直接切替するため、誤爆するとBT切替なしにWindowsの
-        // Ctrl位置がCmd(Windowsホストからは押下でWinキーと認識される)に変わる。
-        // Bluetoothコンボと同じ理由でrequire-prior-idle-msを追加。
+        // alfred/Escapeはlayers指定なしだと全OSで発火し、&to_layer_0がBTに触れず
+        // レイヤー0(Mac)へ直接切替するため、Windows/iPad/iPhone使用中に発火すると
+        // Macレイヤーへ乗っ取られる（Ctrl位置がCmd化しWinキー誤送出・エンコーダ方向反転）。
+        // OS別に分離し、最上位アクティブレイヤー基準（combo.cで確認済み）でスコープする。
+        // 注意: 精密モード(層8)中はどのOS版も発火しない（scroll_toggle系と同じ制約）。
 
         alfred {
             bindings = <&to_layer_0 RG(SPACE)>;
             key-positions = <41 39>;
+            layers = <0 4>;
+            require-prior-idle-ms = <200>;
+        };
+
+        alfred_win {
+            bindings = <&to_layer_0_win LC(SPACE)>;
+            key-positions = <41 39>;
+            layers = <3 7>;
+            require-prior-idle-ms = <200>;
+        };
+
+        alfred_ipad {
+            bindings = <&to_layer_0_ipad RG(SPACE)>;
+            key-positions = <41 39>;
+            layers = <1 5>;
+            require-prior-idle-ms = <200>;
+        };
+
+        alfred_iphone {
+            bindings = <&to_layer_0_iphone RG(SPACE)>;
+            key-positions = <41 39>;
+            layers = <2 6>;
             require-prior-idle-ms = <200>;
         };
 
         Escape {
             bindings = <&to_layer_0 ESC>;
             key-positions = <0 39>;
+            layers = <0 4>;
+            require-prior-idle-ms = <200>;
+        };
+
+        Escape_win {
+            bindings = <&to_layer_0_win ESC>;
+            key-positions = <0 39>;
+            layers = <3 7>;
+            require-prior-idle-ms = <200>;
+        };
+
+        Escape_ipad {
+            bindings = <&to_layer_0_ipad ESC>;
+            key-positions = <0 39>;
+            layers = <1 5>;
+            require-prior-idle-ms = <200>;
+        };
+
+        Escape_iphone {
+            bindings = <&to_layer_0_iphone ESC>;
+            key-positions = <0 39>;
+            layers = <2 6>;
             require-prior-idle-ms = <200>;
         };
 
@@ -1143,7 +1187,7 @@
             bindings = <
 &trans  &nomod F7  &nomod F8  &nomod F9  &nomod F10                          &nomod F      &nomod RS(COMMA)   &nomod UP_ARROW    &nomod RS(PERIOD)   &trans
 &trans  &nomod F4  &nomod F5  &nomod F6  &nomod F11  &trans          &trans  &nomod SPACE  &nomod LEFT_ARROW  &nomod DOWN_ARROW  &nomod RIGHT_ARROW  &trans
-&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &trans  &trans        &mb_back_win       &nomod LC(W)       &mb_fwd_win         &trans
+&trans  &nomod F1  &nomod F2  &nomod F3  &nomod F12  &nomod F13      &nomod DELETE  &trans        &mb_back_win       &nomod LC(W)       &mb_fwd_win         &trans
 &trans  &trans     &trans     &trans     &trans      &trans          &trans  &trans                                                                  &trans
             >;
         };
