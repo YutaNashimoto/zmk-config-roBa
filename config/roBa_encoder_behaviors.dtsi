@@ -29,30 +29,27 @@
 
         // Window_Jesture系(ウィンドウ操作ジェスチャー層)でのエンコーダ固定横スクロール。
         // 「Shiftを押している時と同じ方向」になるよう、encoder_msc_mac_shift_hscroll
-        // がshift押下中に実際に出す方向(CW=DOWN/CCW=UP)を踏襲。ただしSCRL_UP/DOWNの
-        // 値そのものに横方向の意味は無く、macOS等の「Shift+ホイール=横スクロール」
-        // 変換に依存するため、config/roBa.keymap の macros で定義した
-        // encoder_hscroll_scrl_down/up（LSHFTを実際に一時押ししてからSCRL_*を送る）
-        // を使う（当初&msc単体を直接使っていたが、Shiftを押していないため単なる
-        // 縦スクロールになってしまうバグがあった）。
+        // がshift押下中に実際に出す方向(CW=DOWN/CCW=UP)をそのまま固定値で複製。
+        // 以前はencoder_msc_up_downという名前でdefault_layer_win用だったが、
+        // encoder_msc_win_shift_hscroll導入で未使用化したため転用。
 
         encoder_msc_mac_hscroll_fixed: encoder_msc_mac_hscroll_fixed {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_MAC_HSCROLL_FIXED";
             #sensor-binding-cells = <0>;
-            bindings = <&encoder_hscroll_scrl_down>, <&encoder_hscroll_scrl_up>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
         };
 
         // Windows版。encoder_msc_win_shift_hscrollがshift押下中に出す方向
-        // (CW=UP/CCW=DOWN、Mac版と逆)を踏襲。
+        // (CW=UP/CCW=DOWN、Mac版と逆)をそのまま固定値で複製。
 
         encoder_msc_win_hscroll_fixed: encoder_msc_win_hscroll_fixed {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_WIN_HSCROLL_FIXED";
             #sensor-binding-cells = <0>;
-            bindings = <&encoder_hscroll_scrl_up>, <&encoder_hscroll_scrl_down>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             tap-ms = <20>;
         };

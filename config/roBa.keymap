@@ -413,28 +413,6 @@
     };
 
     macros {
-        // Window_Jesture系の固定横スクロール用。SCRL_UP/DOWNの値そのものに
-        // 横方向の意味はなく、macOS/一部Windowsアプリの「Shift+ホイール=横スクロール」
-        // 変換に依存する。そのためLSHFTを実際に一時押ししてからSCRL_*を送る。
-
-        encoder_hscroll_scrl_down: encoder_hscroll_scrl_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &msc SCRL_DOWN>,
-                <&macro_release &kp LSHFT>;
-        };
-
-        encoder_hscroll_scrl_up: encoder_hscroll_scrl_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LSHFT>,
-                <&macro_tap &msc SCRL_UP>,
-                <&macro_release &kp LSHFT>;
-        };
-
         left_arrow: left_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
