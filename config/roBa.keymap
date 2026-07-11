@@ -1287,8 +1287,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_mac_hscroll_fixed>;
         };
 
         Window_Jesture_ipad {
@@ -1298,8 +1296,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_mac_hscroll_fixed>;
         };
 
         Window_Jesture_win {
@@ -1309,8 +1305,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_win_hscroll_fixed>;
         };
 
         BLUETOOTH {

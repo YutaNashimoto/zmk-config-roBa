@@ -27,35 +27,17 @@
             tap-ms = <20>;
         };
 
-        // Window_Jesture系(ウィンドウ操作ジェスチャー層)でのエンコーダ固定横スクロール。
-        // 「Shiftを押している時と同じ方向」になるよう、encoder_msc_mac_shift_hscroll
-        // がshift押下中に実際に出す方向(CW=DOWN/CCW=UP)をそのまま固定値で複製。
-        // 以前はencoder_msc_up_downという名前でdefault_layer_win用だったが、
-        // encoder_msc_win_shift_hscroll導入で未使用化したため転用。
-
-        encoder_msc_mac_hscroll_fixed: encoder_msc_mac_hscroll_fixed {
+        encoder_msc_up_down: encoder_msc_up_down {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_MAC_HSCROLL_FIXED";
+            label = "ENCODER_MSC_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
         };
 
-        // Windows版。encoder_msc_win_shift_hscrollがshift押下中に出す方向
-        // (CW=UP/CCW=DOWN、Mac版と逆)をそのまま固定値で複製。
-
-        encoder_msc_win_hscroll_fixed: encoder_msc_win_hscroll_fixed {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_WIN_HSCROLL_FIXED";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-
-        // Windows版のshift判定hscroll。回転方向はencoder_msc_win_hscroll_fixedと同じ並び
-        // （CW=UP/CCW=DOWN、Mac版と逆）にしつつ、既存のshift-reverse(mac用と共通)を再利用。
+        // Windows版のshift判定hscroll。回転方向はencoder_msc_up_downと同じ並び
+        // （CW=DOWN/CCW=UP）にしつつ、既存のshift-reverse(mac用と共通)を再利用。
         // Shift+ホイール=横スクロールはWindowsだと純正機能ではなくアプリ依存。
 
         encoder_msc_win_shift_hscroll: encoder_msc_win_shift_hscroll {
