@@ -27,11 +27,29 @@
             tap-ms = <20>;
         };
 
-        encoder_msc_up_down: encoder_msc_up_down {
+        // Window_Jesture系(ウィンドウ操作ジェスチャー層)でのエンコーダ横スクロール。
+        // SCRL_LEFT/RIGHT(水平ホイールのネイティブHIDコード)を直接送る。Shiftには
+        // 一切触れないため、旧実装(34e9cf9: LSHFTをmacroでpress/releaseする方式)で
+        // 起きた「Shift解放漏れ→スクロール暴走」が構造的に発生しない。
+        // 方向はMac/iPadのShift+ホイール変換時の体感(CW=右)に合わせる。
+
+        encoder_msc_hscroll_mac: encoder_msc_hscroll_mac {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_UP_DOWN";
+            label = "ENCODER_MSC_HSCROLL_MAC";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
+
+        // Windows版。縦スクロールがMac系と逆(encoder_msc_win_shift_hscroll参照)なのと
+        // 同じ規則で、横も反転(CW=左)。実機で逆に感じたらbindingsを入れ替える。
+
+        encoder_msc_hscroll_win: encoder_msc_hscroll_win {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_HSCROLL_WIN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
         };
