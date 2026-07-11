@@ -777,7 +777,7 @@ layers:
   - '&nomod F3'
   - '&nomod F12'
   - '&nomod F13'
-  - {t: ▽, type: trans}
+  - '&nomod DELETE'
   - {t: ▽, type: trans}
   - '&mb_back_win'
   - '&nomod LC(W)'
@@ -1031,9 +1031,9 @@ layers:
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+LEFT
+  - Ctl+UP ARROW
+  - Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1063,9 +1063,9 @@ layers:
   - '&control_center'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&notif_center'
+  - '&ipad_home'
+  - '&control_center'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&split_left'
@@ -1075,9 +1075,9 @@ layers:
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&split_left'
+  - '&app_switcher'
+  - '&split_right'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1119,9 +1119,9 @@ layers:
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+LEFT
+  - Gui+TAB
+  - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1340,8 +1340,28 @@ combos:
   k: CAPSLOCK
 - p: [41, 39]
   k: '&to_layer_0 RG(SPACE)'
+  l: [default, MOUSE]
+- p: [41, 39]
+  k: '&to_layer_0_win LC(SPACE)'
+  l: [default_layer_win, MOUSE_win]
+- p: [41, 39]
+  k: '&to_layer_0_ipad RG(SPACE)'
+  l: [default_layer_ipad, MOUSE_ipad]
+- p: [41, 39]
+  k: '&to_layer_0_iphone RG(SPACE)'
+  l: [default_layer_iphone, MOUSE_iphone]
 - p: [0, 39]
   k: '&to_layer_0 ESC'
+  l: [default, MOUSE]
+- p: [0, 39]
+  k: '&to_layer_0_win ESC'
+  l: [default_layer_win, MOUSE_win]
+- p: [0, 39]
+  k: '&to_layer_0_ipad ESC'
+  l: [default_layer_ipad, MOUSE_ipad]
+- p: [0, 39]
+  k: '&to_layer_0_iphone ESC'
+  l: [default_layer_iphone, MOUSE_iphone]
 - p: [5, 29]
   k: '&bt_mac'
 - p: [6, 29]
