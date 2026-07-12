@@ -837,6 +837,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
+            hold-while-undecided;
             bindings = <&cmd_mo>, <&kp>;
         };
 
@@ -845,7 +846,19 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
+            hold-while-undecided;
             bindings = <&ctrl_mo>, <&kp>;
+        };
+
+        // 左親指Cmd/Ctrl(LANG2)専用: 押下瞬間から修飾キーを有効化(Karabiner to_if_alone相当)
+        // &mt本体はホームロー全体に影響するため専用ノードを新設
+        mt_fast: mt_fast {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            bindings = <&kp>, <&kp>;
         };
 
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
@@ -1015,7 +1028,7 @@
 &lt 18 Q            &lt 21 W          &lt 23 E      &lt 26 R  &kp T                                                             &kp Y                   &lt 26 U  &lt 23 I   &lt 21 O  &lt 18 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LEFT_ALT)) G  &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2          &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                        &lt 9 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2          &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                        &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -1026,7 +1039,7 @@
 &lt 19 Q            &lt 21 W          &lt 24 E      &lt 27 R  &kp T                                                     &kp Y            &lt 27 U  &lt 24 I   &lt 21 O  &lt 19 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 14 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 14 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -1037,7 +1050,7 @@
 &lt 19 Q            &lt 21 W          &lt 24 E      &lt 26 R  &kp T                                                     &kp Y            &lt 26 U  &lt 24 I   &lt 21 O  &lt 19 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G           &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B           &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
             >;
 
             // Mac/iPadと同じshift判定ロジックを共用。Z+Xで疑似Shift保持中は横スクロール相当に。
@@ -1050,7 +1063,7 @@
 &lt 20 Q            &lt 22 W      &lt 25 E      &lt 28 R  &kp T                                                  &kp Y                &lt 28 U  &lt 25 I   &lt 22 O  &lt 20 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G            &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 17 0
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B            &lt_equal_us 10 0      &kp BACKSPACE  &lt 29 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 17 LANG1                                 &lt 10 ESCAPE
+&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt_fast LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 17 LANG1                                 &lt 10 ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）。
