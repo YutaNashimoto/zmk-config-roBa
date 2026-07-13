@@ -1339,17 +1339,8 @@ combos:
 - p: [37, 38]
   k: CAPSLOCK
 - p: [41, 39]
-  k: '&to_layer_0 RG(SPACE)'
-  l: [default, MOUSE]
-- p: [41, 39]
-  k: '&to_layer_0_win LC(SPACE)'
-  l: [default_layer_win, MOUSE_win]
-- p: [41, 39]
-  k: '&to_layer_0_ipad RG(SPACE)'
-  l: [default_layer_ipad, MOUSE_ipad]
-- p: [41, 39]
-  k: '&to_layer_0_iphone RG(SPACE)'
-  l: [default_layer_iphone, MOUSE_iphone]
+  k: '&alfred_smart'
+  l: [default, default_layer_ipad, default_layer_iphone, default_layer_win, MOUSE, MOUSE_ipad, MOUSE_iphone, MOUSE_win, CHANGE_CPI]
 - p: [0, 39]
   k: '&to_layer_0 ESC'
   l: [default, MOUSE]
@@ -1385,5 +1376,3 @@ combos:
 - p: [30, 31]
   k: {t: CHANGE_CPI, h: toggle}
   l: [default, default_layer_ipad, default_layer_iphone, MOUSE, MOUSE_ipad, MOUSE_iphone, default_layer_win, MOUSE_win, CHANGE_CPI]
-- p: [22, 23]
-  k: '&toggle_lshift'
