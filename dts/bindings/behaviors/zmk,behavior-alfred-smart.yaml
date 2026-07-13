@@ -1,0 +1,5 @@
+description: Launch Cmd+Space/Ctrl+Space based on the currently active OS default layer
+
+compatible: "zmk,behavior-alfred-smart"
+
+include: zero_param.yaml

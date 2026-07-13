@@ -269,37 +269,18 @@
             key-positions = <37 38>;
         };
 
-        // alfred/Escapeはlayers指定なしだと全OSで発火し、&to_layer_0がBTに触れず
+        // Escapeはlayers指定なしだと全OSで発火し、&to_layer_0がBTに触れず
         // レイヤー0(Mac)へ直接切替するため、Windows/iPad/iPhone使用中に発火すると
         // Macレイヤーへ乗っ取られる（Ctrl位置がCmd化しWinキー誤送出・エンコーダ方向反転）。
         // OS別に分離し、最上位アクティブレイヤー基準（combo.cで確認済み）でスコープする。
         // 注意: 精密モード(層8)中はどのOS版も発火しない（scroll_toggle系と同じ制約）。
 
+        // alfred: 実行時にOSデフォルトレイヤー(0-3)を判定するalfred_smart behaviorに統合
+        // (2026-07-13)。全デフォルト層/マウス層/精密モード層のどこからでも正しいOSへ発火する。
         alfred {
-            bindings = <&to_layer_0 RG(SPACE)>;
+            bindings = <&alfred_smart>;
             key-positions = <41 39>;
-            layers = <0 4>;
-            require-prior-idle-ms = <200>;
-        };
-
-        alfred_win {
-            bindings = <&to_layer_0_win LC(SPACE)>;
-            key-positions = <41 39>;
-            layers = <3 7>;
-            require-prior-idle-ms = <200>;
-        };
-
-        alfred_ipad {
-            bindings = <&to_layer_0_ipad RG(SPACE)>;
-            key-positions = <41 39>;
-            layers = <1 5>;
-            require-prior-idle-ms = <200>;
-        };
-
-        alfred_iphone {
-            bindings = <&to_layer_0_iphone RG(SPACE)>;
-            key-positions = <41 39>;
-            layers = <2 6>;
+            layers = <0 1 2 3 4 5 6 7 8>;
             require-prior-idle-ms = <200>;
         };
 
@@ -855,6 +836,11 @@
             tapping-term-ms = <200>;
             hold-while-undecided;
             bindings = <&kp>, <&kp>;
+        };
+
+        alfred_smart: alfred_smart {
+            compatible = "zmk,behavior-alfred-smart";
+            #binding-cells = <0>;
         };
 
         // MOUSE_win(層17)用 US記号補正: タップで層16へexitしつつUS記号を出す
