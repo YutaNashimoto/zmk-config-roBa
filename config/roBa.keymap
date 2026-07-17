@@ -331,13 +331,13 @@
         };
 
         Bluetooth_3 {
-            bindings = <&bt_iphone>;
+            bindings = <&bt_ipad_mini>;
             key-positions = <7 29>;
             require-prior-idle-ms = <200>;
         };
 
         Bluetooth_4 {
-            bindings = <&bt BT_SEL 3>;
+            bindings = <&bt_iphone>;
             key-positions = <8 29>;
             require-prior-idle-ms = <200>;
         };
@@ -691,7 +691,9 @@
         };
 
         // Bluetoothプロファイル切替＋デフォルトレイヤー切替を同時に行う。
-        // prof1=Mac(0) / prof2=iPad(1) / prof3=iPhone(1) / prof5=Windows(13)。
+        // 2026-07: iPad Pro購入に伴い再編成。
+        // prof0=Mac(層0) / prof1=iPad Pro(層1) / prof2=iPad mini(層1) / prof3=iPhone(層2) / prof4=Windows(層3)。
+        // iPad Pro/iPad miniは共にiPadOS用の挙動(層1)を共有し、物理的なBluetoothプロファイル番号だけが異なる。
 
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
@@ -704,13 +706,20 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &to 1>;
-            label = "BT_IPAD";
+            label = "BT_IPAD_PRO";
+        };
+
+        bt_ipad_mini: bt_ipad_mini {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 1>;
+            label = "BT_IPAD_MINI";
         };
 
         bt_iphone: bt_iphone {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &to 2>;
+            bindings = <&bt BT_SEL 3 &to 2>;
             label = "BT_IPHONE";
         };
 
@@ -1314,7 +1323,7 @@
 
         BLUETOOTH {
             bindings = <
-&to 0   &to 1   &to 2   &trans  &to 3                       &bt_mac  &bt_ipad  &bt_iphone  &bt BT_SEL 3  &bt_win
+&to 0   &to 1   &to 1   &to 2   &to 3                       &bt_mac  &bt_ipad  &bt_ipad_mini  &bt_iphone  &bt_win
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &trans    &trans      &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &trans    &trans      &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &bt BT_CLR_ALL
