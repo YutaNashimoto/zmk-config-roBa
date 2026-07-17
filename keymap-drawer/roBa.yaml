@@ -1279,13 +1279,13 @@ layers:
   BLUETOOTH:
   - {t: default, h: toggle}
   - {t: default_layer_ipad, h: toggle}
+  - {t: default_layer_ipad, h: toggle}
   - {t: default_layer_iphone, h: toggle}
-  - {t: ▽, type: trans}
   - {t: default_layer_win, h: toggle}
   - '&bt_mac'
   - '&bt_ipad'
+  - '&bt_ipad_mini'
   - '&bt_iphone'
-  - {t: BT, h: '3'}
   - '&bt_win'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1358,9 +1358,9 @@ combos:
 - p: [6, 29]
   k: '&bt_ipad'
 - p: [7, 29]
-  k: '&bt_iphone'
+  k: '&bt_ipad_mini'
 - p: [8, 29]
-  k: {t: BT, h: '3'}
+  k: '&bt_iphone'
 - p: [9, 29]
   k: '&bt_win'
 - p: [41, 20]

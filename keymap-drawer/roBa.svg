@@ -387,14 +387,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -703,14 +702,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -1019,14 +1017,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -1337,14 +1334,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -1725,14 +1721,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -2113,14 +2108,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -2501,14 +2495,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -2893,14 +2886,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-8">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-9">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -3148,14 +3140,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -3397,14 +3388,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -3642,14 +3632,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -3894,14 +3883,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -4148,14 +4136,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -4427,14 +4414,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -4690,14 +4676,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -4961,14 +4946,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -5250,14 +5234,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -5539,14 +5522,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -5814,14 +5796,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -6071,14 +6052,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -6334,14 +6314,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-6">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -6577,14 +6556,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -6820,14 +6798,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -7075,14 +7052,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -7319,14 +7295,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -7570,14 +7545,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -7815,14 +7789,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -8060,14 +8033,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -8305,14 +8277,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
@@ -8371,13 +8342,15 @@ path.combo {
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#default_layer_iphone">
+<a href="#default_layer_ipad">
 <text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">default_la…</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
-<g transform="translate(196, 35)" class="key trans keypos-3">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(196, 35)" class="key keypos-3">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<a href="#default_layer_iphone">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">default_la…</tspan></text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(253, 43)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -8395,12 +8368,11 @@ path.combo {
 </g>
 <g transform="translate(617, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g transform="translate(673, 42)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BT</text>
-<text x="0" y="24" class="key hold">3</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g transform="translate(729, 63)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -8561,14 +8533,13 @@ path.combo {
 <path d="M560,92 l44,-50" class="combo"/>
 <path d="M560,92 l-44,50" class="combo"/>
 <rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
-<text x="560" y="92" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
+<text x="560" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;bt_ipad_m…</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M588,98 l69,-46" class="combo"/>
 <path d="M588,98 l-69,46" class="combo"/>
 <rect rx="6" ry="6" x="574" y="85" width="28" height="26" class="combo"/>
-<text x="588" y="98" class="combo tap">BT</text>
-<text x="588" y="109" class="combo hold">3</text>
+<text x="588" y="98" class="combo tap"><tspan style="font-size: 70%">&amp;bt_iphone</tspan></text>
 </g>
 <g class="combo combopos-5">
 <path d="M617,109 l95,-39" class="combo"/>
