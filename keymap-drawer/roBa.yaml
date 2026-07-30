@@ -577,7 +577,7 @@ layers:
   - Ctl+Gui+Alt+LEFT ARROW
   - UP ARROW
   - Alt+Gui+Ctl+RIGHT ARROW
-  - Ctl+Sft+LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Sft+T
   - Sft+Alt+D
@@ -930,21 +930,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+R
-  - {t: ▽, type: trans}
-  - Gui+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+R
-  - {t: ▽, type: trans}
+  - Gui+Sft+T
+  - Sft+Alt+D
+  - Gui+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -954,8 +942,20 @@ layers:
   - {t: ▽, type: trans}
   - Gui+0
   - {t: ▽, type: trans}
+  - Gui+R
+  - Sft+Ctl+TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -974,21 +974,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+R
-  - {t: ▽, type: trans}
-  - Ctl+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+R
-  - {t: ▽, type: trans}
+  - Ctl+Sft+T
+  - '&dup_tab_win'
+  - Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -998,8 +986,20 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+0
   - {t: ▽, type: trans}
+  - Ctl+R
+  - Ctl+Sft+TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+W
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1016,10 +1016,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - Ctl+UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1150,10 +1150,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: SCROLL, h: toggle}
-  - {t: ▽, type: trans}
+  - Alt+Ctl+ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1165,6 +1162,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+Alt+LEFT
+  - {t: ▽, type: trans}
+  - Alt+Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1174,7 +1174,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Alt+Ctl+C
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1194,10 +1194,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: SCROLL_ipad, h: toggle}
-  - {t: ▽, type: trans}
+  - '&ipad_fullscreen'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1209,6 +1206,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&ipad_tile_left'
+  - {t: ▽, type: trans}
+  - '&ipad_tile_right'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1238,10 +1238,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: SCROLL_win, h: toggle}
-  - {t: ▽, type: trans}
+  - Gui+UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1253,6 +1250,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Gui+LEFT
+  - {t: ▽, type: trans}
+  - Gui+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -1371,8 +1371,12 @@ combos:
   k: '&down_arrow'
 - p: [41, 7]
   k: '&up_arrow'
-- p: [4, 39]
-  k: Ctl+Sft+LEFT ALT
 - p: [30, 31]
   k: {t: CHANGE_CPI, h: toggle}
   l: [default, default_layer_ipad, default_layer_iphone, MOUSE, MOUSE_ipad, MOUSE_iphone, default_layer_win, MOUSE_win, CHANGE_CPI]
+- p: [18, 19]
+  k: '&mkp MB1'
+- p: [19, 20]
+  k: '&mkp MB2'
+- p: [18, 20]
+  k: '&mkp MB3'
