@@ -5,29 +5,33 @@
 #include <zephyr/logging/log.h>
 
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modifiers.h>
 #include <zmk/keymap.h>
+#include <zmk/keys.h>
 #include <zmk/behavior.h>
-#include <zmk/events/keycode_state_changed.h>
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-// behavior_cmd_mo.c で定義。保持中の修飾キー（encoded値）を共有する。
-extern uint32_t cmd_mo_held_mod;
+// behavior_cmd_mo.c で定義。保持中の修飾キー（MOD_* のビットフラグ）を共有する。
+extern zmk_mod_flags_t cmd_mo_held_mod;
+// 修飾キーをHIDへ直接登録/排出する共通ヘルパー（behavior_cmd_mo.c で定義）。
+extern void roba_mod_hold(zmk_mod_flags_t mod_flag);
+extern void roba_mod_release(zmk_mod_flags_t mod_flag);
 
 #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
 // cmd_mo の Windows 版。RCTRL を保持しつつレイヤーを一時有効化する。
 static int ctrl_mo_pressed(struct zmk_behavior_binding *binding,
                            struct zmk_behavior_binding_event event) {
-    cmd_mo_held_mod = RCTRL;
+    cmd_mo_held_mod = MOD_RCTL;
     zmk_keymap_layer_activate(binding->param1);
-    raise_zmk_keycode_state_changed_from_encoded(RCTRL, true, event.timestamp);
+    roba_mod_hold(MOD_RCTL);
     return ZMK_BEHAVIOR_OPAQUE;
 }
 
 static int ctrl_mo_released(struct zmk_behavior_binding *binding,
                             struct zmk_behavior_binding_event event) {
-    raise_zmk_keycode_state_changed_from_encoded(RCTRL, false, event.timestamp);
+    roba_mod_release(MOD_RCTL);
     zmk_keymap_layer_deactivate(binding->param1);
     cmd_mo_held_mod = 0;
     return ZMK_BEHAVIOR_OPAQUE;

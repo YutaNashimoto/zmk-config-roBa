@@ -1,0 +1,5 @@
+description: Hold a modifier via direct HID registration (bypasses the hold-tap capture/replay path)
+
+compatible: "zmk,behavior-hold-mod"
+
+include: one_param.yaml

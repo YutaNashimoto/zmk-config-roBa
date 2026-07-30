@@ -5,23 +5,29 @@
 #include <zephyr/logging/log.h>
 
 #include <dt-bindings/zmk/keys.h>
+#include <zmk/keys.h>
 #include <zmk/behavior.h>
 #include <zmk/events/keycode_state_changed.h>
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-// cmd_mo が保持中の修飾キー（behavior_cmd_mo.c で定義）。
-extern uint32_t cmd_mo_held_mod;
+// cmd_mo が保持中の修飾キー（MOD_* のビットフラグ、behavior_cmd_mo.c で定義）。
+extern zmk_mod_flags_t cmd_mo_held_mod;
+// 修飾キーをHIDへ直接登録/排出する共通ヘルパー（behavior_cmd_mo.c で定義）。
+extern void roba_mod_hold(zmk_mod_flags_t mod_flag);
+extern void roba_mod_release(zmk_mod_flags_t mod_flag);
 
 #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 
 // cmd_mo の保持修飾を一時的に外してから param1 のキーを送る behavior。
 // 押下時: 修飾を解除 → キー押下。 離す時: キー解除 → （まだホールド中なら）修飾を復帰。
 // cmd_mo が離されると cmd_mo_held_mod=0 になるため、押し離し順による修飾固着を防げる。
+// 修飾の上げ下げは keycode_state_changed を経由せずHIDへ直接行う（hold-tapの
+// 保留・再送でカウンタが重複加算されるのを避けるため。詳細は behavior_cmd_mo.c）。
 static int nomod_pressed(struct zmk_behavior_binding *binding,
                          struct zmk_behavior_binding_event event) {
     if (cmd_mo_held_mod) {
-        raise_zmk_keycode_state_changed_from_encoded(cmd_mo_held_mod, false, event.timestamp);
+        roba_mod_release(cmd_mo_held_mod);
     }
     raise_zmk_keycode_state_changed_from_encoded(binding->param1, true, event.timestamp);
     return ZMK_BEHAVIOR_OPAQUE;
@@ -31,7 +37,7 @@ static int nomod_released(struct zmk_behavior_binding *binding,
                           struct zmk_behavior_binding_event event) {
     raise_zmk_keycode_state_changed_from_encoded(binding->param1, false, event.timestamp);
     if (cmd_mo_held_mod) {
-        raise_zmk_keycode_state_changed_from_encoded(cmd_mo_held_mod, true, event.timestamp);
+        roba_mod_hold(cmd_mo_held_mod);
     }
     return ZMK_BEHAVIOR_OPAQUE;
 }

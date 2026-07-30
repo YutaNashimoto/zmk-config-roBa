@@ -848,13 +848,20 @@
         // 左親指Cmd/Ctrl(LANG2)専用: 押下瞬間から修飾キーを有効化(Karabiner to_if_alone相当)
         // &mt本体はホームロー全体に影響するため専用ノードを新設
 
+        // 修飾キー保持専用。&kp と違いHIDへ直接登録し、離すときは参照カウントを
+        // 0まで排出する（Cmd固着＝再起動でしか直らない不具合の対策・2026-07-31）。
+        hold_mod: hold_mod {
+            compatible = "zmk,behavior-hold-mod";
+            #binding-cells = <1>;
+        };
+
         mt_fast: mt_fast {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             hold-while-undecided;
-            bindings = <&kp>, <&kp>;
+            bindings = <&hold_mod>, <&kp>;
         };
 
         alfred_smart: alfred_smart {
