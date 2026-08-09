@@ -18,9 +18,11 @@
 #
 ---
 include:
+ # 【一時的・デバッグ中】studio-rpc-usb-uart はUSB CDCシリアルをStudioのRPCで
+ # 占有するため、CONFIG_ZMK_USB_LOGGING と併用するとビルドが失敗する。
+ # カーソル暴走の診断が終わったら snippet 行と CONFIG_ZMK_STUDIO=y を復活させること。
  - board: seeeduino_xiao_ble
    shield: roBa_R
-   snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
    shield: roBa_L
  - board: seeeduino_xiao_ble
