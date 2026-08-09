@@ -53,21 +53,8 @@ static int typing_guard_handle_event(const struct device *dev, struct input_even
     k_mutex_unlock(&data->lock);
 
     // param1 = ガード窓(ms)。直前打鍵から窓内なら移動量を0にする。
-    const int32_t raw = event->value;
-    bool suppressed = false;
     if (param1 > 0 && (last + (int64_t)param1) > k_uptime_get()) {
         event->value = 0;
-        suppressed = true;
-    }
-
-    // 【デバッグ用・カーソル暴走の切り分け】ドライバが出力した生の移動量を記録する。
-    // このプロセッサは全チェーンの先頭にあるため、ここに出る値は「ZMKの後続処理を
-    // 一切通っていない、ドライバ直後の値」である。ボールを固定した状態でここに値が
-    // 流れるなら発生源はドライバ/センサー/配線側で、後続のZMK処理は無罪と確定する。
-    // 診断が済んだらこのログと CONFIG_ZMK_USB_LOGGING は削除すること。
-    if (raw != 0) {
-        LOG_INF("trackball %s raw=%d suppressed=%d", event->code == INPUT_REL_X ? "X" : "Y", raw,
-                suppressed ? 1 : 0);
     }
 
     return ZMK_INPUT_PROC_CONTINUE;
