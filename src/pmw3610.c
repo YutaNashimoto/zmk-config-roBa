@@ -95,6 +95,7 @@ static int spi_cs_ctrl(const struct device *dev, bool enable) {
 // checked and keep
 static int reg_read(const struct device *dev, uint8_t reg, uint8_t *buf) {
     int err;
+    int cs_err;
     /* struct pixart_data *data = dev->data; */
     const struct pixart_config *config = dev->config;
 
@@ -112,7 +113,7 @@ static int reg_read(const struct device *dev, uint8_t reg, uint8_t *buf) {
     err = spi_write_dt(&config->bus, &tx);
     if (err) {
         LOG_ERR("Reg read failed on SPI write");
-        return err;
+        goto release_cs;
     }
 
     k_busy_wait(T_SRAD);
@@ -130,22 +131,24 @@ static int reg_read(const struct device *dev, uint8_t reg, uint8_t *buf) {
     err = spi_read_dt(&config->bus, &rx);
     if (err) {
         LOG_ERR("Reg read failed on SPI read");
-        return err;
+        goto release_cs;
     }
 
-    err = spi_cs_ctrl(dev, false);
-    if (err) {
-        return err;
+release_cs:
+    cs_err = spi_cs_ctrl(dev, false);
+    if (!err && cs_err) {
+        err = cs_err;
     }
 
     k_busy_wait(T_SRX);
 
-    return 0;
+    return err;
 }
 
 // primitive write without enable/disable spi clock on the sensor
 static int _reg_write(const struct device *dev, uint8_t reg, uint8_t val) {
     int err;
+    int cs_err;
     /* struct pixart_data *data = dev->data; */
     const struct pixart_config *config = dev->config;
 
@@ -163,19 +166,20 @@ static int _reg_write(const struct device *dev, uint8_t reg, uint8_t val) {
     err = spi_write_dt(&config->bus, &tx);
     if (err) {
         LOG_ERR("Reg write failed on SPI write");
-        return err;
+        goto release_cs;
     }
 
     k_busy_wait(T_SCLK_NCS_WR);
 
-    err = spi_cs_ctrl(dev, false);
-    if (err) {
-        return err;
+release_cs:
+    cs_err = spi_cs_ctrl(dev, false);
+    if (!err && cs_err) {
+        err = cs_err;
     }
 
     k_busy_wait(T_SWX);
 
-    return 0;
+    return err;
 }
 
 static int reg_write(const struct device *dev, uint8_t reg, uint8_t val) {
@@ -204,6 +208,7 @@ static int reg_write(const struct device *dev, uint8_t reg, uint8_t val) {
 
 static int motion_burst_read(const struct device *dev, uint8_t *buf, size_t burst_size) {
     int err;
+    int cs_err;
     /* struct pixart_data *data = dev->data; */
     const struct pixart_config *config = dev->config;
 
@@ -222,7 +227,7 @@ static int motion_burst_read(const struct device *dev, uint8_t *buf, size_t burs
     err = spi_write_dt(&config->bus, &tx);
     if (err) {
         LOG_ERR("Motion burst failed on SPI write");
-        return err;
+        goto release_cs;
     }
 
     k_busy_wait(T_SRAD_MOTBR);
@@ -236,18 +241,19 @@ static int motion_burst_read(const struct device *dev, uint8_t *buf, size_t burs
     err = spi_read_dt(&config->bus, &rx);
     if (err) {
         LOG_ERR("Motion burst failed on SPI read");
-        return err;
+        goto release_cs;
     }
 
-    err = spi_cs_ctrl(dev, false);
-    if (err) {
-        return err;
+release_cs:
+    cs_err = spi_cs_ctrl(dev, false);
+    if (!err && cs_err) {
+        err = cs_err;
     }
 
     /* Terminate burst */
     k_busy_wait(T_BEXIT);
 
-    return 0;
+    return err;
 }
 
 /** Writing an array of registers in sequence, used in power-up register initialization and running
@@ -655,6 +661,17 @@ static int pmw3610_report_data(const struct device *dev) {
     int err = motion_burst_read(dev, buf, sizeof(buf));
     if (err) {
         return err;
+    }
+
+    /*
+     * The first byte of a motion burst is the Motion register. Its MOT bit is
+     * the sensor's validity flag for the delta bytes that follow. Ignoring it
+     * can replay stale X/Y register contents after a spurious or delayed IRQ,
+     * which presents as a cursor that keeps moving without physical motion.
+     * This matches the guard used by Zephyr's upstream PMW3610 driver.
+     */
+    if ((buf[PMW3610_MOTION_POS] & PMW3610_MOTION_STATUS_MOTION) == 0) {
+        return 0;
     }
 
     int16_t raw_x =

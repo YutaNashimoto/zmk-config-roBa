@@ -86,11 +86,15 @@ extern "C" {
 #define PMW3610_BURST_SIZE 7
 
 /* Position in the motion registers */
+#define PMW3610_MOTION_POS 0
 #define PMW3610_X_L_POS 1
 #define PMW3610_Y_L_POS 2
 #define PMW3610_XY_H_POS 3
 #define PMW3610_SHUTTER_H_POS 5
 #define PMW3610_SHUTTER_L_POS 6
+
+/* Motion register flags */
+#define PMW3610_MOTION_STATUS_MOTION BIT(7)
 
 /* cpi/resolution range */
 #define PMW3610_MAX_CPI 3200
