@@ -1036,7 +1036,7 @@
 &lt 18 Q            &lt 21 W          &lt 23 E      &lt 26 R  &kp T                                                             &kp Y                   &lt 26 U  &lt 23 I   &lt 21 O  &lt 18 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &mt LC(LS(LEFT_ALT)) G  &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &mt LC(LS(LEFT_ALT)) H  &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                   &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N                &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2     &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                        &lt 9 ESCAPE
+&hold_mod LEFT_SHIFT      &hold_mod LEFT_CONTROL  &hold_mod LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2     &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                        &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -1047,7 +1047,7 @@
 &lt 19 Q            &lt 21 W          &lt 24 E      &lt 27 R  &kp T                                                          &kp Y            &lt 27 U  &lt 24 I   &lt 21 O  &lt 19 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G                &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 14 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
+&hold_mod LEFT_SHIFT      &hold_mod LEFT_CONTROL  &hold_mod LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 14 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_mac_shift_hscroll>;
@@ -1058,7 +1058,7 @@
 &lt 19 Q            &lt 21 W          &lt 24 E      &lt 26 R  &kp T                                                          &kp Y            &lt 26 U  &lt 24 I   &lt 21 O  &lt 19 P
 &mt LEFT_CONTROL A  &kp S             &kp D         &kp F     &kp G                &kp LG(Q)         &mt GLOBE SINGLE_QUOTE  &kp H            &kp J     &kp K      &kp L     &lt 16 MINUS
 &mt LEFT_SHIFT Z    &kp X             &kp C         &kp V     &kp B                &lt 9 EQUAL       &kp BACKSPACE           &lt 29 N         &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
+&hold_mod LEFT_SHIFT      &hold_mod LEFT_CONTROL  &hold_mod LEFT_ALT  &kp TAB   &mt_fast LCMD LANG2  &lt 13 SPACE      &lt 11 ENTER            &rlang 16 LANG1                                 &lt 9 ESCAPE
             >;
 
             // Mac/iPadと同じshift判定ロジックを共用。Z+Xで疑似Shift保持中は横スクロール相当に。
@@ -1071,7 +1071,7 @@
 &lt 20 Q            &lt 22 W      &lt 25 E      &lt 28 R  &kp T                                                       &kp Y                &lt 28 U  &lt 25 I   &lt 22 O  &lt 20 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F     &kp G                 &kp LA(F4)             &quote_us      &kp H                &kp J     &kp K      &kp L     &lt_minus_us 17 0
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V     &kp B                 &lt_equal_us 10 0      &kp BACKSPACE  &lt 29 N             &kp M     &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT      &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB   &mt_fast LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 17 LANG1                                 &lt 10 ESCAPE
+&hold_mod LEFT_SHIFT      &hold_mod LEFT_GUI  &hold_mod LEFT_ALT  &kp TAB   &mt_fast LCTRL LANG2  &lt 15 SPACE           &lt 12 ENTER   &rlang_win 17 LANG1                                 &lt 10 ESCAPE
             >;
 
             // Windows: エンコーダのスクロール方向も反転（Mac=down_up / Win=up_down）。
@@ -1086,7 +1086,7 @@
 &lt_to_layer_0 18 Q    &lt_to_layer_0 21 W  &lt_to_layer_0 23 E  &lt_to_layer_0 26 R  &to_layer_0 T                                                                          &kp Y                        &lt_to_layer_0 26 U  &lt_to_layer_0 23 I  &lt_to_layer_0 21 O  &lt_to_layer_0 18 P
 &mt_to_0 LCTRL A       &to_layer_0 S        &to_layer_0 D        &to_layer_0 F        &mt_to_0 LC(LS(LEFT_ALT)) G  &kp LG(Q)                    &mt_to_0 GLOBE SINGLE_QUOTE  &mt_to_0 LC(LS(LEFT_ALT)) H  &mkp_exit_AML MB1    &mkp_exit_AML MB3    &mkp_exit_AML MB2    &lt_to_layer_0 16 MINUS
 &mt_to_0 LEFT_SHIFT Z  &to_layer_0 X        &to_layer_0 C        &to_layer_0 V        &to_layer_0 B                &lt_to_layer_0 9 EQUAL       &kp BACKSPACE                &lt_to_layer_0 8 N           &to_layer_0 M        &to_layer_0 COMMA    &to_layer_0 DOT      &mt_to_0 RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT         &kp LCTRL            &kp LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 13 SPACE      &lt_to_layer_0 11 ENTER      &rlang 16 LANG1                                                                             &lt_to_layer_0 9 ESC
+&hold_mod LEFT_SHIFT         &hold_mod LCTRL            &hold_mod LEFT_ALT         &to_layer_0 TAB      &mt_to_0 LCMD LANG2          &lt_to_layer_0 13 SPACE      &lt_to_layer_0 11 ENTER      &rlang 16 LANG1                                                                             &lt_to_layer_0 9 ESC
             >;
         };
 
@@ -1095,7 +1095,7 @@
 &lt_to_layer_0_ipad 19 Q    &lt_to_layer_0_ipad 21 W  &lt_to_layer_0_ipad 24 E  &lt_to_layer_0_ipad 27 R  &to_layer_0_ipad T                                                                            &to_layer_0_ipad Y       &lt_to_layer_0_ipad 27 U  &lt_to_layer_0_ipad 24 I  &lt_to_layer_0_ipad 21 O  &lt_to_layer_0_ipad 19 P
 &mt_to_0_ipad LCTRL A       &to_layer_0_ipad S        &to_layer_0_ipad D        &to_layer_0_ipad F        &to_layer_0_ipad G        &kp LG(Q)                         &mt_to_0_ipad GLOBE SINGLE_QUOTE  &to_layer_0_ipad H       &mkp_exit_AML_ipad MB1    &mkp_exit_AML_ipad MB3    &mkp_exit_AML_ipad MB2    &lt_to_layer_0_ipad 16 MINUS
 &mt_to_0_ipad LEFT_SHIFT Z  &to_layer_0_ipad X        &to_layer_0_ipad C        &to_layer_0_ipad V        &to_layer_0_ipad B        &lt_to_layer_0_ipad 9 EQUAL       &kp BACKSPACE                     &lt_to_layer_0_ipad 8 N  &to_layer_0_ipad M        &to_layer_0_ipad COMMA    &to_layer_0_ipad DOT      &mt_to_0_ipad RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT              &kp LCTRL                 &kp LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 14 SPACE      &lt_to_layer_0_ipad 11 ENTER      &rlang 16 LANG1                                                                                        &lt_to_layer_0_ipad 9 ESC
+&hold_mod LEFT_SHIFT              &hold_mod LCTRL                 &hold_mod LEFT_ALT              &to_layer_0_ipad TAB      &mt_to_0_ipad LCMD LANG2  &lt_to_layer_0_ipad 14 SPACE      &lt_to_layer_0_ipad 11 ENTER      &rlang 16 LANG1                                                                                        &lt_to_layer_0_ipad 9 ESC
             >;
         };
 
@@ -1104,7 +1104,7 @@
 &lt_to_layer_0_iphone 19 Q    &lt_to_layer_0_iphone 21 W  &lt_to_layer_0_iphone 24 E  &lt_to_layer_0_iphone 26 R  &to_layer_0_iphone T                                                                                &to_layer_0_iphone Y       &lt_to_layer_0_iphone 26 U  &lt_to_layer_0_iphone 24 I  &lt_to_layer_0_iphone 21 O  &lt_to_layer_0_iphone 19 P
 &mt_to_0_iphone LCTRL A       &to_layer_0_iphone S        &to_layer_0_iphone D        &to_layer_0_iphone F        &to_layer_0_iphone G        &kp LG(Q)                           &mt_to_0_iphone GLOBE SINGLE_QUOTE  &to_layer_0_iphone H       &mkp_exit_AML_iphone MB1    &mkp_exit_AML_iphone MB3    &mkp_exit_AML_iphone MB2    &lt_to_layer_0_iphone 16 MINUS
 &mt_to_0_iphone LEFT_SHIFT Z  &to_layer_0_iphone X        &to_layer_0_iphone C        &to_layer_0_iphone V        &to_layer_0_iphone B        &lt_to_layer_0_iphone 9 EQUAL       &kp BACKSPACE                       &lt_to_layer_0_iphone 8 N  &to_layer_0_iphone M        &to_layer_0_iphone COMMA    &to_layer_0_iphone DOT      &mt_to_0_iphone RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT                &kp LCTRL                   &kp LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 13 SPACE      &lt_to_layer_0_iphone 11 ENTER      &rlang 16 LANG1                                                                                                &lt_to_layer_0_iphone 9 ESC
+&hold_mod LEFT_SHIFT                &hold_mod LCTRL                   &hold_mod LEFT_ALT                &to_layer_0_iphone TAB      &mt_to_0_iphone LCMD LANG2  &lt_to_layer_0_iphone 13 SPACE      &lt_to_layer_0_iphone 11 ENTER      &rlang 16 LANG1                                                                                                &lt_to_layer_0_iphone 9 ESC
             >;
         };
 
@@ -1113,7 +1113,7 @@
 &lt_to_layer_0_win 20 Q      &lt_to_layer_0_win 22 W  &lt_to_layer_0_win 25 E  &lt_to_layer_0_win 28 R  &to_layer_0_win T                                                                       &to_layer_0_win Y       &lt_to_layer_0_win 28 U  &lt_to_layer_0_win 25 I  &lt_to_layer_0_win 22 O  &lt_to_layer_0_win 20 P
 &mt_to_0_win LEFT_CONTROL A  &to_layer_0_win S        &to_layer_0_win D        &to_layer_0_win F        &to_layer_0_win G         &trans                           &quote_us_mwin               &to_layer_0_win H       &mkp_exit_AML_win MB1    &mkp_exit_AML_win MB3    &mkp_exit_AML_win MB2    &lt_minus_us_mwin 17 0
 &mt_to_0_win LEFT_SHIFT Z    &to_layer_0_win X        &to_layer_0_win C        &to_layer_0_win V        &to_layer_0_win B         &lt_equal_us_mwin 10 0           &kp BACKSPACE                &lt_to_layer_0_win 8 N  &to_layer_0_win M        &to_layer_0_win COMMA    &to_layer_0_win DOT      &mt_to_0_win RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT               &kp LEFT_GUI             &kp LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 12 ENTER  &rlang_win 17 LANG1                                                                                &lt_to_layer_0_win 10 ESC
+&hold_mod LEFT_SHIFT               &hold_mod LEFT_GUI             &hold_mod LEFT_ALT             &to_layer_0_win TAB      &mt_to_0_win LCTRL LANG2  &lt_to_layer_0_win 15 SPACE      &lt_to_layer_0_win 12 ENTER  &rlang_win 17 LANG1                                                                                &lt_to_layer_0_win 10 ESC
             >;
         };
 
