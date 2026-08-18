@@ -1,0 +1,5 @@
+description: Suppress slow one-directional drift while passing intentional movement
+
+compatible: "zmk,input-processor-drift-filter"
+
+include: ip_one_param.yaml

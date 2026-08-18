@@ -28,6 +28,15 @@
         #input-processor-cells = <1>;
     };
 
+    // ゆっくりした一方向のドリフト(BLE接続時のカーソル暴走)を遮断する。
+    // 実測: 通常操作=約225カウント/秒 / ドリフト=約33カウント/秒 と7倍の差があるため、
+    // 100msごとの積算が閾値未満の窓を「ドリフト」とみなして0にする。
+    // 副次効果でマウスレイヤーの誤起動(K=中クリック化・文字カーソル飛び)も止まる。
+    zip_drift_filter: zip_drift_filter {
+        compatible = "zmk,input-processor-drift-filter";
+        #input-processor-cells = <1>;
+    };
+
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
@@ -35,7 +44,7 @@
 
         // 自動マウス層をOS別に出し分ける（ドライバのautomouse-layerは無効化済み）。
         // ベース（Mac等、Win以外）: 移動で層4(MOUSE)を一時有効化。
-        input-processors = <&zip_typing_guard 250>, <&zip_temp_layer 4 10000>;
+        input-processors = <&zip_typing_guard 250>, <&zip_drift_filter 10>, <&zip_temp_layer 4 10000>;
 
         // 精密モード(層8 CHANGE_CPI)がONの間だけカーソルを×2/5(0.4倍)に。
         // process-next で後続のOS別子ノード＋baseへ連鎖するので、temp_layer遷移や
@@ -44,7 +53,7 @@
         change_cpi {
             layers = <8>;
             process-next;
-            input-processors = <&zip_typing_guard 250>, <&zip_xy_scaler 2 5>;
+            input-processors = <&zip_typing_guard 250>, <&zip_drift_filter 10>, <&zip_xy_scaler 2 5>;
         };
 
         // iPad（デフォルト層1がアクティブ）の上書き:
@@ -55,14 +64,14 @@
             // iPadもソフト倍率化: base1000×2/5=実効400（精密モード(層8)がsnipe判定を
             // 壊す問題を回避するため snipe廃止）。精密ON時は change_cpi(×2/5)が
             // さらに掛かり実効160になる。
-            input-processors = <&zip_typing_guard 250>, <&zip_temp_layer 5 10000>, <&zip_xy_scaler 2 5>;
+            input-processors = <&zip_typing_guard 250>, <&zip_drift_filter 10>, <&zip_temp_layer 5 10000>, <&zip_xy_scaler 2 5>;
         };
 
         iphone {
             layers = <2>;
             // iPhoneは通常CPI(1000)を0.4倍=実効400に（緩やかなので滑らか）
             input-processors =
-                <&zip_typing_guard 250>,
+                <&zip_typing_guard 250>, <&zip_drift_filter 10>,
                 <&zip_temp_layer 6 10000>,
                 <&zip_xy_scaler 2 5>;
         };
@@ -78,7 +87,7 @@
         win {
             layers = <3>;
             input-processors =
-                <&zip_typing_guard 250>,
+                <&zip_typing_guard 250>, <&zip_drift_filter 10>,
                 <&zip_temp_layer 7 10000>,
                 <&zip_xy_scaler 3 5>,
                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
