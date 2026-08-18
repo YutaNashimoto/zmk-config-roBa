@@ -831,7 +831,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             hold-while-undecided;
             bindings = <&cmd_mo>, <&kp>;
         };
@@ -840,7 +840,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             hold-while-undecided;
             bindings = <&ctrl_mo>, <&kp>;
         };
@@ -859,7 +859,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             hold-while-undecided;
             bindings = <&hold_mod>, <&kp>;
         };
