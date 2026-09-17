@@ -18,10 +18,26 @@
 #
 ---
 include:
+# 2台運用: 旧roBa=roBa_B / 新roBa=roBa_W
+# USB名(CONFIG_ZMK_KEYBOARD_NAME)とBluetooth名の接頭辞(roBa_B_1 等)を台ごとに変える。
+# コマンドラインの -DCONFIG_... は shield の .conf より後に適用されるため上書きになる。
  - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
+   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"roBa_B\" -DCONFIG_ZMK_BLE_PROFILE_NAME_PREFIX=\"roBa_B\"
+   artifact-name: roBa_B_R
  - board: seeeduino_xiao_ble
    shield: roBa_L
+   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"roBa_B_L\"
+   artifact-name: roBa_B_L
+ - board: seeeduino_xiao_ble
+   shield: roBa_R
+   snippet: studio-rpc-usb-uart
+   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"roBa_W\" -DCONFIG_ZMK_BLE_PROFILE_NAME_PREFIX=\"roBa_W\"
+   artifact-name: roBa_W_R
+ - board: seeeduino_xiao_ble
+   shield: roBa_L
+   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"roBa_W_L\"
+   artifact-name: roBa_W_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
