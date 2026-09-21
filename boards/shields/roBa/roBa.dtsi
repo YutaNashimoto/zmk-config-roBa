@@ -85,6 +85,10 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
+        // ディープスリープ(CONFIG_ZMK_SLEEP=y)からキー押下で復帰させるために必須。
+        // これが無いとスリープ直前にkscanがsuspendされて全ピンが切断され、
+        // 電源スイッチを入れ直す(またはUSBを挿す/リセットする)まで起きなくなる。
+        wakeup-source;
         diode-direction = "col2row";
             row-gpios
                 = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
